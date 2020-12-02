@@ -1,0 +1,13 @@
+
+<!-- Comentario -->
+<inecuaciones>
+   
+   <formula>
+      <![CDATA[
+      	5x + 10y < 20; 2x - 3y > 10
+      ]]>
+   
+   </formula>
+   
+</inecuaciones>
+

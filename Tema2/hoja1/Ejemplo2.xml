@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos [
+    <!ELEMENT articulos (codigo | id)*>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+]>    
+<articulos>
+    <codigo>AF-32</codigo>
+    <id>3891</id>
+    <codigo>AF-50</codigo>
+    <codigo>AF-89</codigo>
+    <id>273682</id>
+</articulos>

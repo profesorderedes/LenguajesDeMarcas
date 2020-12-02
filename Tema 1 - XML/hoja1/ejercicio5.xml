@@ -1,0 +1,11 @@
+<farmacia>
+	<sin_receta>
+		<medicina>Paracetamol</medicina>
+		<medicina>Aspirina</medicina>
+	</sin_receta>
+	<con_receta>
+		<medicina>Nolotil</medicina>	
+		<medicina>Amoxicilina</medicina>	
+	</con_receta>
+</farmacia>
+

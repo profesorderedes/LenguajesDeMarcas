@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE listado [
+
+    <!ELEMENT listado (participante)*>
+
+    <!ELEMENT participante (nombre, apellidos)| (apellidos, nombre))>
+
+    <!ELEMENT nombre (#PCDATA)> 
+
+    <!ELEMENT apellidos (#PCDATA)>
+
+]>
+
+
+<listado>
+
+    <participante>
+
+        <nombre>Ana María</nombre>
+        <apellidos>Pérez Casado</apellidos>
+
+    </participante>
+
+    <participante>
+
+        <apellidos>López Rico</apellidos>
+        <nombre>Nuria</nombre>
+
+    </participante>
+
+</listado>

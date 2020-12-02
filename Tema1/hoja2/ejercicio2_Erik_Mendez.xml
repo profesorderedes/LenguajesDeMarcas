@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Factura num="999">
+
+    <Datos_empresa nombre="Equipos DIgitales S.L" ubicacion=" Av.Valladolid Madrid 28015" CIF="Q-9876543" TEL="917776688" FAX="917776699">
+    </Datos_empresa>
+    
+    <Datos_pedido Fecha="12/09/2016" pedido_num="731" forma_de_pago="EFECTIVO">
+    </Datos_pedido>
+    
+    <Datos_cliente num="879" nombre="Carlos Sierra García">
+
+        <Direccion_de_envio> Av. Oporto num 7 piso 4 puerta D</Direccion_de_envio>
+        <Población> Madrid cod.postal: 28043</Población>
+        <Provincia> Madrid </Provincia>
+
+    </Datos_cliente>
+
+    <Datos_factura>
+        <producto ref="INT791">
+            <Descripción>PROCESADOR INTEL CORE i5-6500 3.2 GHZ SK1151 6MB 65W SKYLINE</Descripción>
+            <Cant>1</Cant>
+            <Precio>178</Precio>
+            <Importe>178</Importe>
+        </producto>
+
+        <producto ref="GBY776">
+            <Descripción>PLACA INTEL CORE i3/i5/i7 GIGABYTE GA-H110M-S2H SK1151 DDR4 HDMI/DVI/USB3.0</Descripción>
+            <Cant>1</Cant>
+            <Precio>54€</Precio>
+            <Importe>54€</Importe>
+        </producto>
+
+        <producto ref="KNG1974">
+            <Descripción> MEMORIA 8GB DDR4</Descripción>
+            <Cant>2</Cant>
+            <Precio>40€</Precio>
+            <Importe>80€</Importe>
+        </producto>
+
+        <producto ref="GBY776">
+            <Descripción> KGN2162 DISCO DURO 120GB </Descripción>
+            <Cant>1</Cant>
+            <Precio>36€</Precio>
+            <Importe>36€</Importe>
+        </producto>
+
+        <Base_imponible>348,00 </Base_imponible>
+        <IVA>21,0</IVA>
+         <Importe_IVA>73,08</Importe_IVA>
+         <TOTAL_FACTURA>421,08</TOTAL_FACTURA>
+         
+     </Datos_factura>
+    </Factura>

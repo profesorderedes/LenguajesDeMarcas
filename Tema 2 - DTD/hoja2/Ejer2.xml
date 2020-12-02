@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE semaforos [
+
+    <!ELEMENT semaforos (semaforo*)>
+    <!ELEMENT semaforo EMPTY>
+        <!ATTLIST semaforo color (rojo | naranja | verde) #IMPLIED >
+
+]>
+
+<semaforos>
+    <semaforo color="rojo" />
+    <semaforo color="naranja" />
+    <semaforo/>
+</semaforos>

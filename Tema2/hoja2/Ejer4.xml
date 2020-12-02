@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+
+<!DOCTYPE semaforos [
+    <!ELEMENT semaforos (semaforo*)>
+    <!ELEMENT semaforo (#PCDATA)>
+    <!ATTLIST semaforo color CDATA "verde">    
+
+]>
+
+<semaforos>
+    <semaforo color="rojo" />
+    <semaforo color="naranja" />
+</semaforos>
