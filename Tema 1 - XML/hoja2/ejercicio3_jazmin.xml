@@ -1,5 +1,0 @@
-<sistema_domotico>
-  <condicion>Temperatura &lt; 17 </condicion>
-  <condicion>Humedad &gt; 50 </condicion>
-  <condicion>Lampara apagada &amp; calefacción encendida</condicion>
-</sistema_domotico>

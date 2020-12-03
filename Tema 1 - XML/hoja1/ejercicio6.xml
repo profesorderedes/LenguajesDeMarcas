@@ -1,6 +1,0 @@
-<farmacia>
-	<medicina receta="no">Paracetamol</medicina>
-	<medicina receta="no">Aspirina</medicina>
-	<medicina receta="si">Nolotil</medicina>	
-	<medicina receta="si">Amoxicilina</medicina>	
-</farmacia>

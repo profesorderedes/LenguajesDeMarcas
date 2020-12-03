@@ -1,9 +1,0 @@
-<revista>
-    <articulo>
-       <!-- Las etiquetas cursiva y negrita no están bien anidadas -->
-        El lenguaje de programación <cursiva>Java fue creado a mediados de <negrita>los 90</cursiva></negrita>.
-    </articulo>
-    <articulo>
-        
-    </articulo>
-</revista>
