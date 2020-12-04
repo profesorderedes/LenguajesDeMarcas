@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="receta">
+		<xs:complexType>
+			<xs:sequence>
+			
+				<xs:element name="medicamento" type="xs:string" 
+					maxOccurs="unbounded"/>
+					
+				<xs:element name="farmacia" type="xs:string" 
+					default="Farmacia Juaneda" />
+					
+				<xs:element name="edad">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minExclusive value="0"/>
+							<xs:maxInclusive value="150"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>	
+					
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

@@ -11,6 +11,6 @@
 	
 	<!-- La edad de un paciente puede ser mayor o igual a 0, 
 		y menor o igual a 150 -->
-	<edad>150</edad>
+	<edad>-4</edad>
 	
 </receta>
