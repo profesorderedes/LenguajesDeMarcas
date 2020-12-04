@@ -12,14 +12,7 @@
 				<xs:element name="farmacia" type="xs:string" 
 					default="Farmacia Juaneda" />
 					
-				<xs:element name="edad">
-					<xs:simpleType>
-						<xs:restriction base="xs:integer">
-							<xs:minInclusive value="0"/>
-							<xs:maxInclusive value="150"/>
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:element>	
+					
 					
 			</xs:sequence>
 		</xs:complexType>
