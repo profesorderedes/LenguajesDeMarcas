@@ -13,7 +13,7 @@
 		y menor o igual a 150 -->
 	<edad>150</edad>
 	
-	<!-- El nombre del paciente no deberá exceder de 50 caracteres -->
+	<!-- El nombre del paciente no deberá exceder de 50 caracteres. -->
 	<nombre>Francisco Santos</nombre>
 	
 </receta>
