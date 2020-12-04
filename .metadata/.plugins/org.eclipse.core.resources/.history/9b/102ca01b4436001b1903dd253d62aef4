@@ -23,9 +23,7 @@
 				
 				<xs:element name="nombre">
 					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:maxLength value="50" />
-						</xs:restriction>
+						
 					</xs:simpleType>
 				</xs:element>
 					
@@ -34,13 +32,3 @@
 	</xs:element>
 
 </xs:schema>
-
-
-
-
-
-
-
-
-
-
