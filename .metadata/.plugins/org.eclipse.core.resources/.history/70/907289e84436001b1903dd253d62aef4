@@ -11,11 +11,9 @@
 	
 	<!-- La edad de un paciente puede ser mayor o igual a 0, 
 		y menor o igual a 150 -->
-	<edad>70</edad>
+	<edad>150</edad>
 	
 	<!-- El nombre del paciente no deberá exceder de 50 caracteres -->
 	<nombre>Francisco Santos</nombre>
-	
-	<pago>Gratuito</pago>
 	
 </receta>

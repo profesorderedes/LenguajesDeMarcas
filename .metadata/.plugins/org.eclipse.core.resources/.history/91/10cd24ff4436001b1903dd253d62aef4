@@ -16,6 +16,6 @@
 	<!-- El nombre del paciente no deberá exceder de 50 caracteres -->
 	<nombre>Francisco Santos</nombre>
 	
-	<pago>Gratuito</pago>
+	<pago></pago>
 	
 </receta>
