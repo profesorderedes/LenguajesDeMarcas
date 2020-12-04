@@ -16,13 +16,12 @@
 	<!-- El nombre del paciente no deberá exceder de 50 caracteres -->
 	<nombre>Francisco Santos</nombre>
 	
-	<!-- El elemento pago puede ser: Gratuito, Copago o Íntegro -->
+	<!-- El tipo de pago puede ser: Gratuito, Copago o Íntegro -->
 	<pago>Gratuito</pago>
 	
-	<!-- El elemento dni debe ser 8 cifras seguidas de una letra mayúscula-->
+	<!-- El tipo dni debe ser 8 cifras seguidas de una letra mayúscula-->
 	<dni>19102001H</dni>
-
-	<!-- El elemento numColegiado tiene un atributo de tipo integer  -->	
+	
 	<medico numColegiado="287368">Juan Luque</medico>
 	
 </receta>
