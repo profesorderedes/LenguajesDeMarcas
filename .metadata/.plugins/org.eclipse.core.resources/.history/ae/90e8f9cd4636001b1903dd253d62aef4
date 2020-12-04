@@ -39,30 +39,13 @@
 					</xs:simpleType>
 				</xs:element>
 
-				<xs:element name="dni">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:pattern value="\d{8}[A-Z]" />
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:element>
-
-				<xs:element name="medico">
-					<xs:complexType>
-						<xs:simpleContent>
-							<xs:extension base="xs:string">
-								<xs:attribute name="numColegiado" 
-									type="xs:integer" />
-							</xs:extension>
-						</xs:simpleContent>
-					</xs:complexType>
-				</xs:element>
-
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 
 </xs:schema>
+
+
 
 
 

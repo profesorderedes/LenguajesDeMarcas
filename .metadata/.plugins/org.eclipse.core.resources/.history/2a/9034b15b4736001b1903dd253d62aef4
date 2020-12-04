@@ -19,28 +19,6 @@
 	<!-- El tipo de pago puede ser: Gratuito, Copago o Íntegro -->
 	<pago>Gratuito</pago>
 	
-	<!-- El tipo dni debe ser 8 cifras seguidas de una letra mayúscula-->
-	<dni>19102001H</dni>
-	
-	<medico numColegiado="287368">Juan Luque</medico>
+	<dni>102001H</dni>
 	
 </receta>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

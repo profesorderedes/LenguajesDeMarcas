@@ -22,25 +22,4 @@
 	<!-- El tipo dni debe ser 8 cifras seguidas de una letra mayúscula-->
 	<dni>19102001H</dni>
 	
-	<medico numColegiado="287368">Juan Luque</medico>
-	
 </receta>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
