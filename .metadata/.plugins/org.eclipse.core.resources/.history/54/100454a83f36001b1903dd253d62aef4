@@ -5,15 +5,8 @@
 	<xs:element name="receta">
 		<xs:complexType>
 			<xs:sequence>
-			
 				<xs:element name="medicamento" type="xs:string" 
 					maxOccurs="unbounded"/>
-					
-				<xs:element name="farmacia" type="xs:string" 
-					fixed="Farmacia Juaneda" />
-					
-					
-					
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

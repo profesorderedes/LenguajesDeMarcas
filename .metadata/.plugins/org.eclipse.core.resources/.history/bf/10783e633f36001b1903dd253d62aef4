@@ -6,7 +6,4 @@
 	<medicamento>Paracetamol</medicamento>
 	<medicamento>Ibuprofeno</medicamento>
 	
-	<!-- El contenido de farmacia deberá ser siempre el mismo -->
-	<farmacia>Farmacia Juaneda</farmacia>
-	
 </receta>

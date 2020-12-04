@@ -7,6 +7,5 @@
 	<medicamento>Ibuprofeno</medicamento>
 	
 	<!-- El contenido de farmacia deberá ser siempre el mismo -->
-	<farmacia>Farmacia Juaneda</farmacia>
-	
+	<farmacia>Farmacia Juaned</farmacia>
 </receta>
