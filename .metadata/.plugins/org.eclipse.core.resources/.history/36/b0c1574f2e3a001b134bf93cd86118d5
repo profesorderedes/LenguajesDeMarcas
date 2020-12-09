@@ -52,7 +52,7 @@
 						<xs:simpleContent>
 							<xs:extension base="xs:string">
 								<xs:attribute name="numColegiado" 
-									type="xs:integer"/>
+									type="xs:integer" use="required"/>
 							</xs:extension>
 						</xs:simpleContent>
 					</xs:complexType>
