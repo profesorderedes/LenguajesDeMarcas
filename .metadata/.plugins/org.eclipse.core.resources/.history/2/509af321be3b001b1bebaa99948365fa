@@ -25,10 +25,8 @@
 	<!-- El elemento numColegiado tiene un atributo de tipo integer  -->	
 	<medico numColegiado="287368">Juan Luque</medico>
 	
-	<!-- El elemento posologia contiene dos elementos hijos, tomas y horario -->
 	<posologia>
-		<tomas></tomas>
-		<horario></horario>
+		
 	</posologia>
 	
 	
