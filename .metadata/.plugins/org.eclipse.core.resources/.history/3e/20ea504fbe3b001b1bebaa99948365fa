@@ -27,8 +27,8 @@
 	
 	<!-- El elemento posologia contiene dos elementos hijos, tomas y horario -->
 	<posologia>
-		<tomas>3</tomas>
-		<horario>Tomar en el desayuno, comida y cena.</horario>
+		<tomas></tomas>
+		<horario></horario>
 	</posologia>
 	
 	

@@ -51,12 +51,13 @@
 					<xs:complexType>
 						<xs:simpleContent>
 							<xs:extension base="xs:string">
-								<xs:attribute name="numColegiado" type="xs:integer" />
+								<xs:attribute name="numColegiado" 
+									type="xs:integer"/>
 							</xs:extension>
 						</xs:simpleContent>
 					</xs:complexType>
 				</xs:element>
-
+				
 				<xs:element name="posologia">
 					<xs:complexType>
 						<xs:sequence>
