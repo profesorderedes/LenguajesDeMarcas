@@ -60,26 +60,23 @@
 				<xs:element name="posologia" type="TipoPosologia" />
 
 				<xs:element name="alergias">
-					<xs:complexType />
+						<xs:complexType/>
 				</xs:element>
-
+				
 				<xs:element name="grupo_sanguineo">
 					<xs:complexType>
-						<xs:attribute name="tipo" type="xs:string" />
+						<xs:attribute name="tipo" type="xs:string"/>
 					</xs:complexType>
 				</xs:element>
-
+				
 				<xs:element name="instrucciones">
 					<xs:complexType mixed="true">
-						<xs:sequence>
-							<xs:element name="b" type="xs:string"
-								maxOccurs="unbounded" />
-						</xs:sequence>
+					
 					</xs:complexType>
 				</xs:element>
-
-
-
+				
+				
+				
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

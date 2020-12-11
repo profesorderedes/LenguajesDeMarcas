@@ -35,14 +35,8 @@
 	<alergias />
 
 	<!-- El elemento grupo_sanguineo estará vacío -->
-	<grupo_sanguineo tipo="A+" />
+	<grupo_sanguineo tipo="A+" ></grupo_sanguineo>
 
-	<!-- El elemento instrucciones tiene contenido mixto (texto mezclado con
-		otros elementos) -->
-	<instrucciones>
-		Debe tomar la medicación <b>antes</b> de la comida, no después.
-		Es <b>importante</b> no tomar más de tres dosis al día.
-	</instrucciones>
 
 </receta>
 

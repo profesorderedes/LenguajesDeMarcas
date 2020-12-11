@@ -72,8 +72,7 @@
 				<xs:element name="instrucciones">
 					<xs:complexType mixed="true">
 						<xs:sequence>
-							<xs:element name="b" type="xs:string"
-								maxOccurs="unbounded" />
+							<xs:element name="b" type="xs:string" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
