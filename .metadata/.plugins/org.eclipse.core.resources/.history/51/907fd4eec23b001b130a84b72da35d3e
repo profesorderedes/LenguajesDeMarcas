@@ -58,10 +58,7 @@
 				</xs:element>
 
 				<xs:element name="posologia" type="TipoPosologia" />
-
-				<xs:element name="alergias">
-
-				</xs:element>
+	
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -72,8 +69,10 @@
 			<xs:element name="horario" type="xs:string" />
 		</xs:sequence>
 	</xs:complexType>
-
-
+	
+	<xs:element name="alergias">
+		
+	</xs:element>
 
 </xs:schema>
 

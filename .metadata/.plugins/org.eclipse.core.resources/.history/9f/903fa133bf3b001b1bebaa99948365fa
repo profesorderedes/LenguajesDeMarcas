@@ -57,23 +57,18 @@
 					</xs:complexType>
 				</xs:element>
 
-				<xs:element name="posologia" type="TipoPosologia" />
-
-				<xs:element name="alergias">
-
+				<xs:element name="posologia">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="tomas" type="xs:positiveInteger" />
+							<xs:element name="horario" type="xs:string" />
+						</xs:choice>
+					</xs:complexType>
 				</xs:element>
+
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-
-	<xs:complexType name="TipoPosologia">
-		<xs:sequence>
-			<xs:element name="tomas" type="xs:positiveInteger" />
-			<xs:element name="horario" type="xs:string" />
-		</xs:sequence>
-	</xs:complexType>
-
-
 
 </xs:schema>
 

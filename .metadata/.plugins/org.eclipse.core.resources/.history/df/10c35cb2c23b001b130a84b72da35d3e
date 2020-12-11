@@ -31,7 +31,6 @@
 		<horario>Tomar en el desayuno, comida y cena.</horario>
 	</posologia>
 	
-	<!-- El elemento alergias siempre estará vacío -->
 	<alergias/>
 	
 	
