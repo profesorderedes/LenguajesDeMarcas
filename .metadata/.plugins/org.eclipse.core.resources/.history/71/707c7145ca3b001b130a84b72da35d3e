@@ -39,7 +39,7 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:complexType name="TipoBarco">
+	<xs:complexType name="TipoFechas">
 		<xs:sequence>
 			<xs:element name="salida" type="xs:date" />
 			<xs:element name="llegada" type="xs:date" />

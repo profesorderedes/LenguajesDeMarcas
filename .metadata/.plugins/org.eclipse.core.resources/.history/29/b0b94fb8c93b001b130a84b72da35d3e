@@ -19,19 +19,17 @@
 				<xs:choice>
 
 					<xs:element name="avion">
-						<xs:complexType>
-							<xs:complexContent>
-								<xs:extension base="TipoBarco">
-									<xs:sequence>
-										<xs:element name="equipaje_embarcado"
-											type="xs:string" />
-									</xs:sequence>
-								</xs:extension>
-							</xs:complexContent>
-						</xs:complexType>
+
 					</xs:element>
 
-					<xs:element name="barco" type="TipoBarco" />
+					<xs:element name="barco" type="TipoFechas">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="salida" type="xs:date" />
+								<xs:element name="llegada" type="xs:date" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
 
 				</xs:choice>
 
@@ -39,7 +37,7 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:complexType name="TipoBarco">
+	<xs:complexType name="TipoFechas">
 		<xs:sequence>
 			<xs:element name="salida" type="xs:date" />
 			<xs:element name="llegada" type="xs:date" />
