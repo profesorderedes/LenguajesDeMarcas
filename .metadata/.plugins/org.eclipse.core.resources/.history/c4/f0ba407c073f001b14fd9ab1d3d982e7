@@ -46,23 +46,12 @@
 	<xs:element name="alumnes">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="alumne" maxOccurs="unbounded" />
+				<xs:element ref="alumne" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="alumne">
-		<xs:complexType>
-			<xs:complexContent>
-				<xs:extension base="TipoPersona">
-					<xs:sequence>
-						<xs:element ref="nota" />
-					</xs:sequence>
-					<xs:attribute ref="delegat" />
-				</xs:extension>
-			</xs:complexContent>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="alumne" />
 
 	<xs:attribute name="delegat" />
 

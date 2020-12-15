@@ -51,14 +51,13 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="alumne">
+	<xs:element name="alumne" >
 		<xs:complexType>
 			<xs:complexContent>
 				<xs:extension base="TipoPersona">
 					<xs:sequence>
-						<xs:element ref="nota" />
+						
 					</xs:sequence>
-					<xs:attribute ref="delegat" />
 				</xs:extension>
 			</xs:complexContent>
 		</xs:complexType>

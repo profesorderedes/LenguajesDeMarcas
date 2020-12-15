@@ -51,7 +51,7 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="alumne">
+	<xs:element name="alumne" >
 		<xs:complexType>
 			<xs:complexContent>
 				<xs:extension base="TipoPersona">
