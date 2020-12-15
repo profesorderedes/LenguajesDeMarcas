@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="classe" />
+	<xs:attribute name="modul" />
+	<xs:attribute name="nommodul" />
+	<xs:element name="curs" />
+	<xs:attribute name="especialitat" />
+	<xs:element name="professor" />
+	<xs:element name="nom" />
+	<xs:element name="cognom" />
+	<xs:element name="alumnes" />
+	<xs:element name="alumne" />
+	<xs:attribute name="delegat" />
+	<xs:element name="nota" />
+
+</xs:schema>

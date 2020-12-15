@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<classe modul="3" nommodul="Programació bàsica" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<curs especialitat="ASIX">1</curs>
+	<professor>
+		<nom>Marcel</nom>
+		<cognom>Puig</cognom>
+	</professor>
+	<alumnes>
+		<alumne>
+			<nom>Filomeno</nom>
+			<cognom>Garcia</cognom>
+			<nota>5</nota>
+		</alumne>
+		<alumne delegat="si">
+			<nom>Frederic</nom>
+			<cognom>Pi</cognom>
+			<nota>3</nota>
+		</alumne>
+		<alumne>
+			<nom>Manel</nom>
+			<cognom>Puigdevall</cognom>
+			<nota>8</nota>
+		</alumne>
+	</alumnes>
+</classe>
