@@ -27,7 +27,7 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:attribute name="especialitat">
+	<xs:attribute name="especialitat" >
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
 				<xs:enumeration value="ASIX" />
@@ -37,33 +37,25 @@
 		</xs:simpleType>
 	</xs:attribute>
 
-	<xs:element name="professor" type="TipoPersona" />
-
-	<xs:element name="nom" type="xs:string" />
-
-	<xs:element name="cognom" type="xs:string" />
-
-	<xs:element name="alumnes">
+	<xs:element name="professor" >
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="alumne" maxOccurs="unbounded" />
+				<xs:element ref="nom"/>
+				<xs:element ref="cognom"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+
+	<xs:element name="nom" type="xs:string" />
+
+	<xs:element name="cognom" />
+
+	<xs:element name="alumnes" />
 
 	<xs:element name="alumne" />
 
 	<xs:attribute name="delegat" />
 
 	<xs:element name="nota" />
-
-	<!-- Tipos definidos por nosotros -->
-
-	<xs:complexType name="TipoPersona">
-		<xs:sequence>
-			<xs:element ref="nom" />
-			<xs:element ref="cognom" />
-		</xs:sequence>
-	</xs:complexType>
 
 </xs:schema>
