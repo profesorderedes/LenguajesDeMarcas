@@ -75,8 +75,7 @@
 	<xs:element name="nota">
 		<xs:simpleType>
 			<xs:restriction base="xs:integer">
-				<xs:minInclusive value="0" />
-				<xs:maxInclusive value="10" />
+				
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
