@@ -1,0 +1,5 @@
+
+<!-- Creau un esquema per posar notes a un grup d'alumnes. Heu de incloure 
+	el nom de l'alumne, tres avaluacions i heu de fer que la nota d'aquestes 
+	avaluacions sigui un enter entre 0 i 10.
+ -->
