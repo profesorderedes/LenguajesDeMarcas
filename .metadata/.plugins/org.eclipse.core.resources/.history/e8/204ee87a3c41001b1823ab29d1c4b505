@@ -8,8 +8,8 @@
 				<xs:element ref="professor" />
 				<xs:element ref="alumnes" />
 			</xs:sequence>
-			<xs:attribute ref="modul" use="required"/>
-			<xs:attribute ref="nommodul" use="required" />
+			<xs:attribute ref="modul" required="true" />
+			<xs:attribute ref="nommodul" />
 		</xs:complexType>
 	</xs:element>
 
