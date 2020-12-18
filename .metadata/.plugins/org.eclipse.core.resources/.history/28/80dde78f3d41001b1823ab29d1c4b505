@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciutat>
+	<nom>Athens</nom>
+	<state>GA</state>
+	<description> Home of the University of Georgia</description>
+	<population>100,000</population>
+	<location>Located about 60 miles Northeast of Atlanta</location>
+	<latitude>33 57' 39" N</latitude>
+	<longitude>83 22' 42" W</longitude>
+</ciutat>
