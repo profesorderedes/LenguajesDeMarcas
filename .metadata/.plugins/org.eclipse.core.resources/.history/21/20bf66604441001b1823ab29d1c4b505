@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tourGuide
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="tourGuide.xsd">
+<tourGuide>
 	<city>
 		<cityName>Belmopan</cityName>
 		<adminUnit>Cayo</adminUnit>
@@ -14,12 +12,9 @@
 		<description>Belmopan is the capital of Belize</description>
 		<history>Belmopan was established following the devastation of the
 			former capital, Belize City, by Hurricane Hattie in 1965. High
-			ground
-			and open space influenced the choice and ground-breaking
-			began in
-			1966. By 1970 most government offices and operations had
-			already moved
-			to the new location.
+			ground and open space influenced the choice and ground-breaking
+			began in 1966. By 1970 most government offices and operations had
+			already moved to the new location.
 		</history>
 	</city>
 	<city>
@@ -51,8 +46,7 @@
 		<description>Winnipeg has two seasons. Winter and Construction.</description>
 		<history>The city was founded by people at the forks (Fort Garry)
 			trading in pelts with the Hudson Bay Company. Ironically,
-			The Bay was
-			bought by America.
+			The Bay was bought by America.
 		</history>
 	</city>
 </tourGuide>
