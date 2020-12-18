@@ -11,17 +11,5 @@
 			<segundaEv></segundaEv>
 			<terceraEv></terceraEv>
 		</alumno>
-		<alumno>
-			<nombre></nombre>
-			<primeraEv></primeraEv>
-			<segundaEv></segundaEv>
-			<terceraEv></terceraEv>
-		</alumno>
-		<alumno>
-			<nombre></nombre>
-			<primeraEv></primeraEv>
-			<segundaEv></segundaEv>
-			<terceraEv></terceraEv>
-		</alumno>
 	</alumnos>
 </notas>
