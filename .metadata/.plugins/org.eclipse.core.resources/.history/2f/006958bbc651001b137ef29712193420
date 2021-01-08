@@ -6,6 +6,7 @@
 	pot haver un preu mínim de manera que si no s'arriba no es vendria. -->
 
 <subasta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
 	xsi:noNamespaceSchemaLocation="notas.xsd">
 
 	<objeto descripcion="Cuadro">
@@ -13,13 +14,13 @@
 		<precioSalida>50</precioSalida>
 		<precioMin>250</precioMin>
 	</objeto>
-
+	
 	<objeto descripcion="Escultura">
 		<propietario>Pedro W.C.</propietario>
 		<precioSalida>110</precioSalida>
 		<precioMin>150</precioMin>
 	</objeto>
-
+	
 	<objeto descripcion="Reloj">
 		<propietario>Antonio López</propietario>
 		<precioSalida>90</precioSalida>
