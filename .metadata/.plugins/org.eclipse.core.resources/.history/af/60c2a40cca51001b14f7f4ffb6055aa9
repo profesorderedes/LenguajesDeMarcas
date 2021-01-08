@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Creau un esquema per posar preus a una serie d'objectes destinats a 
+	ser venuts en una subhasta. De cada objecte heu de guardar el seu propietari, 
+	el preu de sortida (màxim 6 dígits, dos d'ells decimals). Opcionalment hi 
+	pot haver un preu mínim de manera que si no s'arriba no es vendria. -->
+
+<subasta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="subasta.xsd">
+
+	<objeto descripcion="Cuadro">
+		<propietario>Pedro W.C.</propietario>
+		<precioSalida>50</precioSalida>
+		<precioMin>2009.12</precioMin>
+	</objeto>
+
+	<objeto descripcion="Escultura">
+		<propietario>Pedro W.C.</propietario>
+		<precioSalida>110</precioSalida>
+		<precioMin>150</precioMin>
+	</objeto>
+
+	<objeto descripcion="Reloj">
+		<propietario>Antonio López</propietario>
+		<precioSalida>90</precioSalida>
+		<precioMin>100</precioMin>
+	</objeto>
+</subasta>

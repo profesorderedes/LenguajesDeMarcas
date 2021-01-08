@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<flight>
-	<airline>Delta</airline>
-	<flightno>22</flightno>
-	<origin>Atlanta</origin>
-	<destination>Paris</destination>
-	<departure>5:40pm</departure>
-	<arrival>8:10am</arrival>
-</flight>
