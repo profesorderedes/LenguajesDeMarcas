@@ -12,21 +12,19 @@
 
 	xsi:noNamespaceSchemaLocation="notas.xsd">
 
-	<objeto descripcion="Cuadro">
+	<Objeto descripcion="Cuadro">
 		<propietario>Pedro W.C.</propietario>
 		<precioSalida>50</precioSalida>
 		<precioMin>250</precioMin>
-	</objeto>
-	
-	<objeto descripcion="Escultura">
+	</Objeto>
+	<Objeto descripcion="Escultura">
 		<propietario>Pedro W.C.</propietario>
 		<precioSalida>110</precioSalida>
 		<precioMin>150</precioMin>
-	</objeto>
-	
-	<objeto descripcion="Reloj">
+	</Objeto>
+	<Objeto descripcion="Reloj">
 		<propietario>Antonio López</propietario>
 		<precioSalida>90</precioSalida>
 		<precioMin>100</precioMin>
-	</objeto>
+	</Objeto>
 </subasta>
