@@ -9,26 +9,36 @@
 	<alumnos>
 
 		<alumno>
+
 			<nombre>Carlos</nombre>
 			<primeraEv>9</primeraEv>
 			<segundaEv>7</segundaEv>
 			<terceraEv>8</terceraEv>
+
 		</alumno>
 
 		<alumno>
+
 			<nombre>Mauricio</nombre>
 			<primeraEv>6</primeraEv>
 			<segundaEv>9</segundaEv>
 			<terceraEv>7</terceraEv>
+
 		</alumno>
 
+
+
 		<alumno>
+
 			<nombre>Tomasa</nombre>
 			<primeraEv>9</primeraEv>
 			<segundaEv>7</segundaEv>
 			<terceraEv>8</terceraEv>
+
 		</alumno>
 
 	</alumnos>
+
+
 
 </notas>

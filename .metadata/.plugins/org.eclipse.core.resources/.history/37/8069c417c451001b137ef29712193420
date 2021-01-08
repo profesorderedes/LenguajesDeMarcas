@@ -10,7 +10,7 @@
 
 		<alumno>
 			<nombre>Carlos</nombre>
-			<primeraEv>9</primeraEv>
+			<primeraEva>9</primeraEv>
 			<segundaEv>7</segundaEv>
 			<terceraEv>8</terceraEv>
 		</alumno>

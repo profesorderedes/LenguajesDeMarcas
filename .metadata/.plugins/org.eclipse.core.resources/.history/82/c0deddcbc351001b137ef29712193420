@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="notas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="alumnos"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="alumnos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="alumno" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="alumno" type="tipoAlumno" />
+
+	<xs:element name="nombre" type="xs:string" />
+
+	<xs:element name="primeraEv" type="xs:positiveInteger" />
+
+	<xs:element name="segundaEv" type="xs:positiveInteger" />
+
+	<xs:element name="terceraEv" type="xs:positiveInteger" />
+
+	<xs:complexType name="tipoAlumno">
+		<xs:sequence>
+			<xs:element ref="nombre" />
+			<xs:element ref="primeraEv" />
+			<xs:element ref="segundaEv" />
+			<xs:element ref="terceraEv" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
