@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<empleados
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="empleados.xsd">
+
+	<empleado id="A1">
+		<nombre>Juan</nombre>
+		<inicioContrato>2000/01/25</inicioContrato>
+		<ocupaciónActual>Oficial 1º</ocupaciónActual>
+		<ocupacionesAnteriores>Oficial2º, Oficial3º</ocupacionesAnteriores>
+		<jefe>A2</jefe>
+		<sueldo>2.000</sueldo>
+		<titulaciones>Técnico especialista</titulaciones>
+		<sede> Barcelona</sede>
+		<observaciones>
+			El rendimiento de Juan es correcto.
+			<meritos>Comportamiento</meritos>
+			<demeritos>Falta de puntualidad ocasional</demeritos>
+		</observaciones>
+
+	</empleado>
+
+	<empleado id="A2">
+
+		<nombre>María</nombre>
+		<inicioContrato>1995/09/07</inicioContrato>
+		<ocupaciónActual>Jefa</ocupaciónActual>
+		<ocupacionesAnteriores>Administración, Jefa Administración
+		</ocupacionesAnteriores>
+		<jefe></jefe>
+		<sueldo>2.800</sueldo>
+		<titulaciones>Grado de Gerencias, Técnica de administración
+		</titulaciones>
+		<sede>Valencia</sede>
+		<observaciones>
+			Su trabajo como jefe es encomiable.
+			<meritos>Dedicación y buena energía</meritos>
+		</observaciones>
+
+	</empleado>
+
+	<empleado id="A3">
+
+		<nombre>Francina</nombre>
+		<inicioContrato>2010/07/04</inicioContrato>
+		<ocupaciónActual>Oficial 2º</ocupaciónActual>
+		<ocupacionesAnteriores>Oficial 3º y peón</ocupacionesAnteriores>
+		<jefe>A2</jefe>
+		<sueldo>1.600</sueldo>
+		<titulaciones>Tecnica especialista</titulaciones>
+		<sede>Barcelona</sede>
+		<observaciones>
+			Se adapta al puesto de trabajo rápidamente.
+		</observaciones>
+
+	</empleado>
+
+	<empleado id="A4">
+
+		<nombre>Paquirrin</nombre>
+		<inicioContrato>2020/12/08</inicioContrato>
+		<ocupaciónActual>Peón</ocupaciónActual>
+		<ocupacionesAnteriores></ocupacionesAnteriores>
+		<jefe>A1</jefe>
+		<sueldo>1.000</sueldo>
+		<titulaciones>FP Básica técnico</titulaciones>
+		<sede>Madrid</sede>
+		<observaciones>
+			<demeritos>Puntualidad</demeritos>
+		</observaciones>
+
+	</empleado>
+
+	<empleado id="A5">
+		<nombre>Antonio</nombre>
+		<inicioContrato>2018/10/07</inicioContrato>
+		<ocupaciónActual>Oficial 2º</ocupaciónActual>
+		<ocupacionesAnteriores>Oficial 3º y Peón</ocupacionesAnteriores>
+		<jefe>A2</jefe>
+		<sueldo>1.800</sueldo>
+		<titulaciones>Técnico especialista</titulaciones>
+		<sede>Madrid</sede>
+		<observaciones>
+			Excelente organizador.
+			<meritos>Organización</meritos>
+		</observaciones>
+	</empleado>
+
+</empleados>
