@@ -17,7 +17,7 @@
 	<empleado id="A1">
 
 		<nombre>Juan</nombre>
-		<inicioContrato>2000/01/25</inicioContrato>
+		<inicioContrato>2000-01-25</inicioContrato>
 		<ocupaciónActual>Oficial 1º</ocupaciónActual>
 		<ocupacionesAnteriores>Oficial2º, Oficial3º</ocupacionesAnteriores>
 		<jefe>A2</jefe>
@@ -35,7 +35,7 @@
 	<empleado id="A2">
 
 		<nombre>María</nombre>
-		<inicioContrato>1995/09/07</inicioContrato>
+		<inicioContrato>1995-09-07</inicioContrato>
 		<ocupaciónActual>Jefa</ocupaciónActual>
 		<ocupacionesAnteriores>Administración, Jefa Administración
 		</ocupacionesAnteriores>
@@ -54,7 +54,7 @@
 	<empleado id="A3">
 
 		<nombre>Francina</nombre>
-		<inicioContrato>2010/07/04</inicioContrato>
+		<inicioContrato>2010-07-04</inicioContrato>
 		<ocupaciónActual>Oficial 2º</ocupaciónActual>
 		<ocupacionesAnteriores>Oficial 3º y peón</ocupacionesAnteriores>
 		<jefe>A2</jefe>
@@ -70,7 +70,7 @@
 	<empleado id="A4">
 
 		<nombre>Paquirrin</nombre>
-		<inicioContrato>2020/12/08</inicioContrato>
+		<inicioContrato>2020-12-08</inicioContrato>
 		<ocupaciónActual>Peón</ocupaciónActual>
 		<ocupacionesAnteriores></ocupacionesAnteriores>
 		<jefe>A1</jefe>
@@ -86,7 +86,7 @@
 	<empleado id="A5">
 
 		<nombre>Antonio</nombre>
-		<inicioContrato>2018/10/07</inicioContrato>
+		<inicioContrato>2018-10-07</inicioContrato>
 		<ocupaciónActual>Oficial 2º</ocupaciónActual>
 		<ocupacionesAnteriores>Oficial 3º y Peón</ocupacionesAnteriores>
 		<jefe>A2</jefe>
