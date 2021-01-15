@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:element name="empleados">
+
+		<xs:complexType>
+
+			<xs:sequence>
+
+				<xs:element ref="empleado" maxOccurs="unbounded" />
+
+			</xs:sequence>
+
+		</xs:complexType>
+
+	</xs:element>
+
+
+	<xs:element name="empleado">
+
+		<xs:complexType>
+
+			<xs:sequence>
+
+				<xs:element ref="nombre" />
+
+				<xs:element ref="inicioContrato" />
+
+				<xs:element ref="ocupacionActual" />
+
+				<xs:element ref="ocupacionesAnteriores" />
+
+				<xs:element ref="jefe" minOccurs="0" />
+
+				<xs:element ref="sueldo" />
+
+				<xs:element ref="titulaciones" />
+
+				<xs:element ref="sede" />
+
+				<xs:element ref="observaciones" />
+
+			</xs:sequence>
+
+			<xs:attribute ref="id" use="required" />
+
+		</xs:complexType>
+
+	</xs:element>
+
+
+	<xs:attribute name="id" type="xs:ID" />
+
+
+	<xs:element name="nombre" type="xs:string" />
+
+
+	<xs:element name="inicioContrato" type="xs:string" />
+
+
+	<xs:element name="ocupacionActual" type="xs:string" />
+
+
+	<xs:element name="ocupacionesAnteriores" type="xs:string" />
+
+
+	<xs:element name="jefe" type="xs:IDREF" />
+
+
+	<xs:element name="sueldo" type="xs:string" />
+
+
+	<xs:element name="titulaciones" type="xs:string" />
+
+
+	<xs:element name="sede">
+
+		<xs:simpleType>
+
+			<xs:restriction base="xs:string">
+
+				<xs:enumeration value="Barcelona" />
+
+				<xs:enumeration value="Madrid" />
+
+				<xs:enumeration value="Valencia" />
+
+			</xs:restriction>
+
+		</xs:simpleType>
+
+	</xs:element>
+
+
+	<xs:element name="observaciones">
+
+		<xs:complexType mixed="true">
+
+			<xs:sequence>
+
+				<xs:element name="meritos" type="xs:string" minOccurs="0" />
+
+				<xs:element name="demeritos" type="xs:string"
+
+					minOccurs="0" />
+
+			</xs:sequence>
+
+		</xs:complexType>
+
+	</xs:element>
+
+
+
+
+
+</xs:schema>

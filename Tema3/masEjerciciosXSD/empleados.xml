@@ -12,13 +12,13 @@
 
 <empleados
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="empleados.xsd">
+	xsi:noNamespaceSchemaLocation="empleados-juanmanuel.xsd">
 
 	<empleado id="A1">
 
 		<nombre>Juan</nombre>
 		<inicioContrato>2000-01-25</inicioContrato>
-		<ocupaciónActual>Oficial 1º</ocupaciónActual>
+		<ocupacionActual>Oficial 1º</ocupacionActual>
 		<ocupacionesAnteriores>Oficial2º, Oficial3º</ocupacionesAnteriores>
 		<jefe>A2</jefe>
 		<sueldo>2.000</sueldo>
@@ -36,7 +36,7 @@
 
 		<nombre>María</nombre>
 		<inicioContrato>1995-09-07</inicioContrato>
-		<ocupaciónActual>Jefa</ocupaciónActual>
+		<ocupacionActual>Jefa</ocupacionActual>
 		<ocupacionesAnteriores>Administración, Jefa Administración
 		</ocupacionesAnteriores>
 		<sueldo>2.800</sueldo>
@@ -54,7 +54,7 @@
 
 		<nombre>Francina</nombre>
 		<inicioContrato>2010-07-04</inicioContrato>
-		<ocupaciónActual>Oficial 2º</ocupaciónActual>
+		<ocupacionActual>Oficial 2º</ocupacionActual>
 		<ocupacionesAnteriores>Oficial 3º y peón</ocupacionesAnteriores>
 		<jefe>A2</jefe>
 		<sueldo>1.600</sueldo>
@@ -70,7 +70,7 @@
 
 		<nombre>Paquirrin</nombre>
 		<inicioContrato>2020-12-08</inicioContrato>
-		<ocupaciónActual>Peón</ocupaciónActual>
+		<ocupacionActual>Peón</ocupacionActual>
 		<ocupacionesAnteriores></ocupacionesAnteriores>
 		<jefe>A1</jefe>
 		<sueldo>1.000</sueldo>
@@ -86,7 +86,7 @@
 
 		<nombre>Antonio</nombre>
 		<inicioContrato>2018-10-07</inicioContrato>
-		<ocupaciónActual>Oficial 2º</ocupaciónActual>
+		<ocupacionActual>Oficial 2º</ocupacionActual>
 		<ocupacionesAnteriores>Oficial 3º y Peón</ocupacionesAnteriores>
 		<jefe>A2</jefe>
 		<sueldo>1.800</sueldo>
