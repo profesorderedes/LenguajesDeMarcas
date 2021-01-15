@@ -23,7 +23,7 @@
 		<jefe>A2</jefe>
 		<sueldo>2.000</sueldo>
 		<titulaciones>Técnico especialista</titulaciones>
-		<sede> Barcelona</sede>
+		<sede>Barcelona</sede>
 		<observaciones>
 			El rendimiento de Juan es correcto.
 			<meritos>Comportamiento</meritos>
@@ -39,7 +39,6 @@
 		<ocupaciónActual>Jefa</ocupaciónActual>
 		<ocupacionesAnteriores>Administración, Jefa Administración
 		</ocupacionesAnteriores>
-		<jefe></jefe>
 		<sueldo>2.800</sueldo>
 		<titulaciones>Grado de Gerencias, Técnica de administración
 		</titulaciones>
