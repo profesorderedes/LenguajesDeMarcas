@@ -1,32 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:element name="connexions_ADSL" >
+	<xs:element name="connexions_ADSL">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="oferta" maxOccurs="unbounded"/>
+				<xs:element ref="oferta" maxOccurs="unbounded" />
 				<xs:element ref="ofertes_actives" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="oferta" />
+	<xs:element name="oferta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom" />
+				<xs:element ref="nom_companyia" />
+				<xs:element ref="fibra" minOccurs="0" />
+				<xs:element ref="velocitat_transferencia" />
+				<xs:element ref="preu" />
+			</xs:sequence>
+			<xs:attribute ref="id" use="required" />
+		</xs:complexType>
+	</xs:element>
 
-	<xs:attribute name="id" />
+	<xs:attribute name="id" type="xs:positiveInteger" />
 
-	<xs:element name="nom" />
+	<xs:element name="nom" type="xs:string" />
 
-	<xs:element name="nom_companyia" />
+	<xs:element name="nom_companyia">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Arrakis" />
+				<xs:enumeration value="Jazztel" />
+				<xs:enumeration value="Movistar" />
+				<xs:enumeration value="Orange" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
 
-	<xs:element name="fibra" />
+	<xs:element name="fibra">
+		<xs:complexType />
+	</xs:element>
 
-	<xs:element name="velocitat_transferencia" />
+	<xs:element name="velocitat_transferencia">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="pujada" />
+				<xs:element ref="baixada" />
+			</xs:sequence>
+			<xs:attribute ref="unitat" use="required" />
+		</xs:complexType>
+	</xs:element>
 
-	<xs:attribute name="unitat" />
+	<xs:attribute name="unitat">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Kbps" />
+				<xs:enumeration value="Mbps" />
+				<xs:enumeration value="Gbps" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
 
-	<xs:element name="pujada" />
+	<xs:element name="pujada" type="xs:decimal" />
 
-	<xs:element name="baixada" />
+	<xs:element name="baixada" type="xs:decimal" />
 
 	<!-- DEBERES HASTA AQUÍ -->
 
@@ -49,7 +87,7 @@
 	<xs:element name="linia" />
 
 	<xs:element name="promocio" />
-	
+
 	<xs:attribute name="fins" />
 
 	<xs:element name="promocio_preu" />

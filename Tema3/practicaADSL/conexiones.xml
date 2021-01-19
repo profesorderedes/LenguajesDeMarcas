@@ -92,7 +92,7 @@
 	</oferta>
 	<oferta id="6">
 		<nom>ASDL Rural</nom>
-		<nom_companyia>Orange </nom_companyia>
+		<nom_companyia>Orange</nom_companyia>
 		<velocitat_transferencia unitat="Mbps">
 			<pujada>0.512</pujada>
 			<baixada>6</baixada>
