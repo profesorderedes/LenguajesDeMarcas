@@ -66,8 +66,6 @@
 
 	<xs:element name="baixada" type="xs:decimal" />
 
-	<!-- DEBERES HASTA AQUÍ -->
-
 	<xs:element name="preu">
 		<xs:complexType>
 			<xs:sequence>
@@ -80,38 +78,82 @@
 				<xs:element ref="extres" minOccurs="0"
 					maxOccurs="unbounded" />
 			</xs:sequence>
-			<xs:attribute ref="moneda" />
+			<xs:attribute ref="moneda" use="required" />
 		</xs:complexType>
 	</xs:element>
 
 	<xs:attribute name="moneda" fixed="Euro" type="xs:string" />
 
-	<xs:element name="alta" />
+	<xs:element name="alta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="permanencia_alta" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute ref="gratis" use="required" />
+			<xs:attribute ref="permanencia" use="required" />
+		</xs:complexType>
+	</xs:element>
 
-	<xs:attribute name="gratis" />
+	<xs:attribute name="gratis" type="TipoBooleano" />
 
-	<xs:attribute name="permanencia" />
+	<xs:attribute name="permanencia" type="TipoBooleano" />
 
-	<xs:element name="permanencia_alta" />
+	<xs:element name="permanencia_alta">
+		<xs:complexType>
+			<xs:attribute ref="temps" use="required" />
+			<xs:attribute ref="quantitat" use="required" />
+		</xs:complexType>
+	</xs:element>
 
-	<xs:attribute name="temps" />
+	<xs:attribute name="temps">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="dies" />
+				<xs:enumeration value="mesos" />
+				<xs:enumeration value="anys" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
 
-	<xs:attribute name="quantitat" />
+	<xs:attribute name="quantitat"
+		type="xs:nonNegativeInteger" />
 
-	<xs:element name="linia" />
+	<xs:element name="linia" type="TipoPrecio" />
 
-	<xs:element name="promocio" />
+	<xs:element name="promocio">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="promocio_preu" />
+			</xs:sequence>
+			<xs:attribute ref="fins" />
+		</xs:complexType>
+	</xs:element>
 
-	<xs:attribute name="fins" />
+	<xs:attribute name="fins" type="xs:date" />
 
-	<xs:element name="promocio_preu" />
+	<xs:element name="promocio_preu" type="TipoPrecio" />
 
-	<xs:element name="mensual" />
+	<xs:element name="mensual" type="TipoPrecio" />
 
-	<xs:element name="total_mensual" />
+	<xs:element name="total_mensual" type="TipoPrecio" />
 
-	<xs:element name="extres" />
+	<xs:element name="extres" type="xs:string" />
 
-	<xs:element name="ofertes_actives" />
+	<xs:element name="ofertes_actives" type="xs:string" />
+
+	<!-- Tipos definidos por nosotros -->
+
+	<xs:simpleType name="TipoBooleano">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Si" />
+			<xs:enumeration value="No" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="TipoPrecio">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="2" />
+		</xs:restriction>
+	</xs:simpleType>
 
 </xs:schema>
