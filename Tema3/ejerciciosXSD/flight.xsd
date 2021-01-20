@@ -28,10 +28,12 @@
 	<xs:element name="arrival" >
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<!-- Pendiente de investigación -->
-				<xs:pattern value="\d:\d{2}[a-p]m" />
+				<xs:pattern value="\d\d?:\d{2}[ap]m" />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
 
 </xs:schema>
+
+
+
