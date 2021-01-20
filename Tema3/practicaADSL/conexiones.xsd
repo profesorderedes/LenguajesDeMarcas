@@ -68,9 +68,23 @@
 
 	<!-- DEBERES HASTA AQUÍ -->
 
-	<xs:element name="preu" />
+	<xs:element name="preu">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="alta" />
+				<xs:element ref="linia" />
+				<xs:element ref="promocio" minOccurs="0"
+					maxOccurs="unbounded" />
+				<xs:element ref="mensual" />
+				<xs:element ref="total_mensual" />
+				<xs:element ref="extres" minOccurs="0"
+					maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute ref="moneda" />
+		</xs:complexType>
+	</xs:element>
 
-	<xs:attribute name="moneda" fixed="Euro" type="xs:string"/>
+	<xs:attribute name="moneda" fixed="Euro" type="xs:string" />
 
 	<xs:element name="alta" />
 
