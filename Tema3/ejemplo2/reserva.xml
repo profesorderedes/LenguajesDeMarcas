@@ -9,14 +9,17 @@
 		<tel>555 280 019</tel>
 	</cliente>
 
-	<!-- Aquí podrá aparecer un avión o un barco, no ambos.
-		 el avión y el barco comparten los elementos "salida" y "llegada".
-		 Pero, además, el avión tiene el elemento "equipaje_embarcado".
-	 -->
+	<!-- Aquí podrá aparecer un avión o un barco, no ambos. el avión y el barco 
+		comparten los elementos "salida" y "llegada". Pero, además, el avión tiene 
+		el elemento "equipaje_embarcado". -->
 	<avion>
 		<salida>2020-12-23</salida>
 		<llegada>2021-01-07</llegada>
 		<equipaje_embarcado>No</equipaje_embarcado>
 	</avion>
-	
+	<barco>
+		<salida>2020-12-23</salida>
+		<llegada>2021-01-07</llegada>
+	</barco>
+
 </reserva>
