@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Ejemplos de HTML</title>
     <style>
-       
+
     </style>
 </head>
 
@@ -13,17 +13,26 @@
 
     <h1>Formulario de autenticación</h1>
 
-    <form action="autentificar.php" method="POST">
+    <form action="autentificar.php" method="GET">
 
         Usuario<br>
         <input type="text" name="usuario">
         <br>
-        Password<br> 
+        Password<br>
         <input type="password" name="password">
         <br>
         <br>
         <!-- Mascota favorita - 5 mascotas -->
-        
+        <select name="mascota">
+            <option value="hamster">Hamster</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="canario">Canario</option>
+            <option value="cerdo">Cerdo vietnamita</option>
+        </select>
+        <br><br>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
 
         <button>Enviar</button><br><br>
         <button type="reset">Borrar datos</button>
