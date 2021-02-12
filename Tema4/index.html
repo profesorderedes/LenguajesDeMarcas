@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <title>Ejemplos de HTML</title>
     <style>
+        .caja-comentarios {
+            width: 200px;
+            height: 150px;
+        }
 
+        fieldset{
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -15,29 +22,44 @@
 
     <form action="autentificar.php" method="GET">
 
-        Usuario<br>
-        <input type="text" name="usuario">
-        <br>
-        Password<br>
-        <input type="password" name="password">
-        <br>
-        <br>
-        
-        <!-- Mascota favorita - 5 mascotas -->
-        <select name="mascota">
-            <option value="hamster">Hamster</option>
-            <option value="perro">Perro</option>
-            <option value="gato">Gato</option>
-            <option value="canario">Canario</option>
-            <option value="cerdo">Cerdo vietnamita</option>
-        </select>
-        <br><br>
+        <fieldset>
+            <legend>Formulario de consulta</legend>
 
-        <textarea name="comentarios"></textarea>
-        <br><br>
+            Usuario<br>
+            <input type="text" name="usuario">
+            <br>
+            Password<br>
+            <input type="password" name="password">
+            <br>
+            <br>
 
-        <button>Enviar</button><br><br>
-        <button type="reset">Borrar datos</button>
+            <!-- Mascota favorita - 5 mascotas -->
+            <select name="mascota">
+                <option value="hamster">Hamster</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="canario">Canario</option>
+                <option value="cerdo">Cerdo vietnamita</option>
+            </select>
+            <br><br>
+
+            Género <br>
+            <input type="radio" name="genero" value="masculino">Masculino
+            <br>
+            <input type="radio" name="genero" value="femenino" checked >Femenino
+            <br><br>
+
+            Tipo de envío<br> 
+            <input type="radio" name="envio" value="tienda">Recogida en tienda
+            <br>
+            <input type="radio" name="envio" value="domicilio">Envío a domicilio
+            <br><br>
+            <textarea class="caja-comentarios" name="comentarios"></textarea>
+            <br><br>
+
+            <button>Enviar</button><br><br>
+            <button type="reset">Borrar datos</button>
+        </fieldset>
 
     </form>
 
