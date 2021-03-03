@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+fieldset {
+width: 300px;
+}
+
+.caja_comentarios {
+width: 225px;
+height: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Formulario de autenticación</h1>
+
+<p>Rellena el siguiente formulario de inscripción.</p>
+
+<form action="encuesta.php" method="POST">
+
+<fieldset>
+<legend>Datos Personales</legend>
+
+Nombre <br>
+<input type="text" name="Nombre">
+<br>
+
+Apellidos <br>
+<input type="text" name="Apellidos">
+<br>
+
+Fecha de nacimiento <br>
+<input type="date" name="fecha_de_nacimiento">
+<br>
+
+Estado civil<br>
+<label><input type="radio" name="estado_civil" value="Soltero">Soltero</label>
+<br>
+<label><input type="radio" name="estado_civil" value="Casado">Casado</label>
+<br>
+
+Dirección <br>
+<input type="text" name="Direccion">
+<br>
+<br>
+
+Isla <br>
+<select name="Isla">
+<option value="Mallorca">Mallorca</option>
+<option value="Menorca">Menorca</option>
+<option value="Ibiza">Ibiza</option>
+<option value="Formentera">Formentera</option>
+</select>
+<br> <br>
+
+Color preferido <br>
+<input type="color" name="colorPreferido" id="colorPreferido">
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Contacto</legend>
+
+Correo electrónico <br>
+<input type="email">
+<br>
+
+Contraseña <br>
+<input type="password">
+<br>
+<br>
+
+<label><input type="checkbox" value="Deseo recibir publicidad">
+Deseo recibir publicidad</label>
+<br>
+<label><input type="checkbox" value="Acepto los terminos">
+Acepto los terminos</label>
+
+<br>
+Comentarios finales
+<textarea class="caja_comentarios" name="caja-comentarios"
+placeholder="Escribe aquí cualquier observación que se te ocurra"></textarea>
+
+
+</fieldset>
+
+<br>
+<button>Enviar</button>
+<button type="reset">Borrar</button>
+
+</form>
+
+</body>
+
+</html>
