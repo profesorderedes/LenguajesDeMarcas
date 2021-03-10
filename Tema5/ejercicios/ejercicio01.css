@@ -1,0 +1,16 @@
+
+div{
+    width: 250px;
+    height: 150px;
+    font-size: 18px;
+}
+.div1{
+    background-color: indianred;
+    color: mistyrose;
+    border: 3px solid goldenrod;
+}
+.div2{
+    background-color: paleturquoise;
+    color: olive;
+    border: 3px solid midnightblue;
+}
