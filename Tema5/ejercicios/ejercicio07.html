@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
+<html lang="es">
 
-    <title>Page Title</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Pruebas</title>
     <style>
-        body{
-            background-image: url(imgs/patron-leaves.png);
+        body {
+            background-image: url('imgs/patron-kale-salad.jpg');
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: normal;
+            color: orangered;
+        }
+
+        .rectangulo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .opacidad0 {
+            background-color: rgba(152, 251, 152, 0);
+        }
+
+        .opacidad03 {
+            background-color: rgba(152, 251, 152, 0.3);
+        }
+
+        .opacidad07 {
+            background-color: rgba(152, 251, 152, 0.7);
+        }
+
+        .opacidad1 {
+            background-color: rgba(152, 251, 152, 1);
         }
     </style>
-
 </head>
-<body>
-    <h1>Patron como fondo de página</h1>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem possimus esse nisi, iure provident atque praesentium ipsum et iste a.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam voluptas fuga.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia similique fuga sequi modi aliquid amet neque alias unde impedit vero voluptatem ullam, iste debitis voluptate repellendus error ad delectus sed?</p>
+<body>
+
+    <h1>Pruebas con fondos y opacidad</h1>
+
+    <p>Usamos la propiedad opacity.</p>
+
+    <div class="rectangulo opacidad0">Opacidad 0</div>
+    <br>
+    <div class="rectangulo opacidad03">Opacidad 0.3</div>
+    <br>
+    <div class="rectangulo opacidad07">Opacidad 0.7</div>
+    <br>
+    <div class="rectangulo opacidad1">Opacidad 1</div>
+
 </body>
+
 </html>
