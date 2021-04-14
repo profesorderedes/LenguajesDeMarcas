@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Pruebas</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        .contenedor-tabla {
+            overflow-x: auto;
+        }
+
+        table {
+            /*border: 1px solid gray;*/
+            border-collapse: collapse;
+            width: 29rem;
+        }
+
+        tr {
+            height: 2rem;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(114, 236, 14, 0.322);
+        }
+
+        tr:first-child {
+            background-color: olive;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 99, 71, 0.616);
+        }
+
+        th,
+        td {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .col {
+            width: 6rem;
+        }
+
+        .col-ancha {
+            width: 11rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Clínica veterinaria Plumillas</h1>
+
+    <p>Pacientes registrados:</p>
+
+    <div class="contenedor-tabla">
+        <table>
+            <tr class="tabla-encabezado">
+                <th class="col">Nombre</th>
+                <th class="col">Especie</th>
+                <th class="col">Edad</th>
+                <th class="col-ancha">Teléfono del dueño</th>
+            </tr>
+            <tr>
+                <td>Pipo</td>
+                <td>Perro</td>
+                <td>8</td>
+                <td>555 900900</td>
+            </tr>
+            <tr>
+                <td>Gandalf</td>
+                <td>Gato</td>
+                <td>4</td>
+                <td>555 911882</td>
+            </tr>
+            <tr>
+                <td>Micho</td>
+                <td>Gato</td>
+                <td>1</td>
+                <td>555 457747</td>
+            </tr>
+            <tr>
+                <td>Frida</td>
+                <td>Gato</td>
+                <td>11</td>
+                <td>555 332112</td>
+            </tr>
+            <tr>
+                <td>Atos</td>
+                <td>Periquito</td>
+                <td>2</td>
+                <td>555 541112</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
