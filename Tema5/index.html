@@ -4,221 +4,49 @@
 <!-- Solución al problema de la desaparición de bordes 
 https://stackoverflow.com/questions/50361698/border-style-do-not-work-with-sticky-position-element
 -->
+
 <head>
     <meta charset="UTF-8">
     <title>Position</title>
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid gray;
+
+        div{
+            width: 100px;
+            height: 100px;
         }
 
-        tr:nth-child(odd){
-            background-color: rgb(230, 245, 230);
+        #caja1{
+            position: absolute;
+            background-color: greenyellow;
+            top: 80px;
+            left: 0;
+            
         }
 
-        tr:first-child{
-            position: sticky;
-            top: 0;
-            border: 1px solid gray;
-            background-color: rgb(247, 191, 191);
+        #caja2{
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            background-color: blue;
         }
 
-        th,td{
-            padding: 5px;
+        img{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            z-index: -1;
         }
 
-        
     </style>
 </head>
 
 <body>
 
-    <h1>Prueba de position: sticky en tablas</h1>
-    <table>
-        <tr>
-            <th>Apellidos</th>
-            <th>Nombre</th>
-            <th>DNI</th>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-        <tr>
-            <td>Sogorb Valls</td>
-            <td>Carlos</td>
-            <td>11902991Y</td>
-        </tr>
-    </table>
-
+    <h1>Pruebas con z-index</h1>
+    <div id="caja1"></div>
+    <img src="imgs/gato-astronauta-mini.jpg" 
+        alt="Gato astronauta">
+    <div id="caja2"></div>
 </body>
 
 </html>
