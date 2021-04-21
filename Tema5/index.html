@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- Solución al problema de la desaparición de bordes 
-https://stackoverflow.com/questions/50361698/border-style-do-not-work-with-sticky-position-element
--->
-
 <head>
     <meta charset="UTF-8">
-    <title>Position</title>
+    <title>Floats</title>
     <style>
-
-        #contenedor{
-            position: relative;
+        #contenedor {
+            max-width: 700px;
+            margin: 10px auto;
         }
 
-        img{
-            width: 500px;
+        img {
+            float: left;
+            width: 200px;
+            margin-right: 10px;
+            margin-bottom: 10px;
         }
-
-        p{
-            margin: 0;
-        }
-
-        #texto{
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            color: white;
-            font-size: 1.2rem;
-        }
-
     </style>
 </head>
 
 <body>
-    <h1>Texto sobre imagen</h1>
+
     <div id="contenedor">
-        <img src="imgs/perro2.jpg" alt="Perro">
-        <p id="texto">Texto superpuesto</p>
+        <h1>La web del labrador</h1>
+
+        <p>El labrador retriever (conocido también como cobrador de Labrador ​o perdiguero de Labrador​) es una raza
+            canina
+            originaria de Terranova, en la actual Canadá. Es una de las razas más populares del mundo por la cantidad de
+            ejemplares registrados.​ </p>
+        <img src="imgs/perro1.jpg" alt="Perro">
+        <p>Su excepcional afabilidad, gentileza, inteligencia, nobleza, energía y bondad, hacen que los labradores sean
+            generalmente considerados como buenos compañeros para personas de todas las edades, así como fiables perros
+            trabajadores, comúnmente formando parte de las brigadas caninas de la policía en operativos antidroga,
+            antiexplosivos, de búsqueda y rescate, entre otros. Con adiestramiento, el labrador es una de las razas de
+            perro
+            más dócil, obediente y talentosa que existen.​ </p>
     </div>
-    
 </body>
 
 </html>

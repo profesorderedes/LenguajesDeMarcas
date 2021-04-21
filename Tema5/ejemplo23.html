@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Solución al problema de la desaparición de bordes 
+https://stackoverflow.com/questions/50361698/border-style-do-not-work-with-sticky-position-element
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+
+        #contenedor{
+            position: relative;
+        }
+
+        img{
+            width: 500px;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        #texto{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Texto sobre imagen</h1>
+    <div id="contenedor">
+        <img src="imgs/perro2.jpg" alt="Perro">
+        <p id="texto">Texto superpuesto</p>
+    </div>
+    
+</body>
+
+</html>
