@@ -9,36 +9,65 @@
             width: 700px;
             margin: 10px auto;
         }
-        img{
+
+        #col-izquierda {
+            float: left;
+            max-width: 320px;
+            margin-right: 20px;
+            border-right: 2px solid green;
+            padding-right: 20px;
+        }
+
+        #col-derecha {
+            float: left;
+            max-width: 320px;
+        }
+
+        img {
             width: 300px;
         }
 
+        #columnas{
+            overflow: auto;
+        }
     </style>
 </head>
 
 <body>
     <div id="contenedor">
-
-
         <h1>IES Son Ferrer - Ciclos de informática</h1>
         <p>En el IES Son Ferrer es posible estudiar el CFGM de Sistemas Microinformáticos y Redes, y el el CFGS de
             Desarrollo de Aplicaciones Web.</p>
 
-        <div id="col-izquierda">
-            <h2>CFGM de Sistemas Microinformáticos y Redes</h2>
-            <p>Este profesional ejerce su actividad principalmente en empresas del sector servicios que se dediquen a la
-                comercializacion, montaje y reparacion de equipos, redes y servicios microinformaticos en general, como
-                parte del soporte informatico de la organizacion o en entidades de cualquier tamaño y sector productivo
-                que utilizan sistemas microinformaticos y redes de datos para su gestion.</p>
-            <img src="imgs/smr.jpg" alt="Ciclo de grado medio">
+        <div id="columnas">
+
+            <div id="col-izquierda">
+                <h2>CFGM de Sistemas Microinformáticos y Redes</h2>
+                <p>Este profesional ejerce su actividad principalmente en empresas del sector servicios que se dediquen
+                    a la
+                    comercializacion, montaje y reparacion de equipos, redes y servicios microinformaticos en general,
+                    como
+                    parte del soporte informatico de la organizacion o en entidades de cualquier tamaño y sector
+                    productivo
+                    que utilizan sistemas microinformaticos y redes de datos para su gestion.</p>
+                <img src="imgs/smr.jpg" alt="Ciclo de grado medio">
+            </div>
+
+            <div id="col-derecha">
+                <h2>CFGS de Desarrollo de Aplicaciones Web</h2>
+                <p>Este ciclo formativo permite al titulado prepararse para poder desarrollar, implantar y mantener
+                    aplicaciones web, garantizando los criterios de calidad establecidos y la seguridad en el acceso a
+                    los
+                    datos. </p>
+                <img src="imgs/daw.png" alt="Ciclo de grado superior">
+            </div>
+
         </div>
-        <div id="col-derecha">
-            <h2>CFGS de Desarrollo de Aplicaciones Web</h2>
-            <p>Este ciclo formativo permite al titulado prepararse para poder desarrollar, implantar y mantener
-                aplicaciones web, garantizando los criterios de calidad establecidos y la seguridad en el acceso a los
-                datos. </p>
-            <img src="imgs/daw.png" alt="Ciclo de grado superior">
-        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, architecto. Incidunt labore, quibusdam sit
+            nemo, iusto, expedita natus enim minus facere hic eligendi nostrum corrupti fugiat nulla voluptas dolore
+            ratione cumque ab vel. Iure aspernatur nostrum vero aut. Explicabo, illum temporibus, est repellendus
+            incidunt obcaecati dicta optio nesciunt ipsam provident eligendi vitae quos. Cupiditate doloribus non
+            laudantium, neque impedit vel!</p>
     </div>
 </body>
 
