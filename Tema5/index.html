@@ -7,19 +7,30 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         ul {
-            padding: 5px;
             background-color: #333;
             overflow: auto;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 35px;
         }
 
         li {
             float: left;
             list-style-type: none;
             padding: 5px;
+            height: 100%;
+        }
+        a{
             color: white;
+            text-decoration: none;
+        }
+        .actual{
+            background-color: red;
         }
     </style>
 </head>
@@ -27,7 +38,7 @@
 <body>
 
     <ul>
-        <li><a href="">Inicio</a></li>
+        <li class="actual"><a href="">Inicio</a></li>
         <li><a href="">Nacional</a></li>
         <li><a href="">Internacional</a></li>
         <li><a href="">Opinión</a></li>
