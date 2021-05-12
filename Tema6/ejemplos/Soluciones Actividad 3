@@ -1,7 +1,17 @@
-1) //modulo[ciclo = 
+1) 
+//modulo[ciclo = 
      //ciclo[nombre = "Sistemas Microinformáticos y Redes"]/@id
    ]/nombre/text()
 
-2) //ciclo[@id = 
+2) 
+//ciclo[@id = 
   //modulos/modulo[nombre = "Lenguajes de marcas y sistemas de gestión de información"]/ciclo/text()
 ]/nombre/text()
+
+3)
+//modulo[ciclo = 
+  //ciclos/ciclo[grado = "Superior"]/@id
+]/nombre/text()
+
+4) 
+
