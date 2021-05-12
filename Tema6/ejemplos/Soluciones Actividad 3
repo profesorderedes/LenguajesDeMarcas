@@ -14,4 +14,15 @@
 ]/nombre/text()
 
 4) 
+(:Primera consulta: Títulos que se aprobaron en 2008:)
+(:
+//ciclos/ciclo[decretoTitulo/@año = 2008]/@id
+:)
 
+(:Segunda consulta: Módulos del ciclo SMR:)
+(:
+//modulo[ciclo = "SMR"]/nombre/text()
+:)
+//modulo[ciclo = 
+  //ciclos/ciclo[decretoTitulo/@año = 2008]/@id
+]/nombre/text()
