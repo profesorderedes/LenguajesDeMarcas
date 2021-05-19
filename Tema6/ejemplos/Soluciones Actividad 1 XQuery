@@ -1,0 +1,26 @@
+1)
+Con XPath sólo:
+doc("Actividad1 XQuery.xml")//titulo
+Con XQuery:
+for $x in doc("Actividad1 XQuery.xml")//titulo
+return $x
+
+2) 
+for $x in doc("Actividad1 XQuery.xml")//libro
+order by $x/@anyo
+return <libro>{$x/@anyo}{$x/titulo}</libro>
+
+3)
+for $x in doc('Actividad 1 XQuery.xml')//libro
+  where $x/precio = 65.95
+  return $x
+  
+4)
+for $x in doc('Actividad 1 XQuery.xml')//libro
+  where $x/@anyo < 2000
+  return $x/titulo
+  
+5)
+for $x in doc('Actividad 1 XQuery.xml')//libro
+  where $x/editorial='Addison-Wesley' and $x/@anyo>1992
+  return <libro>{$x/@anyo}{data($x/titulo)}</libro>
