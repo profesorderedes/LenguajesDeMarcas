@@ -1,3 +1,7 @@
 (:F L W O R:)
-for $x at $i in doc("llibres.xml")//llibre
-return <elemento>{$i}.- {$x/títol/data()}</elemento>
+(:
+let $x := (1 to 10)
+return <num>{$x}</num>
+:)
+for $x in (1 to 10)
+return <num>{$x}</num>
