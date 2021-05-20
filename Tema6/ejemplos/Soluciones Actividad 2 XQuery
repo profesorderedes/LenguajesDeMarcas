@@ -1,4 +1,10 @@
-(:F L W O R:)
+1)
+for $x in doc("BDBailes.xml")//baile
+where $x/sala = 1
+return $x
+
+2)
 for $x in doc("BDBailes.xml")//baile
 where $x/sala = 2 and $x/precio < 35 and $x/precio/@moneda = "dolares"
 return $x
+
