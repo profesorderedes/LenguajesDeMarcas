@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vuelos>
+	<reserva linea="IBERIA">
+		<localizador>HNA191</localizador>
+		<pasajero>
+			<nombre>Laura Matute</nombre>
+			<dni>22900099G</dni>
+		</pasajero>
+		<fecha>2021-07-01</fecha>
+		<origen>Valencia</origen>
+		<destino>Santiago de Compostela</destino>
+		<precio moneda="euro">90</precio>
+		<abonado/>
+	</reserva>
+	<reserva linea="AIREUROPA">
+		<localizador>JJE901</localizador>
+		<pasajero>
+			<nombre>Manuel González</nombre>
+			<dni>11902199L</dni>
+		</pasajero>
+		<fecha>2021-06-15</fecha>
+		<origen>Valencia</origen>
+		<destino>Palma de Mallorca</destino>
+		<precio moneda="euro">110</precio>
+	</reserva>
+	<reserva linea="QATARAIR">
+		<localizador>ORZ901</localizador>
+		<pasajero>
+			<nombre>Margaret Humphrey</nombre>
+			<pasaporte>72881772</pasaporte>
+		</pasajero>
+		<fecha>2021-06-19</fecha>
+		<origen>Doha</origen>
+		<destino>Estambul</destino>
+		<precio moneda="dólar">750</precio>
+		<abonado/>
+	</reserva>
+	<reserva linea="IBERIA">
+		<localizador>XLL781</localizador>
+		<pasajero>
+			<nombre>Pierre Lamaitre</nombre>
+			<pasaporte>811228992</pasaporte>
+		</pasajero>
+		<fecha>2021-07-02</fecha>
+		<origen>París</origen>
+		<destino>Palma de Mallorca</destino>
+		<precio moneda="euro">275</precio>
+		<abonado/>
+	</reserva>
+	<linea_aerea codigo="IBERIA" region="Europa">
+		<nombre>Iberia Internacional</nombre>
+	</linea_aerea>
+	<linea_aerea codigo="AIREUROPA" region="Europa">
+		<nombre>Air Europa</nombre>
+	</linea_aerea>
+	<linea_aerea codigo="QATARAIR" region="Oriente ">
+		<nombre>Qatar Airways</nombre>
+	</linea_aerea>
+</vuelos>
