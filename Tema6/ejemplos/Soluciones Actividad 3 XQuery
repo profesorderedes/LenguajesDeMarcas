@@ -1,0 +1,25 @@
+1)
+for $x in doc("vuelos.xml")//linea_aerea/nombre
+return $x
+
+2)
+for $x in doc("vuelos.xml")/vuelos
+return $x/reserva
+
+3)
+for $x in doc("vuelos.xml")//pasajero
+return $x/nombre/text()
+
+4)
+
+
+
+
+
+
+
+
+
+
+
+
