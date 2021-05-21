@@ -5,6 +5,36 @@ return $x
 
 2)
 for $x in doc("BDBailes.xml")//baile
-where $x/sala = 2 and $x/precio < 35 and $x/precio/@moneda = "dolares"
+where $x/sala = 2 and $x/precio < 35 and $x//@moneda = "dolares"
 return $x
 
+3)
+for $x in doc("BDBailes.xml")//baile
+where $x//@cuota = "mensual"
+return $x/profesor
+
+4)
+for $x in doc("BDBailes.xml")//baile
+return (data($x/profesor),data($x/nombre))
+
+5)
+for $x in doc("BDBailes.xml")//baile
+return <profesor>
+<nombre>{data($x/profesor)}</nombre><baile>{data($x/nombre)}</baile>
+</profesor>
+
+6)
+for $x in doc("BDBailes.xml")//baile
+order by $x/nombre
+return $x/nombre
+
+7) 
+for $x in doc("BDBailes.xml")//baile
+where $x//@moneda = "euro"
+order by $x/nombre
+return $x/nombre
+
+8)
+for $x in doc("BDBailes.xml")//baile
+where $x/plazas < 20 and $x//@moneda = "dolares"
+return $x/nombre

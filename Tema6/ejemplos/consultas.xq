@@ -1,4 +1,5 @@
 (:F L W O R:)
 for $x in doc("BDBailes.xml")//baile
-where $x/sala = 2 and $x/precio < 35 and $x/precio/@moneda = "dolares"
-return $x
+return <profesor>
+<nombre>{data($x/profesor)}</nombre><baile>{data($x/nombre)}</baile>
+</profesor>
