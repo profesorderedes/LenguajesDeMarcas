@@ -11,8 +11,19 @@ for $x in doc("vuelos.xml")//pasajero
 return $x/nombre/text()
 
 4)
+for $x in doc("vuelos.xml")//reserva
+where $x/abonado
+return $x
 
+5)
+for $x in doc("vuelos.xml")//reserva
+return $x/localizador
 
+6)
+for $x in doc("vuelos.xml")//reserva
+return <reserva>
+{$x/localizador}{$x//nombre}
+</reserva>
 
 
 
