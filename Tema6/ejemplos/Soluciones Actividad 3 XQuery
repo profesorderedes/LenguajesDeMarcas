@@ -25,6 +25,36 @@ return <reserva>
 {$x/localizador}{$x//nombre}
 </reserva>
 
+7)
+for $x in doc("vuelos.xml")/vuelos/reserva
+return <reserva>{$x/localizador/text()}, {$x/pasajero/nombre/text()}</reserva>
+
+8)
+for $x in doc("vuelos.xml")//reserva
+where $x/destino = "Santiago de Compostela"
+return $x
+
+9) 
+for $x in doc("vuelos.xml")//reserva
+where $x/destino = "Palma de Mallorca" and $x/origen = "París"
+return $x
+
+10)
+for $x in doc("vuelos.xml")//reserva
+where $x/origen = 'Valencia'
+order by $x/fecha
+return $x/pasajero/nombre
+
+11)
+for $x in doc("vuelos.xml")//reserva
+where $x/origen = "Valencia" or $x/origen = "París"
+return <pasajero>{$x/pasajero/nombre}{$x/origen}</pasajero>
+
+12)
+for $x in doc("vuelos.xml")//reserva
+where $x/origen = "Valencia" or $x/origen = "París"
+order by $x/origen
+return <pasajero>{$x/pasajero/nombre}{$x/origen}</pasajero>
 
 
 
