@@ -19,3 +19,35 @@ return <li>{$x//nombre/data()}</li>
 </ul>
 </body>
 
+4)
+<body>
+   <h1>Listado de pasajeros</h1>
+   <ul>
+   {
+   for $x in doc("vuelos.xml")//reserva
+   order by $x//nombre descending
+   return <li>{$x//nombre/text()}</li>
+   }                               
+   </ul>
+</body>
+
+5)
+for $x in doc("vuelos.xml")//reserva
+where $x//destino !="Palma de Mallorca"
+order by $x//destino descending
+return <vuelo>
+{$x//nombre}
+{$x//destino}
+</vuelo>
+
+6)
+for $x in doc("vuelos.xml")//reserva
+where $x//destino ="Palma de Mallorca"
+order by $x//precio descending
+return <vuelo>{data($x//fecha)}: {$x//localizador/text()}, {data($x//precio)} €</vuelo>
+
+7)
+let $x := doc("vuelos.xml")//reserva
+return count($x)
+
+8) 
