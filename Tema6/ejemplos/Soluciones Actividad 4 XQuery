@@ -51,3 +51,22 @@ let $x := doc("vuelos.xml")//reserva
 return count($x)
 
 8) 
+<body>
+ <h1>Vuelo más caro y más barato</h1>
+   {
+ let $x := doc("vuelos.xml")//reserva
+ let $max :=max($x//precio)
+ let $min:= min($x//precio)
+ return <p>El vuelo más caro cuesta {$max} €, y el más barato, {$min} €</p>
+   }
+ </body>
+
+9)
+for $x in distinct-values(doc("vuelos.xml")//reserva/origen)
+order by $x
+return $x 
+
+10)
+let $x := doc("vuelos.xml")//reserva//precio
+let $total:= sum($x)
+return $total

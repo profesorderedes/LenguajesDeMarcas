@@ -1,1 +1,3 @@
-let $x := doc("vuelos.xml")
+for $x in distinct-values(doc("vuelos.xml")//reserva/origen)
+order by $x
+return $x 
