@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios</title>
+    <script src="https://kit.fontawesome.com/4f7346e88f.js" crossorigin="anonymous"></script>
+
+    <!-- He reorganizado el CSS para simplificar el añadido de los iconos a la derecha de la contenedor. 
+        Ahora #contenedor es un div al que aplicamos bordes y márgenes laterales. Y tenemos dos ul llamados 
+        #menu-izquierdo y #menu-derecho -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #161d25;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        #contenedor {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            margin: 2rem 2.2rem 0 2.2rem;
+            /* Para que no se solapen los bordes superior e inferior */
+            overflow: auto;
+        }
+
+        #menu-izquierdo {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        li {
+            list-style-type: none;
+            color: white;
+        }
+
+        #menu-izquierdo li {
+            float: left;
+            padding: 1.5rem 1.2rem;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        li a:visited {
+            text-decoration: none;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        #menu-izquierdo li:first-child {
+            padding-left: 0;
+        }
+
+        .icono-lupa {
+            color: chartreuse;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Barra de menú de Xataka</h1>
+
+    <div id="contenedor">
+        <ul id="menu-izquierdo">
+            <li><a class="icono-lupa" href=""><i class="fas fa-search"></i></a></li>
+            <li><a href="">Análisis</a></li>
+            <li><a href="">Xataka selección</a></li>
+            <li><a href="">Móviles</a></li>
+            <li><a href="">Ciencia</a></li>
+            <li><a href="">Pro</a></li>
+            <li><a href="">Newsletter</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
