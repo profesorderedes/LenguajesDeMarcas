@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weatherdata>
+	<location>
+		<name>Palma de Mallorca</name>
+		<type></type>
+		<country>ES</country>
+		<timezone>7200</timezone>
+		<location altitude="0" latitude="39.5694" longitude="2.6502"
+			geobase="geonames" geobaseid="2512989"></location>
+	</location>
+	<credit></credit>
+	<meta>
+		<lastupdate></lastupdate>
+		<calctime>0</calctime>
+		<nextupdate></nextupdate>
+	</meta>
+	<sun rise="2021-06-09T04:21:51" set="2021-06-09T19:15:43"></sun>
+	<forecast>
+		<time from="2021-06-09T12:00:00" to="2021-06-09T15:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="195" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="2.98" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.75" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.62" min="299.14"
+				max="299.62"></temperature>
+			<feels_like value="299.62" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1021"></pressure>
+			<humidity value="51" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-09T15:00:00" to="2021-06-09T18:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="182" code="S" name="South"></windDirection>
+			<windSpeed mps="2.4" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.7" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="298.9" min="297.47"
+				max="298.9"></temperature>
+			<feels_like value="298.86" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1020"></pressure>
+			<humidity value="51" unit="%"></humidity>
+			<clouds value="clear sky" all="2" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-09T18:00:00" to="2021-06-09T21:00:00">
+			<symbol number="800" name="clear sky" var="01n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="101" code="E" name="East"></windDirection>
+			<windSpeed mps="1.07" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.26" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.42" min="294.82"
+				max="296.42"></temperature>
+			<feels_like value="296.34" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1020"></pressure>
+			<humidity value="59" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-09T21:00:00" to="2021-06-10T00:00:00">
+			<symbol number="800" name="clear sky" var="01n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="81" code="E" name="East"></windDirection>
+			<windSpeed mps="1" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.44" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="294.28" min="294.28"
+				max="294.28"></temperature>
+			<feels_like value="294.04" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="61" unit="%"></humidity>
+			<clouds value="clear sky" all="1" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T00:00:00" to="2021-06-10T03:00:00">
+			<symbol number="801" name="few clouds" var="02n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="345" code="NNW"
+				name="North-northwest"></windDirection>
+			<windSpeed mps="0.86" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.05" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="294.04" min="294.04"
+				max="294.04"></temperature>
+			<feels_like value="293.73" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="59" unit="%"></humidity>
+			<clouds value="few clouds" all="21" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T03:00:00" to="2021-06-10T06:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="69" code="ENE"
+				name="East-northeast"></windDirection>
+			<windSpeed mps="1.62" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="1.81" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="295.77" min="295.77"
+				max="295.77"></temperature>
+			<feels_like value="295.47" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="53" unit="%"></humidity>
+			<clouds value="few clouds" all="24" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T06:00:00" to="2021-06-10T09:00:00">
+			<symbol number="802" name="scattered clouds" var="03d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="198" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="2.03" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.26" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.08" min="299.08"
+				max="299.08"></temperature>
+			<feels_like value="298.9" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="45" unit="%"></humidity>
+			<clouds value="scattered clouds" all="28" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T09:00:00" to="2021-06-10T12:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="211" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="3.83" unit="m/s" name="Gentle Breeze"></windSpeed>
+			<windGust gust="3.54" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.96" min="299.96"
+				max="299.96"></temperature>
+			<feels_like value="300.02" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="43" unit="%"></humidity>
+			<clouds value="few clouds" all="21" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T12:00:00" to="2021-06-10T15:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="204" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="3.58" unit="m/s" name="Gentle Breeze"></windSpeed>
+			<windGust gust="3.58" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.4" min="299.4"
+				max="299.4"></temperature>
+			<feels_like value="299.4" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="46" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T15:00:00" to="2021-06-10T18:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="210" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="2.38" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.84" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="297.64" min="297.64"
+				max="297.64"></temperature>
+			<feels_like value="297.55" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="54" unit="%"></humidity>
+			<clouds value="clear sky" all="1" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T18:00:00" to="2021-06-10T21:00:00">
+			<symbol number="803" name="broken clouds" var="04n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="127" code="SE" name="SouthEast"></windDirection>
+			<windSpeed mps="1.44" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.56" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="294.92" min="294.92"
+				max="294.92"></temperature>
+			<feels_like value="294.88" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="66" unit="%"></humidity>
+			<clouds value="broken clouds" all="52" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-10T21:00:00" to="2021-06-11T00:00:00">
+			<symbol number="802" name="scattered clouds" var="03n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="39" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="0.84" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.27" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="294.21" min="294.21"
+				max="294.21"></temperature>
+			<feels_like value="294.15" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="68" unit="%"></humidity>
+			<clouds value="scattered clouds" all="45" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T00:00:00" to="2021-06-11T03:00:00">
+			<symbol number="801" name="few clouds" var="02n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="40" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="1.13" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.26" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="293.91" min="293.91"
+				max="293.91"></temperature>
+			<feels_like value="293.71" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1017"></pressure>
+			<humidity value="64" unit="%"></humidity>
+			<clouds value="few clouds" all="11" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T03:00:00" to="2021-06-11T06:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="67" code="ENE"
+				name="East-northeast"></windDirection>
+			<windSpeed mps="1.9" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.1" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="295.88" min="295.88"
+				max="295.88"></temperature>
+			<feels_like value="295.64" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1017"></pressure>
+			<humidity value="55" unit="%"></humidity>
+			<clouds value="clear sky" all="9" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T06:00:00" to="2021-06-11T09:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="166" code="SSE"
+				name="South-southeast"></windDirection>
+			<windSpeed mps="1.25" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="2.17" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.61" min="299.61"
+				max="299.61"></temperature>
+			<feels_like value="299.61" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1017"></pressure>
+			<humidity value="44" unit="%"></humidity>
+			<clouds value="clear sky" all="7" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T09:00:00" to="2021-06-11T12:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="217" code="SW" name="Southwest"></windDirection>
+			<windSpeed mps="2.85" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.36" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="300.15" min="300.15"
+				max="300.15"></temperature>
+			<feels_like value="300.39" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1017"></pressure>
+			<humidity value="47" unit="%"></humidity>
+			<clouds value="few clouds" all="11" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T12:00:00" to="2021-06-11T15:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="193" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="2.89" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.27" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.96" min="299.96"
+				max="299.96"></temperature>
+			<feels_like value="300.28" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1016"></pressure>
+			<humidity value="48" unit="%"></humidity>
+			<clouds value="few clouds" all="21" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T15:00:00" to="2021-06-11T18:00:00">
+			<symbol number="802" name="scattered clouds" var="03d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="171" code="S" name="South"></windDirection>
+			<windSpeed mps="0.88" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.86" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="298.7" min="298.7"
+				max="298.7"></temperature>
+			<feels_like value="298.69" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1016"></pressure>
+			<humidity value="53" unit="%"></humidity>
+			<clouds value="scattered clouds" all="32" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T18:00:00" to="2021-06-11T21:00:00">
+			<symbol number="803" name="broken clouds" var="04n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="25" code="NNE"
+				name="North-northeast"></windDirection>
+			<windSpeed mps="1.1" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.47" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.12" min="296.12"
+				max="296.12"></temperature>
+			<feels_like value="296.14" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="64" unit="%"></humidity>
+			<clouds value="broken clouds" all="53" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-11T21:00:00" to="2021-06-12T00:00:00">
+			<symbol number="803" name="broken clouds" var="04n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="74" code="ENE"
+				name="East-northeast"></windDirection>
+			<windSpeed mps="1.75" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.24" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="295.4" min="295.4"
+				max="295.4"></temperature>
+			<feels_like value="295.4" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1017"></pressure>
+			<humidity value="66" unit="%"></humidity>
+			<clouds value="broken clouds" all="51" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T00:00:00" to="2021-06-12T03:00:00">
+			<symbol number="802" name="scattered clouds" var="03n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="28" code="NNE"
+				name="North-northeast"></windDirection>
+			<windSpeed mps="1.68" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="1.88" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="294.91" min="294.91"
+				max="294.91"></temperature>
+			<feels_like value="294.84" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1017"></pressure>
+			<humidity value="65" unit="%"></humidity>
+			<clouds value="scattered clouds" all="45" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T03:00:00" to="2021-06-12T06:00:00">
+			<symbol number="803" name="broken clouds" var="04d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="46" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="2.17" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.61" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.4" min="296.4"
+				max="296.4"></temperature>
+			<feels_like value="296.37" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="61" unit="%"></humidity>
+			<clouds value="broken clouds" all="52" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T06:00:00" to="2021-06-12T09:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="87" code="E" name="East"></windDirection>
+			<windSpeed mps="2.33" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.48" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="300.81" min="300.81"
+				max="300.81"></temperature>
+			<feels_like value="300.79" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="44" unit="%"></humidity>
+			<clouds value="few clouds" all="19" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T09:00:00" to="2021-06-12T12:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="9" code="N" name="North"></windDirection>
+			<windSpeed mps="0.67" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="3.89" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="301.74" min="301.74"
+				max="301.74"></temperature>
+			<feels_like value="301.79" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="45" unit="%"></humidity>
+			<clouds value="few clouds" all="14" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T12:00:00" to="2021-06-12T15:00:00">
+			<symbol number="801" name="few clouds" var="02d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="110" code="ESE"
+				name="East-southeast"></windDirection>
+			<windSpeed mps="1.55" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="3.89" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="301.29" min="301.29"
+				max="301.29"></temperature>
+			<feels_like value="301.67" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="49" unit="%"></humidity>
+			<clouds value="few clouds" all="15" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T15:00:00" to="2021-06-12T18:00:00">
+			<symbol number="802" name="scattered clouds" var="03d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="71" code="ENE"
+				name="East-northeast"></windDirection>
+			<windSpeed mps="2.68" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.82" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.89" min="299.89"
+				max="299.89"></temperature>
+			<feels_like value="300.38" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="51" unit="%"></humidity>
+			<clouds value="scattered clouds" all="35" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T18:00:00" to="2021-06-12T21:00:00">
+			<symbol number="800" name="clear sky" var="01n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="77" code="ENE"
+				name="East-northeast"></windDirection>
+			<windSpeed mps="2.54" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.69" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.17" min="296.17"
+				max="296.17"></temperature>
+			<feels_like value="296.17" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="63" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-12T21:00:00" to="2021-06-13T00:00:00">
+			<symbol number="800" name="clear sky" var="01n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="42" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="1.13" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="2.02" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="295.77" min="295.77"
+				max="295.77"></temperature>
+			<feels_like value="295.73" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="63" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T00:00:00" to="2021-06-13T03:00:00">
+			<symbol number="800" name="clear sky" var="01n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="28" code="NNE"
+				name="North-northeast"></windDirection>
+			<windSpeed mps="2.39" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.81" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="295.1" min="295.1"
+				max="295.1"></temperature>
+			<feels_like value="295.1" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="67" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T03:00:00" to="2021-06-13T06:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="37" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="2.49" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.52" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.84" min="296.84"
+				max="296.84"></temperature>
+			<feels_like value="296.86" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="61" unit="%"></humidity>
+			<clouds value="clear sky" all="5" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T06:00:00" to="2021-06-13T09:00:00">
+			<symbol number="804" name="overcast clouds" var="04d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="61" code="ENE"
+				name="East-northeast"></windDirection>
+			<windSpeed mps="4.24" unit="m/s" name="Gentle Breeze"></windSpeed>
+			<windGust gust="5.08" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="301.37" min="301.37"
+				max="301.37"></temperature>
+			<feels_like value="301.4" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="45" unit="%"></humidity>
+			<clouds value="overcast clouds" all="97" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T09:00:00" to="2021-06-13T12:00:00">
+			<symbol number="804" name="overcast clouds" var="04d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="87" code="E" name="East"></windDirection>
+			<windSpeed mps="1.32" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="3.66" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="302.27" min="302.27"
+				max="302.27"></temperature>
+			<feels_like value="302.38" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="45" unit="%"></humidity>
+			<clouds value="overcast clouds" all="86" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T12:00:00" to="2021-06-13T15:00:00">
+			<symbol number="803" name="broken clouds" var="04d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="201" code="SSW"
+				name="South-southwest"></windDirection>
+			<windSpeed mps="2.38" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.5" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="301.33" min="301.33"
+				max="301.33"></temperature>
+			<feels_like value="301.8" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="50" unit="%"></humidity>
+			<clouds value="broken clouds" all="61" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T15:00:00" to="2021-06-13T18:00:00">
+			<symbol number="803" name="broken clouds" var="04d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="228" code="SW" name="Southwest"></windDirection>
+			<windSpeed mps="1.39" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="1.88" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="299.21" min="299.21"
+				max="299.21"></temperature>
+			<feels_like value="299.21" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="58" unit="%"></humidity>
+			<clouds value="broken clouds" all="80" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T18:00:00" to="2021-06-13T21:00:00">
+			<symbol number="803" name="broken clouds" var="04n"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="86" code="E" name="East"></windDirection>
+			<windSpeed mps="1.4" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="2.04" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.56" min="296.56"
+				max="296.56"></temperature>
+			<feels_like value="296.63" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="64" unit="%"></humidity>
+			<clouds value="broken clouds" all="84" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-13T21:00:00" to="2021-06-14T00:00:00">
+			<symbol number="802" name="scattered clouds" var="03d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="86" code="E" name="East"></windDirection>
+			<windSpeed mps="1.34" unit="m/s" name="Calm"></windSpeed>
+			<windGust gust="2.07" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="295.24" min="295.24"
+				max="295.24"></temperature>
+			<feels_like value="295.2" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="65" unit="%"></humidity>
+			<clouds value="scattered clouds" all="42" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-14T00:00:00" to="2021-06-14T03:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="50" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="1.91" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.2" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="294.75" min="294.75"
+				max="294.75"></temperature>
+			<feels_like value="294.56" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="61" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-14T03:00:00" to="2021-06-14T06:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="44" code="NE" name="NorthEast"></windDirection>
+			<windSpeed mps="2.59" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="3.27" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="296.87" min="296.87"
+				max="296.87"></temperature>
+			<feels_like value="296.73" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="55" unit="%"></humidity>
+			<clouds value="clear sky" all="0" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-14T06:00:00" to="2021-06-14T09:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="143" code="SE" name="SouthEast"></windDirection>
+			<windSpeed mps="2.02" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="2.92" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="301.71" min="301.71"
+				max="301.71"></temperature>
+			<feels_like value="301.32" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1019"></pressure>
+			<humidity value="40" unit="%"></humidity>
+			<clouds value="clear sky" all="1" unit="%"></clouds>
+			<visibility value="10000"></visibility>
+		</time>
+		<time from="2021-06-14T09:00:00" to="2021-06-14T12:00:00">
+			<symbol number="800" name="clear sky" var="01d"></symbol>
+			<precipitation probability="0"></precipitation>
+			<windDirection deg="145" code="SE" name="SouthEast"></windDirection>
+			<windSpeed mps="2.77" unit="m/s" name="Light breeze"></windSpeed>
+			<windGust gust="4.14" unit="m/s"></windGust>
+			<temperature unit="kelvin" value="303.79" min="303.79"
+				max="303.79"></temperature>
+			<feels_like value="303.48" unit="kelvin"></feels_like>
+			<pressure unit="hPa" value="1018"></pressure>
+			<humidity value="39" unit="%"></humidity>
+			<clouds value="clear sky" all="1" unit="%"></clouds>
+			<visibility value="10000<?xml version=" 1 encoding="UTF-8" ?>
