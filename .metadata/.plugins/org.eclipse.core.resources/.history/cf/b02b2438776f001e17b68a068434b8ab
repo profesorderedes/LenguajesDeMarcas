@@ -1,0 +1,4 @@
+<!ELEMENT alumno (nombre, apellidos, delegado?, optativa)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT delegado EMPTY>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Un trozo de código escrito en Java -->
+<aplicacion>
+	<!-- Programador que ha escrito el código -->
+	<creador>Carlos</creador>
+	
+	<!-- Fecha de escritura -->
+	<fecha>15 de septiembre</fecha>
+	
+	<!-- Código en Java -->
+	<codigo>
+		<![CDATA[
+			cmbCursos = new JComboBox<String>();
+			cmbCursos.addItem("Selecciona un curso");
+			cmbCursos.addItem("1º ESO");
+		]]>
+	</codigo>
+</aplicacion>

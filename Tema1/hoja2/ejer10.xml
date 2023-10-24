@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<contabilidad
+	xmlns="http://www.miempresa.net/proveedores"
+	xmlns:cli="http://www.miempresa.net/clientes">
+	<proveedores>
+		<proveedor nombre="Papelería Carlin" />
+		<proveedor nombre="Librería técnica Quars" />
+	</proveedores>
+	<cli:clientes>
+		<cli:cliente nombre="Manuel García" dni="27188299J" />
+		<cli:cliente nombre="Macarena López" dni="19029100L" />
+	</cli:clientes>
+</contabilidad>

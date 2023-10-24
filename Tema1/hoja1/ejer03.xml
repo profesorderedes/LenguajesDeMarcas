@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<biblioteca>
+	<libro autor="Charles Dickens">
+		<titulo>Nuestro amigo común</titulo>
+	</libro>
+	<libro autor="Arthur Conan Doyle">
+		<titulo>El sabueso de los Baskerville</titulo>
+	</libro>
+</biblioteca>

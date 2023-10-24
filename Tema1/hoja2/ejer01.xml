@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<lista>
+	<cancion>
+		<artista>REM</artista>
+		<titulo>Losing my religion</titulo>
+		<duracion>240</duracion>
+		<estilo>Pop</estilo>
+		<puntuacion>4</puntuacion>
+		<inicio>0</inicio>
+		<fin>240</fin>
+		<estilo_corte>cut</estilo_corte>
+	</cancion>
+	
+	<cancion>
+		<artista></artista>
+		<titulo></titulo>
+		<duracion></duracion>
+		<estilo></estilo>
+		<puntuacion></puntuacion>
+		<inicio></inicio>
+		<fin></fin>
+		<estilo_corte></estilo_corte>
+	</cancion>
+	
+	
+</lista>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+
+En este documento estamos usando las etiquetas pedido, 
+cliente, id, id_valor y nombre que pertenecen al espacio de 
+nombres "http:www.papeleriaplus.com/cliente".
+
+También usamos las etiquetas articulo, id, descripcion y precio que
+pertenecen al espacio de nombres "http:www.papeleriaplus.com/articulo".
+
+Como abreviaturas para colocar como prefijo delante de cada etiqueta
+usamos c: (para cliente). El espacio de nombres de artículo está 
+como predeterminado y sus etiquetas no llevan prefijo.
+
+ -->
+
+<c:pedido xmlns:c="http:www.papeleriaplus.com/cliente"
+	xmlns="http:www.papeleriaplus.com/articulo">
+	<c:cliente>
+		<c:id>DNI</c:id>
+		<c:id_valor>10200200R</c:id_valor>
+		<c:nombre>Lucía Ortiz</c:nombre>
+	</c:cliente>
+
+	<articulo>
+		<id>205</id>
+		<descripcion>Libreta Oxford A4</descripcion>
+		<precio>4.50</precio>
+	</articulo>
+	<articulo>
+		<id>401</id>
+		<descripcion>Bolígrafo Pilot Extra</descripcion>
+		<precio>2.15</precio>
+	</articulo>
+</c:pedido>

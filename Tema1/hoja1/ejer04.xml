@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<biblioteca>
+	<libro autor="Charles Dickens">Nuestro amigo común</libro>
+	<libro autor="Arthur Conan Doyle">El sabueso de los Baskerville</libro>
+	<libro autor="Arthur Conan Doyle">El signo de los cuatro</libro>
+</biblioteca>

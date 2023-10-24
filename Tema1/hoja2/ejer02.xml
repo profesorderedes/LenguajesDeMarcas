@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<factura num="999">
+	<empresa>
+		<nombre>Equipos Digitales sl</nombre>
+		<dir>Av valladolid</dir>
+		<poblacion>Madrid</poblacion>
+		<cp>28015</cp>
+		<cif>Q-9865654</cif>
+		<telefono>915878548</telefono>
+		<fax>915874456</fax>
+	</empresa>
+	
+	<datosFact>
+		<fecha>2016/09/12</fecha>
+		<numPedido>731</numPedido>
+		<formaPago>efectivo</formaPago>
+	</datosFact>
+	
+	<cliente>
+		<num>879</num>
+		<nom>Carlos sierra garcia</nom>
+		<dir>av oporto num 7 piso 4 puerta d</dir>
+		<poblacion>madrid</poblacion>
+		<cp>28043</cp>
+		<provicia>madrid</provicia>
+	</cliente>
+	
+	<articulos>
+		<articulo>
+			<ref>int791</ref>
+			<descripcion>procesador intel core.....</descripcion>
+			<cant>1</cant>
+			<precioUni>178</precioUni>
+			<importeArticulo>178</importeArticulo>
+		</articulo>
+		<articulo>
+			<ref>gby776</ref>
+			<descripcion>placa base intel core.....</descripcion>
+			<cant>1</cant>
+			<precioUni>54</precioUni>
+			<importeArticulo>54</importeArticulo>
+		</articulo>
+		<articulo>
+			<ref>hgn1974</ref>
+			<descripcion>memoria 8GB ram.....</descripcion>
+			<cant>2</cant>
+			<precioUni>40</precioUni>
+			<importeArticulo>80</importeArticulo>
+		</articulo>
+		<articulo>
+			<ref>kgn2162</ref>
+			<descripcion>Disco duro 120GB.....</descripcion>
+			<cant>1</cant>
+			<precioUni>36</precioUni>
+			<importeArticulo>36</importeArticulo>
+		</articulo>
+	</articulos>
+	
+	<impuestosArticulos>
+		<baseImp>348</baseImp>
+		<iva>21</iva>
+		<importeIva>73.08</importeIva>
+	</impuestosArticulos>
+	<totalFac>421.08</totalFac>
+</factura>

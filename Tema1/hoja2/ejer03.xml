@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sistema_domotico>
+	<condicion>Temperatura &lt; 17</condicion>
+	<condicion>Humedad &gt; 50</condicion>
+	<condicion>Lámpara apagada &amp;
+		calefacción encendida
+	</condicion>
+</sistema_domotico>
