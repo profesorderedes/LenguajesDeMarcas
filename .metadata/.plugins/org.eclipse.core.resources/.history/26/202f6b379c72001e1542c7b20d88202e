@@ -1,0 +1,4 @@
+<!ELEMENT coche (marca, modelo, extra*)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT extra (#PCDATA)>

@@ -6,9 +6,6 @@
 	<marca>Renault</marca>
 	<modelo>Clio</modelo>
 	<ocasion/>
-	<combustible>
-		<gasolina/>
-	</combustible>
 	<extra>Asientos calefactados</extra>
 	<extra>Elevalunas eléctrico</extra>
 </coche>

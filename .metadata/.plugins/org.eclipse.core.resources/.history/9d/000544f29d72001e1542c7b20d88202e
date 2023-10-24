@@ -3,8 +3,4 @@
 <!ELEMENT modelo (#PCDATA)>
 <!ELEMENT ocasion EMPTY>
 <!ELEMENT combustible (gasolina|gasoil|electrico|hibrido)>
-<!ELEMENT gasolina EMPTY>
-<!ELEMENT gasoil EMPTY>
-<!ELEMENT electrico EMPTY>
-<!ELEMENT hibrido EMPTY>
 <!ELEMENT extra (#PCDATA)>
