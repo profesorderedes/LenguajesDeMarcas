@@ -1,0 +1,3 @@
+<!ELEMENT carta (#PCDATA|empresa|director)*>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
