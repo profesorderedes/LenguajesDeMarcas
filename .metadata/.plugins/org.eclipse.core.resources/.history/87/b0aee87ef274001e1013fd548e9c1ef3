@@ -3,8 +3,8 @@
 <!DOCTYPE listado [
 	<!ELEMENT listado (participante*)>
 	<!ELEMENT participante ((nombre, apellidos) | (apellidos, nombre))>
-	<!ELEMENT nombre (#PCDATA)>
-	<!ELEMENT apellidos (#PCDATA)>
+	<!ELEMENT nombre ANY>
+	<!ELEMENT apellidos ANY>
 ]>
 
 <listado>

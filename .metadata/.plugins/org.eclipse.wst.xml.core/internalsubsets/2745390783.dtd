@@ -1,5 +1,5 @@
 
-	<!ELEMENT listado ANY>
-	<!ELEMENT participante ANY>
-	<!ELEMENT nombre ANY>
-	<!ELEMENT apellidos ANY>
+	<!ELEMENT listado (participante*)>
+	<!ELEMENT participante ((nombre, apellidos) | (apellidos, nombre))>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellidos (#PCDATA)>
