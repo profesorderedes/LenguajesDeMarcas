@@ -1,0 +1,6 @@
+
+	<!ELEMENT pacientes ANY>
+	<!ELEMENT paciente ANY>
+	<!ELEMENT nombre ANY>
+	<!ELEMENT dni ANY>
+	<!ELEMENT num_seg_social ANY>
