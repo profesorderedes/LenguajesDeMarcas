@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<listado>
+	<participante>
+		<nombre>Ana María</nombre>
+		<apellidos>Pérez Casado</apellidos>
+	</participante>
+	<participante>
+		<apellidos>López Rico</apellidos>
+		<nombre>Nuria</nombre>
+	</participante>
+</listado>

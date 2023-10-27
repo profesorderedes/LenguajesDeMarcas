@@ -1,0 +1,5 @@
+
+	<!ELEMENT listado ANY>
+	<!ELEMENT participante ANY>
+	<!ELEMENT nombre ANY>
+	<!ELEMENT apellidos ANY>
