@@ -2,7 +2,7 @@
 
 <!DOCTYPE pacientes [
 	<!ELEMENT pacientes (paciente*)>
-	<!ELEMENT paciente (nombre, (dni|num_seg_social))>
+	<!ELEMENT paciente (nombre, (dni|num_seg_social), alergias)>
 	<!ELEMENT nombre (#PCDATA)>
 	<!ELEMENT dni (#PCDATA)>
 	<!ELEMENT num_seg_social (#PCDATA)>
@@ -16,5 +16,6 @@
 	<paciente>
 		<nombre>Manuel Campos</nombre>
 		<num_seg_social>88399110J</num_seg_social>
+		<alergias/>
 	</paciente>
 </pacientes>

@@ -4,8 +4,8 @@
 	<!ELEMENT pacientes (paciente*)>
 	<!ELEMENT paciente (nombre, (dni|num_seg_social))>
 	<!ELEMENT nombre (#PCDATA)>
-	<!ELEMENT dni (#PCDATA)>
-	<!ELEMENT num_seg_social (#PCDATA)>
+	<!ELEMENT dni ANY>
+	<!ELEMENT num_seg_social ANY>
 ]>
 
 <pacientes>

@@ -16,5 +16,8 @@
 	<paciente>
 		<nombre>Manuel Campos</nombre>
 		<num_seg_social>88399110J</num_seg_social>
+		<alergias/>
 	</paciente>
 </pacientes>
+
+
