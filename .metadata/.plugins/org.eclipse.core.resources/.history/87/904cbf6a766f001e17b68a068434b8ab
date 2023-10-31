@@ -1,4 +1,0 @@
-<!ELEMENT alumno (nombre, apellidos)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT apellidos (#PCDATA)>
-<!ELEMENT delegado EMPTY>
