@@ -1,0 +1,4 @@
+<!ELEMENT articulo (parrafo+)>
+<!ELEMENT parrafo (#PCDATA|investigador|enfermedad)*>
+<!ELEMENT investigador ANY>
+<!ELEMENT enfermedad ANY>

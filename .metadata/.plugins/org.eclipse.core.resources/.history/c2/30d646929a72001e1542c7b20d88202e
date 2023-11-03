@@ -1,2 +1,0 @@
-<!ELEMENT persona (nombre, apellido)>
-<!ELEMENT nombre (#PCDATA)>
