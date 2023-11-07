@@ -1,0 +1,6 @@
+<!ELEMENT cartelera (actor+, pelicula+)>
+<!ELEMENT actor ANY>
+<!ATTLIST actor cod CDATA #IMPLIED>
+
+<!ELEMENT pelicula ANY>
+<!ATTLIST pelicula actores CDATA #IMPLIED>

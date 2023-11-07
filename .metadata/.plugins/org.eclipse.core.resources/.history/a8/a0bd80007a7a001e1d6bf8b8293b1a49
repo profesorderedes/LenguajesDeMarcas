@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE alumno SYSTEM "alumno.dtd">
+
+<coche fecha_entrada="2023-10-01">
+	<marca>Kia</marca>
+	<modelo>Stonic</modelo>
+</coche>

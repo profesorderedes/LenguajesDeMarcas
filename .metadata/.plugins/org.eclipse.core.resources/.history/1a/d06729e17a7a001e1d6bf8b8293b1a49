@@ -1,0 +1,5 @@
+<!ELEMENT coche (marca, modelo)>
+<!ATTLIST coche fecha_entrada NMTOKEN #IMPLIED>
+
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>

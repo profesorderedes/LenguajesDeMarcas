@@ -1,0 +1,7 @@
+<!ELEMENT alumno ANY>
+<!ATTLIST alumno nivel CDATA #IMPLIED>
+<!ATTLIST alumno nivel CDATA #IMPLIED>
+
+<!ELEMENT nombre ANY>
+<!ELEMENT apellidos ANY>
+

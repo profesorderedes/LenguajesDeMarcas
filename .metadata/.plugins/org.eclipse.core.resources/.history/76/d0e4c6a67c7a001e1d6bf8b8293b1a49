@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE concesionario SYSTEM "coche.dtd">
+
+<concesionario>
+
+	<coche matricula="MAT-7890ECC" fecha_compra="2020-02-01"
+		fechas_revisiones="2021-01-25 2022-01-28 2023-02-05">
+		<marca>Kia</marca>
+		<modelo>Stonic</modelo>
+	</coche>
+	<coche matricula="MAT-8361DTG" fecha_compra="2019-06-10"
+		fechas_revisiones="2020-06-01 2021-06-15">
+		<marca>Volkswagen</marca>
+		<modelo>Taigo</modelo>
+	</coche>
+
+</concesionario>

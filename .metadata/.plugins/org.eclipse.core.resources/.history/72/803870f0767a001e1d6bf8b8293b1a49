@@ -1,0 +1,7 @@
+<!ELEMENT diario (entrada+)>
+<!ATTLIST diario nombre CDATA #REQUIRED>
+<!ELEMENT entrada (contenido)>
+<!ATTLIST entrada fecha CDATA #REQUIRED>
+<!ATTLIST entrada diaFestivo CDATA #IMPLIED>
+<!ELEMENT contenido (#PCDATA|lectura)*>
+<!ELEMENT lectura (lectura)>

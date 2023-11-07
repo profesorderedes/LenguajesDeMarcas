@@ -1,0 +1,5 @@
+
+	<!ELEMENT mascota (propietario, (perro|gato))>
+	<!ELEMENT propietario (#PCDATA)>
+	<!ELEMENT perro (#PCDATA)>
+	<!ELEMENT gato (#PCDATA)>

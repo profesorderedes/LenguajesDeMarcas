@@ -1,0 +1,5 @@
+<!ELEMENT coche ANY>
+<!ATTLIST coche fecha_entrada CDATA #IMPLIED>
+
+<!ELEMENT marca ANY>
+<!ELEMENT modelo ANY>

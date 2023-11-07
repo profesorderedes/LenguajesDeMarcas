@@ -1,0 +1,6 @@
+<!ELEMENT alumno (nombre, apellidos)>
+<!ATTLIST alumno nivel CDATA #REQUIRED>
+<!ATTLIST alumno grupo (A|b|C|D) #IMPLIED>
+
+<!ELEMENT nombre ANY>
+<!ELEMENT apellidos ANY>

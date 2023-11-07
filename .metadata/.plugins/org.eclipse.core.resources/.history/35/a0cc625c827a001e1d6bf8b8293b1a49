@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mascota [
+<!ELEMENT mascota ((propietario, perro) | (propietario, gato))>
+<!ELEMENT propietario (#PCDATA)>
+<!ELEMENT perro (#PCDATA)>
+<!ELEMENT gato (#PCDATA)>
+]>
+<mascota>
+	<propietario>Carlos Pérez</propietario>
+	<perro>Pipo</perro>
+</mascota>

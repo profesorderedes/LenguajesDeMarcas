@@ -1,0 +1,7 @@
+<!ELEMENT concesionario ()>
+<!ELEMENT coche (marca, modelo)>
+<!ATTLIST coche fecha_compra NMTOKEN #IMPLIED>
+<!ATTLIST coche fechas_revisiones NMTOKENS #IMPLIED>
+
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>

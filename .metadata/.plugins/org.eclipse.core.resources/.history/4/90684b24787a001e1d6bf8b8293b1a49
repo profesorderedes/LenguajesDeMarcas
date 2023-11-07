@@ -1,0 +1,4 @@
+<!ELEMENT alumno ANY>
+<!ELEMENT nombre ANY>
+<!ELEMENT apellidos ANY>
+

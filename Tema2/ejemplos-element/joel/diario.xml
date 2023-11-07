@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE diario SYSTEM "diario.dtd">
+
+<diario nombre="Alejandro">
+	<entrada fecha="01/11/23" diaFestivo="Si">
+		<contenido>
+			Poco
+		</contenido>
+	</entrada>
+</diario>

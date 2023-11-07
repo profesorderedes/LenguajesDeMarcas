@@ -1,0 +1,3 @@
+<!ELEMENT coche ANY>
+<!ELEMENT marca ANY>
+<!ELEMENT modelo ANY>
