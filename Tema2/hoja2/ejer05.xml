@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<!DOCTYPE semaforos SYSTEM "ejer05.dtd">
+<semaforos>
+	<semaforo id="sem1" color="verde" />
+	<semaforo id="sem2" color="rojo" />
+	<semaforo id="sem3" color="verde" />
+</semaforos>

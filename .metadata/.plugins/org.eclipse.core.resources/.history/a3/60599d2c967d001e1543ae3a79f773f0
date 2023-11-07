@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<biblioteca>
+	<libro isbn="ISBN-978-8488119202" editorial="ESPASA">
+		<titulo>La Celestina</titulo>
+		<autor>Fernando de Rojas</autor>
+	</libro>
+	<libro isbn="ISBN-978-8411128825" editorial="ALIANZA">
+		<titulo>Lazarillo de Tormes</titulo>
+		<autor>Anónimo</autor>
+	</libro>
+</biblioteca>

@@ -1,0 +1,5 @@
+<!ELEMENT empleados ANY>
+<!ELEMENT empleado ANY>
+<!ATTLIST empleado codigo CDATA #IMPLIED>
+<!ATTLIST empleado jefe CDATA #IMPLIED>
+<!ELEMENT nombre ANY>

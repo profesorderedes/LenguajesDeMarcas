@@ -1,0 +1,5 @@
+<semaforos>
+<semaforo id="sem1" color="verde" />
+<semaforo id="sem2" color="rojo" />
+<semaforo id="sem3" color="verde" />
+</semaforos>

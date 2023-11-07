@@ -1,0 +1,5 @@
+<!ELEMENT empleados (empleado*)>
+<!ELEMENT empleado (nombre)>
+<!ATTLIST empleado codigo ID #REQUIRED>
+<!ATTLIST empleado jefe IDREF "e0001">
+<!ELEMENT nombre ANY>
