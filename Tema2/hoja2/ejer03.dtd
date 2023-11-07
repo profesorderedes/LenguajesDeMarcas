@@ -1,0 +1,3 @@
+<!ELEMENT semaforos (semaforo+)>
+<!ELEMENT semaforo EMPTY>
+	<!ATTLIST semaforo color (verde|naranja|rojo) "verde" >
