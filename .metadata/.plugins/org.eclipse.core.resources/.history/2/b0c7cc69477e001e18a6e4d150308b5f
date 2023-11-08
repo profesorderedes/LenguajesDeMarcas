@@ -8,7 +8,6 @@
 <!ELEMENT First_Name ANY>
 <!ELEMENT Last_Name ANY>
 <!ELEMENT Course ANY>
-
 <!ATTLIST Course Number CDATA #IMPLIED>
 <!ATTLIST Course Enrollment CDATA #IMPLIED>
 
