@@ -1,4 +1,0 @@
-<!ELEMENT persona (edad)>
-<!ATTLIST persona nombre CDATA #REQUIRED>
-<!ATTLIST persona apellidos CDATA #IMPLIED>
-
