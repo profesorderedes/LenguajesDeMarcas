@@ -1,0 +1,5 @@
+<!ELEMENT workers ANY>
+<!ELEMENT worker ANY>
+<!ATTLIST worker id CDATA #IMPLIED>
+<!ATTLIST worker isBoss CDATA #IMPLIED>
+<!ATTLIST worker idBoss CDATA #IMPLIED>
