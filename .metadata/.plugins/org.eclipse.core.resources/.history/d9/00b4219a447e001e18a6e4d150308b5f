@@ -2,4 +2,4 @@
 <!ELEMENT worker (#PCDATA)>
 <!ATTLIST worker id ID #REQUIRED>
 <!ATTLIST worker isBoss (y|n) #REQUIRED>
-<!ATTLIST worker idBoss IDREFS #IMPLIED>
+<!ATTLIST worker idBoss CDATA #IMPLIED>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE workers SYSTEM "ejer09.dtd">
+
+<workers>
+	<worker id="b1" isBoss="y" />
+	<worker id="b2" isBoss="y" idBoss="b1" />
+	<worker id="w1" isBoss="n" idBoss="b1 b2" />
+	<worker id="w2" isBoss="n" idBoss="b2" />
+	<worker id="w3" isBoss="n" idBoss="b2" />
+</workers>
