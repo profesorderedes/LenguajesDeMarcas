@@ -1,6 +1,0 @@
-<!ELEMENT alumno (nombre, apellidos)>
-<!ATTLIST alumno nivel CDATA #REQUIRED>
-<!ATTLIST alumno grupo (A|B|C|D) #REQUIRED>
-
-<!ELEMENT nombre ANY>
-<!ELEMENT apellidos ANY>
