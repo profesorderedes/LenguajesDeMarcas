@@ -1,0 +1,24 @@
+<!ELEMENT Course_Catalog (Department*)>
+<!ELEMENT Department ANY>
+<!ATTLIST Department Code CDATA #IMPLIED>
+<!ATTLIST Department Chair CDATA #IMPLIED>
+
+<!ELEMENT Title ANY>
+<!ELEMENT Course ANY>
+<!ATTLIST Course Number CDATA #IMPLIED>
+<!ATTLIST Course Instructors CDATA #IMPLIED>
+<!ATTLIST Course Enrollment CDATA #IMPLIED>
+<!ATTLIST Course Prerequisites CDATA #IMPLIED>
+
+<!ELEMENT Description ANY>
+<!ELEMENT Courseref ANY>
+<!ATTLIST Courseref Number CDATA #IMPLIED>
+
+<!ELEMENT Professor ANY>
+<!ATTLIST Professor InstrID CDATA #IMPLIED>
+
+<!ELEMENT First_Name ANY>
+<!ELEMENT Middle_Initial ANY>
+<!ELEMENT Last_Name ANY>
+<!ELEMENT Lecturer ANY>
+<!ATTLIST Lecturer InstrID CDATA #IMPLIED>

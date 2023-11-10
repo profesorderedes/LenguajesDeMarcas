@@ -1,0 +1,16 @@
+<!ELEMENT Course_Catalog ANY>
+<!ELEMENT Department ANY>
+<!ELEMENT Title ANY>
+<!ELEMENT Course ANY>
+<!ELEMENT Description ANY>
+<!ELEMENT Professor ANY>
+<!ELEMENT First_Name ANY>
+<!ELEMENT Middle_Initial ANY>
+<!ELEMENT Last_Name ANY>
+<!ELEMENT Lecturer ANY>
+<!ELEMENT Course_Catalog ANY>
+<!ELEMENT Course_Catalog ANY>
+<!ELEMENT Course_Catalog ANY>
+<!ELEMENT Course_Catalog ANY>
+<!ELEMENT Course_Catalog ANY>
+<!ELEMENT Course_Catalog ANY>
