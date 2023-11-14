@@ -1,5 +1,0 @@
-<!ELEMENT semaforos (semaforo+)>
-
-<!ELEMENT semaforo (#PCDATA)>
-
-<!ATTLIST semaforo color CDATA #IMPLIED >
