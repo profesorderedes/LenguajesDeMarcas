@@ -1,0 +1,6 @@
+<!ELEMENT countries ANY>
+<!ELEMENT country ANY>
+<!ELEMENT language ANY>
+<!ELEMENT city ANY>
+<!ELEMENT name ANY>
+<!ELEMENT population ANY>

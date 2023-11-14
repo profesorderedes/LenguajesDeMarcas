@@ -1,0 +1,13 @@
+<!ELEMENT cine (peliculas, generos)>
+<!ELEMENT peliculas (pelicula*)>
+<!ELEMENT pelicula (titulo, director, protagonistas)>
+<!ATTLIST pelicula generos IDREFS #REQUIRED>
+
+<!ELEMENT titulo ANY>
+<!ELEMENT director ANY>
+<!ELEMENT protagonistas ANY>
+<!ELEMENT actor ANY>
+<!ELEMENT actriz ANY>
+<!ELEMENT generos ANY>
+<!ELEMENT genero ANY>
+<!ATTLIST genero abreviatura ID #REQUIRED>

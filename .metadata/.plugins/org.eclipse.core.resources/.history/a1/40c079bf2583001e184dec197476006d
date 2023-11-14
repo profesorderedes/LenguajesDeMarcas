@@ -1,0 +1,12 @@
+<!ELEMENT countries (country)>
+<!ELEMENT country ANY>
+<!ATTLIST country name CDATA #IMPLIED>
+<!ATTLIST country population CDATA #IMPLIED>
+<!ATTLIST country area CDATA #IMPLIED>
+
+<!ELEMENT language ANY>
+<!ATTLIST language percentage CDATA #IMPLIED>
+
+<!ELEMENT city ANY>
+<!ELEMENT name ANY>
+<!ELEMENT population ANY>

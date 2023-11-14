@@ -1,0 +1,8 @@
+<!ELEMENT countries ANY>
+<!ELEMENT country ANY>
+<!ATTLIST country name CDATA #IMPLIED>
+
+<!ELEMENT language ANY>
+<!ELEMENT city ANY>
+<!ELEMENT name ANY>
+<!ELEMENT population ANY>

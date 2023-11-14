@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE countries SYSTEM "ejer03.dtd">
+
 <countries>
 	<country name="Afghanistan" population="22664136" area="647500">
 		<language percentage="11">Turkic</language>

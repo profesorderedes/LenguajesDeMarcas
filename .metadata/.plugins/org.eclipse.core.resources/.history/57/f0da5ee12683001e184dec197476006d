@@ -1,0 +1,13 @@
+<!ELEMENT cine ANY>
+<!ELEMENT peliculas ANY>
+<!ELEMENT pelicula ANY>
+<!ATTLIST pelicula generos CDATA #IMPLIED>
+
+<!ELEMENT titulo ANY>
+<!ELEMENT director ANY>
+<!ELEMENT protagonistas ANY>
+<!ELEMENT actor ANY>
+<!ELEMENT actriz ANY>
+<!ELEMENT generos ANY>
+<!ELEMENT genero ANY>
+<!ATTLIST genero abreviatura CDATA #IMPLIED>
