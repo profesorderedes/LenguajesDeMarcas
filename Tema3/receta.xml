@@ -2,7 +2,7 @@
 
 <receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="receta.xsd">
-    
+
     <medicamento>Paracetamol</medicamento>
     <medicamento>Omeprazol</medicamento>
 
@@ -17,5 +17,10 @@
     <dni>22119029H</dni>
 
     <medico numColegiado="171612713">Juan Ríos</medico>
+
+    <posologia>
+        <tomas>3</tomas>
+        <horario>Mañana, tarde y noche</horario>
+    </posologia>
 
 </receta>
