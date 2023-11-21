@@ -46,6 +46,21 @@
                     </xs:simpleType>
                 </xs:element>
 
+                <!-- Un elemento con contenido string y un atributo
+                se describe como una extensión de string añadiéndole un
+                atributo numColegiado. -->
+                <xs:element name="medico">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="numColegiado" type="xs:integer" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+
+
+
 
             </xs:sequence>
         </xs:complexType>
