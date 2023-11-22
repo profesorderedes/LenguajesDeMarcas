@@ -73,6 +73,12 @@
                     <xs:complexType/>
                 </xs:element>
 
+                <xs:element name="grupo_sanguineo">
+                    <xs:complexType>
+                        <xs:attribute name="tipo" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
                 
 
 
