@@ -31,9 +31,9 @@
                 <xs:element name="pago">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="Gratuito"/>
-                            <xs:enumeration value="Íntegro"/>
-                            <xs:enumeration value="Copago"/>
+                            <xs:enumeration value="Gratuito" />
+                            <xs:enumeration value="Íntegro" />
+                            <xs:enumeration value="Copago" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -41,7 +41,7 @@
                 <xs:element name="dni">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:pattern value="\d{8}[A-Z]"/>
+                            <xs:pattern value="\d{8}[A-Z]" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -53,7 +53,7 @@
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="numColegiado" type="xs:integer" use="required"/>
+                                <xs:attribute name="numColegiado" type="xs:integer" use="required" />
                             </xs:extension>
                         </xs:simpleContent>
                     </xs:complexType>
@@ -62,27 +62,30 @@
                 <xs:element name="posologia">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="tomas" type="xs:positiveInteger"/>
-                            <xs:element name="horario" type="xs:string"/>
+                            <xs:element name="tomas" type="xs:positiveInteger" />
+                            <xs:element name="horario" type="xs:string" />
                         </xs:sequence>
-                        <xs:attribute name="duracion" type="xs:string" use="required"/>
+                        <xs:attribute name="duracion" type="xs:string" use="required" />
                     </xs:complexType>
                 </xs:element>
 
                 <xs:element name="alergias">
-                    <xs:complexType/>
+                    <xs:complexType />
                 </xs:element>
 
                 <xs:element name="grupo_sanguineo">
                     <xs:complexType>
-                        <xs:attribute name="tipo" type="xs:string" use="required"/>
+                        <xs:attribute name="tipo" type="xs:string" use="required" />
                     </xs:complexType>
                 </xs:element>
 
-                
-
-
-
+                <xs:element name="instrucciones">
+                    <xs:complexType mixed="true">
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="b"></xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
 
             </xs:sequence>
         </xs:complexType>
