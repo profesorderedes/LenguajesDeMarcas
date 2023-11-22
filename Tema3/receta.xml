@@ -18,9 +18,13 @@
 
     <medico numColegiado="171612713">Juan Ríos</medico>
 
-    <posologia>
+    <posologia duracion="Cinco días">
         <tomas>3</tomas>
         <horario>Mañana, tarde y noche</horario>
     </posologia>
+
+    <alergias/>
+
+    <grupo_sanguineo tipo="A+" />
 
 </receta>
