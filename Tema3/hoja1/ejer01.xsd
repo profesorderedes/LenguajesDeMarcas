@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="factura" />
+
+    <xs:attribute name="codigo" />
+
+    <xs:attribute name="estado" />
+
+    <xs:element name="cliente" />
+
+    <xs:element name="nombre" />
+
+    <xs:element name="articulos" />
+
+    <xs:element name="articulo" />
+
+    <xs:attribute name="iva" />
+
+    <xs:element name="descripcion" />
+
+    <xs:element name="precioUnitario" />
+
+    <xs:element name="unidades" />
+    
+</xs:schema>
