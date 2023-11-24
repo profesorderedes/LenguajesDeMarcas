@@ -10,64 +10,20 @@
 
                 <xs:element name="farmacia" type="xs:string" fixed="Farmacia Juaneda" />
 
-                <xs:element name="edad">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:integer">
-                            <xs:minInclusive value="0" />
-                            <xs:maxInclusive value="150" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="edad" type="TipoEdad" />
 
-                <xs:element name="nombre">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:minLength value="1" />
-                            <xs:maxLength value="100" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="nombre" type="TipoNombre" />
 
-                <xs:element name="pago">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="Gratuito" />
-                            <xs:enumeration value="Íntegro" />
-                            <xs:enumeration value="Copago" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="pago" type="TipoPago" />
 
-                <xs:element name="dni">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="\d{8}[A-Z]" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
+                <xs:element name="dni" type="TipoDni" />
 
                 <!-- Un elemento con contenido string y un atributo
                 se describe como una extensión de string añadiéndole un
                 atributo numColegiado. -->
-                <xs:element name="medico">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="numColegiado" type="xs:integer" use="required" />
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="medico" type="TipoMedico" />
 
-                <xs:element name="posologia">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="tomas" type="xs:positiveInteger" />
-                            <xs:element name="horario" type="xs:string" />
-                        </xs:sequence>
-                        <xs:attribute name="duracion" type="xs:string" use="required" />
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="posologia" type="TipoPosologia" />
 
                 <xs:element name="alergias">
                     <xs:complexType />
@@ -82,7 +38,7 @@
                 <xs:element name="instrucciones">
                     <xs:complexType mixed="true">
                         <xs:choice minOccurs="0" maxOccurs="unbounded">
-                            <xs:element name="b"/>
+                            <xs:element name="b" />
                         </xs:choice>
                     </xs:complexType>
                 </xs:element>
@@ -90,5 +46,51 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <!-- Tipos definidos por nosotros -->
+
+    <xs:simpleType name="TipoEdad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="150" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoPago">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Gratuito" />
+            <xs:enumeration value="Íntegro" />
+            <xs:enumeration value="Copago" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoDni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="TipoMedico">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="numColegiado" type="xs:integer" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="TipoPosologia">
+        <xs:sequence>
+            <xs:element name="tomas" type="xs:positiveInteger" />
+            <xs:element name="horario" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="duracion" type="xs:string" use="required" />
+    </xs:complexType>
 
 </xs:schema>
