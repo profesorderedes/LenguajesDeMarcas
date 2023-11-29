@@ -12,6 +12,8 @@
     <xs:element name="velocitat_transferencia" />
     <xs:attribute name="unitat" />
 
+    <!-- Hasta aquí -->
+
     <xs:element name="pujada" />
     <xs:element name="baixada" />
     <xs:element name="preu" />
