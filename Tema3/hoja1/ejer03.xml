@@ -3,7 +3,7 @@
 Feu un esquema per documents com aquest.
 Notes:
 L'id de la oferta ha d'esser un enter major d'1.
-El nom de la oferta pot anar dins una etiqueta nom.
+El nom de la oferta va dins una etiqueta nom.
 La velocitat de transferència pot estar en Kbps, Mbps o Gbps
 La moneda del preu serà un valor fix Euro.
 Els preus tindran dos decimals.
