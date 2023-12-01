@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<libros>
+<libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejemplo01.xsd">
 
     <libro>
         <titulo>El Quijote</titulo>
@@ -14,7 +15,7 @@
         <titulo isbn="120-12121-121-1212">Estudio en escarlata</titulo>
         <autor>Arthur Conan Doyle</autor>
         <nacionalidad>
-            <extranjero/>
+            <extranjera/>
         </nacionalidad>
     </libro>
 
