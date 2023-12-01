@@ -14,7 +14,8 @@ La permanència pot esser-hi o no. Si hi és, l'atribut temps pot prendre els va
 dies, mesos i anys.
 L'atribut quantitat pot prendre valors sense decimals sencers positius amb el 0 inclòs.
 -->
-<connexions_ADSL>
+<connexions_ADSL xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejer03.xsd">
     <oferta id="1">
         <nom>Arrakis BT Go</nom>
         <nom_companyia>Arrakis</nom_companyia>
@@ -45,13 +46,13 @@ L'atribut quantitat pot prendre valors sense decimals sencers positius amb el 0 
     </oferta>
     <oferta id="3">
         <nom>Fibra 300 Megas simétricos + Llamadas gratis con Línea Jazztel </nom>
-<nom_companyia>
-        Jazztel</nom_companyia><fibra />
-<velocitat_transferencia unitat="Mbps">
+        <nom_companyia>Jazztel</nom_companyia>
+        <fibra />
+        <velocitat_transferencia unitat="Mbps">
             <pujada>300</pujada>
             <baixada>300</baixada>
         </velocitat_transferencia>
-<preu moneda="Euro">
+        <preu moneda="Euro">
             <alta gratis="Si" permanencia="No" />
             <linia>0</linia>
             <promocio fins="2019-01-01">
@@ -104,14 +105,15 @@ L'atribut quantitat pot prendre valors sense decimals sencers positius amb el 0 
             <total_mensual>53.87</total_mensual>
         </preu>
     </oferta>
-    <oferta id="6"><nom>ASDL Rural</nom>
-<nom_companyia>Orange </nom_companyia>
-<velocitat_transferencia
+    <oferta id="6">
+        <nom>ASDL Rural</nom>
+        <nom_companyia>Orange</nom_companyia>
+        <velocitat_transferencia
             unitat="Mbps">
             <pujada>0.512</pujada>
             <baixada>6</baixada>
         </velocitat_transferencia>
-<preu moneda="Euro">
+        <preu moneda="Euro">
             <alta gratis="Si" permanencia="Si">
                 <permanencia_alta temps="mesos" quantitat="18" />
             </alta>
