@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    
+
     <xs:element name="libros">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="libro" maxOccurs="unbounded"/>
+                <xs:element ref="libro" maxOccurs="unbounded" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -29,12 +29,25 @@
             </xs:simpleContent>
         </xs:complexType>
     </xs:element>
-    
-    <xs:attribute name="isbn" />
 
-    <xs:element name="autor" />
-    <xs:element name="nacionalidad" />
-    <xs:element name="nacional" />
-    <xs:element name="extranjera" />
+    <xs:attribute name="isbn" type="xs:string" />
+
+    <xs:element name="autor" type="xs:string" />
+    <xs:element name="nacionalidad">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="nacional" />
+                <xs:element ref="extranjera" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="nacional">
+        <xs:complexType />
+    </xs:element>
+
+    <xs:element name="extranjera">
+        <xs:complexType />
+    </xs:element>
 
 </xs:schema>
