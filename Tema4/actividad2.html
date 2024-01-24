@@ -7,7 +7,7 @@
     <title>Actividad 2</title>
 
     <style>
-        fieldset{
+        fieldset {
             width: 350px;
         }
 
@@ -29,10 +29,10 @@
             <legend>Datos personales</legend>
 
             <label for="nombre">Nombre</label> <br>
-            <input type="text" name="nombre" id="nombre"> <br> <br>
+            <input type="text" name="nombre" id="nombre" title="Escribe tu nombre"> <br> <br>
 
             <label for="apellidos">Apellidos</label> <br>
-            <input type="text" name="apellidos" id="apellidos"> <br> <br>
+            <input type="text" name="apellidos" id="apellidos" title="Escribe tus apellidos"> <br> <br>
 
             <label for="fecha_nacimiento">Fecha de nacimiento</label> <br>
             <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"> <br><br>
@@ -74,11 +74,12 @@
             <input type="checkbox" name="publi" id="publi" value="publi" checked>
             <label for="publi">Deseo recibir publicidad</label> <br>
 
-            <input type="checkbox" name="terminos" id="terminos" value="terminos" checked>
+            <input type="checkbox" name="terminos" id="terminos" value="terminos"
+                title="Es obligatorio aceptar los términos" checked>
             <label for="terminos">Acepto los términos</label> <br>
 
             <label for="comentarios">Comentarios finales</label> <br>
-            <textarea class="comentarios" name="comentarios" id="comentarios" 
+            <textarea class="comentarios" name="comentarios" id="comentarios"
                 placeholder="Escribe aquí cualquier observación que se te ocurra"></textarea>
 
         </fieldset>
