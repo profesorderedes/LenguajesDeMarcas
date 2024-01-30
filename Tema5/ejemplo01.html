@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Aplicamos color rojo a los span que se encuentren dentro de un p */
+        p span{
+            color: red;
+        }
+
+        .color_rgb{
+            background-color: rgb(30, 200, 70);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo 1</h1>
+
+    <p>En este ejemplo <span>aplicamos estilo</span> a los span que estén dentro de p</p>
+
+    Fuera de las etiquetas p, el span no <span>hace nada</span> ahora.
+
+    <p class="color_rgb">Este párrafo va a tener un color de fondo formado por las componentes RGB 30, 200, 70</p>
+</body>
+</html>
