@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 7</title>
+    <style>
+        .alinear {
+            text-align-last: center;
+            text-align: justify;
+        }
+
+        .direccion-inversa {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .alinear-vertical {
+            width: 30px;
+            vertical-align: bottom;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .texto-decorado {
+            text-decoration: underline;
+            text-decoration-color: brown;
+            text-decoration-thickness: 3px;
+            text-decoration-style: dashed ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Alineaciones</h1>
+
+    <p class="alinear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laborum, consectetur accusantium
+        cupiditate repellendus, amet sapiente repudiandae assumenda itaque aliquid mollitia modi inventore eum illum
+        delectus harum facilis? Praesentium, in quo quae doloremque ex maiores sed aspernatur enim, ullam incidunt,
+        quisquam blanditiis. Dolores at et veritatis necessitatibus doloremque eligendi unde culpa, aut vitae dicta rem
+        vero. Suscipit, iusto! Hic deleniti laborum facere ex quaerat esse. Suscipit nulla nobis sequi aliquam? Quos ab
+        illum porro, dolorum sint labore nostrum corporis optio aliquid tempora, omnis, deleniti ea rem facere
+        distinctio. Voluptatibus, laboriosam voluptates quasi maxime minus ducimus iste exercitationem molestiae
+        aspernatur eligendi, autem tempore maiores asperiores accusamus. Unde at labore similique non, perspiciatis cum
+        qui sunt nam, corporis reiciendis minus porro illum.</p>
+
+    <p class="direccion-inversa">Este párrafo se debería mostrar escrito de derecha a izquierda.</p>
+
+    <p>Aquí tenemos un hámster <img class="alinear-vertical" src="imgs/hamsters/w150px/hamster01.png" alt="Hámster"> en
+        medio un texto.</p>
+
+    <h2>Decoración de texto</h2>
+    <p>Puedes consultar la <a href="https://wikipedia.org">Wikipedia</a> para más información.</p>
+
+    <p><span class="texto-decorado">Nunca se debe usar HTML</span> para dar formato a una página web.</p>
+
+</body>
+
+</html>
