@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad 14</title>
     <style>
-        div {
+        #contenedor {
             background-color: coral;
             color: aliceblue;
             padding: 10px;
+            width: 600px;
+            margin: auto;
         }
 
         .descuento {
-            outline-style: dashed;
-            outline-color: blueviolet;
-            padding: 3px;
+            outline: 3px dashed blueviolet;
+            outline-offset: 7px;
             opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div id="contenedor">
         <h1>Ofertas en Blck Friday</h1>
         <p>Disfruta de un <span class="descuento">40%</span> de descuento en todas las compras hechas durante el Black
             Friday.</p>
