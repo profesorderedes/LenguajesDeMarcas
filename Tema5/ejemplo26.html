@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+    <style>
+        .primer-parrafo::first-letter {
+            font-family: "Water Brush", cursive;
+            font-size: 3rem;
+        }
+
+        .primer-parrafo::first-line {
+            line-height: 0.8;
+        }
+
+        p::selection{
+            background-color: lightpink;
+        }
+
+        p::before{
+            content: "(c) ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudoelementos</h1>
+
+    <p class="primer-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem, dignissimos
+        enim culpa expedita
+        consequatur eos quod perferendis nam ipsum sequi necessitatibus quisquam corporis ea reiciendis fugit molestias
+        quasi incidunt nobis laborum maiores, magni sapiente dolorum natus. Nesciunt, qui et.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nemo officia fugit earum. Odio, pariatur. Ullam
+        alias molestiae cumque suscipit fuga, mollitia ipsum veritatis in magni minima! Est, expedita maxime.</p>
+
+
+</body>
+
+</html>
