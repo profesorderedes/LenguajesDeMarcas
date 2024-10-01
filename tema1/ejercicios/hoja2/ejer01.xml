@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<lista_reproduccion>
+    
+    <cancion>
+        <artista estilo="rap_urbano">Kaze</artista>
+        <titulo duracion="321">Record</titulo>
+        <puntuacion>5</puntuacion>
+        <comienzo>0</comienzo>
+        <final estilo_corte="fade_out">319</final>    
+    </cancion>
+
+    <cancion>
+        <artista estilo="rock">Linking parck</artista>
+        <titulo duracion="400">The emptines machine</titulo>
+        <puntuacion>5</puntuacion>
+        <comienzo>0</comienzo>
+        <final estilo_corte="cut">399</final>    
+    </cancion>
+
+</lista_reproduccion>
