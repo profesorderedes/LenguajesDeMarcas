@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<empresa>
+    <cliente>
+        <nombre>Carlos Martínez</nombre>
+        <nombre>María Sánchez</nombre>
+        <nombre>Pepa López</nombre>
+    </cliente>
+
+    <proveedores>
+        <proveedor suministra="carne pescado fruta" nif="78219917T">Suministros Pérez</proveedor>
+        <proveedor>Papelería Gutiérrez</proveedor>
+    </proveedores>
+
+    
+</empresa>

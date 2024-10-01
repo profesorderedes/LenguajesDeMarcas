@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedido xmlns="http://www.papeleria.es/clientes" xmlns:a="http://www.papeleria.es/articulos">
+
+    <!-- Metemos los elementos que tienen que ver con el cliente en el espacio de nombres "c" -->
+    <cliente>
+        <id>DNI</id>
+        <id_valor>10200200R</id_valor>
+        <nombre>Lucía Ortiz</nombre>
+    </cliente>
+
+    <!-- Metemos los elementos que tienen que ver con los artículos en el espacio de nombres "a" -->
+    <a:articulo>
+        <a:id>205</a:id>
+        <a:descripcion>Libreta Oxford A4</a:descripcion>
+        <a:precio>4.50</a:precio>
+    </a:articulo>
+
+    <a:articulo>
+        <a:id>401</a:id>
+        <a:descripcion>Bolígrafo Pilot Extra</a:descripcion>
+        <a:precio>2.15</a:precio>
+    </a:articulo>
+
+</pedido>

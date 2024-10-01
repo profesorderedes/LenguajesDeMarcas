@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<familia>
+    <progenitor>
+        <nombre dni="20100100Y">Pedro Álvarez</nombre>
+        <nacimiento>1980</nacimiento>
+    </progenitor>
+    <progenitor>
+        <nombre dni="12300200U">Luisa Robles</nombre>
+        <nacimiento>1982</nacimiento>
+    </progenitor>
+    <descendiente>Manuela Álvarez</descendiente>
+    <descendiente>Natalia Álvarez</descendiente>
+</familia>

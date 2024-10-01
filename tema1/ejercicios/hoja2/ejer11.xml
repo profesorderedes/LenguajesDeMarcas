@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<horario xmlns="http://www.iessonferrer.net/horarios">
+
+    <dia dia_semana="lunes">
+        <asignatura horas="1,2">Programación</asignatura>
+        <asignatura horas="3,4">Ipo</asignatura>
+        <asignatura horas="5">Lenguajes de marcas</asignatura>
+        <asignatura horas="6">Bases de datos</asignatura>
+    </dia>
+
+    <dia dia_semana="martes">
+        <asignatura horas="1">Entornos de desarrollo</asignatura>
+        <asignatura horas="2,3">Lenguaje_marcas</asignatura>
+        <asignatura horas="4">Programación</asignatura>
+        <asignatura horas="5,6">Bases de datos</asignatura>
+    </dia>
+
+    <dia dia_semana="miercoles">
+        <asignatura horas="1,2">Sistemas_informaticos</asignatura>
+        <asignatura horas="3">Ipo</asignatura>
+        <asignatura horas="4">Programación</asignatura>
+        <asignatura horas="5,6">Bases de datos</asignatura>
+    </dia>
+
+    <dia dia_semana="jueves">
+        <asignatura horas="1,2">Lenguaje_marcas</asignatura>
+        <asignatura horas="3">Programación</asignatura>
+        <asignatura horas="4">Bases de datos</asignatura>
+        <asignatura horas="5">Digitalización</asignatura>
+        <asignatura horas="6">Entornos de desarrollo</asignatura>
+    </dia>
+
+    <dia dia_semana="viernes">
+        <asignatura horas="1,2">Programación</asignatura>
+        <asignatura horas="3">Entornos de desarrollo</asignatura>
+        <asignatura horas="4,5">Sistemas_informaticos</asignatura>
+        <asignatura horas="6">Bases de datos</asignatura>
+    </dia>
+
+</horario>
