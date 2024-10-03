@@ -1,35 +1,34 @@
-?xml version="1.0" encoding="UTF-8" >
+<?xml version="1.0" encoding="UTF-8"?>
+
 <equipos_de_futbol>
-<equipo>
-<nombre>Levante</nombre>
-<ciudad>Valencia</ciudad>
-<entrenador>
-</entrenador>
-<jugadores>
-<jugador posicion="portero">
-<nombre>Javier Jiménez</nombre>
-<nacionalidad>española</nacionalidad>
-</jugador>
-<jugador posicion="lateral" posicion="delantero">
-<nombre> Nong </nombre>
-<nacionalidad>camerunés</Nacionalidad>
-</jugador>
-</jugadores>
-</equipo>
-<equipo2>
-< nombre>Real Sociedad</nombre >
-<ciudad>San Sebastián</ciudad
->
-</entrenador>
-<jugadores>
-<jugador posicion="portero">
-<nombre>Claudio Bravo</nombre>
-<nacionalidad>chilena</nacionalidad>
-</jugador>
-<jugador posicion="defensa">
-<nombre>Mikel González</nombre>
-<nacionalidad>española</nacionalidad>
-</jugadores>
-</jugadores>
-</equipo>
+    <equipo>
+        <nombre>Levante</nombre>
+        <ciudad>Valencia</ciudad>
+        <entrenador></entrenador>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombre>Javier Jiménez</nombre>
+                <nacionalidad>española</nacionalidad>
+            </jugador>
+            <jugador posicion="lateral delantero">
+                <nombre> Nong </nombre>
+                <nacionalidad>camerunés</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo2>
+        <nombre>Real Sociedad</nombre>
+        <ciudad>San Sebastián</ciudad>
+        <entrenador></entrenador>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombre>Claudio Bravo</nombre>
+                <nacionalidad>chilena</nacionalidad>
+            </jugador>
+            <jugador posicion="defensa">
+                <nombre>Mikel González</nombre>
+                <nacionalidad>española</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo2>
 </equipos_de_futbol>
