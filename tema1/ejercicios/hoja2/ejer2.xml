@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<factura>
+
+    <empresa>
+        <numFactura>999</numFactura>
+        <nombreEmpresa>Equipos digitales S.L. Av. Valladolid</nombreEmpresa>
+        <localicacion>Madrid 28015</localicacion>
+        <cif>Q-9876543</cif>
+
+        <fecha>12/09/2016</fecha>
+        <numPedido>731</numPedido>
+        <formaPago>Efectivo</formaPago>
+    </empresa>
+
+    <datosCliente>
+        <numCliente>879</numCliente>
+        <nombre>Carlos Sierra García</nombre>
+        <direccionEnvio>Av. Oporto num 7 piso 4 puerta D</direccionEnvio>
+        <poblacion>Madrid cod. postal: 28043</poblacion>
+        <provincia>Madrid</provincia>
+    </datosCliente>
+
+    <datosFactura>
+        <ref>"Descripción"</ref>
+        <articulo cantidad="1" precio="178" importe="178">Procesador Intel Core I5-6500 3.2 Ghz
+            SK1151 6MB</articulo>
+        <articulo cantidad="1" precio="56" importe="54">Placa Intel Core I3/I5/I7 Gigabyte</articulo>
+        <articulo cantidad="2" precio="40" importe="80">Memoria 8GB DDR4 2133 Kingston</articulo>
+        <articulo cantidad="1" precio="36" importe="36">Disco Duro 120 GB 2.5" Kingstom</articulo>
+    </datosFactura>
+
+    <baseImporte>380.00</baseImporte>
+    <IVA>21.0</IVA>
+    <importeIVA>73.08</importeIVA>
+
+    <totalFactura>421.08</totalFactura>
+
+</factura>
