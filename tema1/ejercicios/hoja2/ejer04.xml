@@ -3,9 +3,11 @@
 <aplicacion>
     <creador>Carlos</creador>
     <fecha>15 de septiembre</fecha>
-    <![CDATA[ 
-    cmbCursos = new JCombox<String>();
-    cmbCursos.addItem("Selecciona un curso");
-    cmbCursos.addItem("1 ESO");
-    ]]>
+    <codigo>
+        <![CDATA[ 
+        cmbCursos = new JCombox<String>();
+        cmbCursos.addItem("Selecciona un curso");
+        cmbCursos.addItem("1 ESO");
+        ]]>
+    </codigo>
 </aplicacion>
