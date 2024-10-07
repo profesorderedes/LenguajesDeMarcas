@@ -2,4 +2,17 @@
 
 <!DOCTYPE alumno SYSTEM "alumno.dtd">
 
-<alumno>Federico López Roma</alumno>
+<alumno>
+    
+    <apellido>López</apellido>
+    <apellido>Roma</apellido>
+    <apellido>Pérez</apellido>
+    
+    <nombre>Federico</nombre>
+
+    <delegado/>
+
+    <optativa>
+        <cultura_clasica/>
+    </optativa>
+</alumno>
