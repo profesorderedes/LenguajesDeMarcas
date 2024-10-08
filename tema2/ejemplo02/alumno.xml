@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE alumno SYSTEM "alumno.dtd">
+<!DOCTYPE alumno [
+    <!ELEMENT alumno (((nombre, apellido*) | (apellido*, nombre)), delegado?, optativa)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT delegado EMPTY>
+    <!ELEMENT optativa (cultura_clasica | teatro | informatica)>
+    <!ELEMENT cultura_clasica EMPTY>
+    <!ELEMENT teatro EMPTY>
+    <!ELEMENT informatica EMPTY>
+]>
 
 <alumno>
-    
+
     <apellido>López</apellido>
     <apellido>Roma</apellido>
     <apellido>Pérez</apellido>
-    
+
     <nombre>Federico</nombre>
 
-    <delegado/>
+    <delegado />
 
     <optativa>
-        <cultura_clasica/>
+        <cultura_clasica />
     </optativa>
 </alumno>
