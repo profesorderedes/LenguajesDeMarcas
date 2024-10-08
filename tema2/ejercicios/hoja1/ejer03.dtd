@@ -1,0 +1,5 @@
+<!ELEMENT hilo ()>
+<!ELEMENT mensaje ()>
+<!ELEMENT autor ()>
+<!ELEMENT titulo ()>
+<!ELEMENT texto ()>
