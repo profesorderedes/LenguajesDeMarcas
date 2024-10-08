@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE alumno SYSTEM "alumno.dtd">
+
+<alumno>
+    
+    <apellido>López</apellido>
+    <apellido>Roma</apellido>
+    <apellido>Pérez</apellido>
+    
+    <nombre>Federico</nombre>
+
+    <delegado/>
+
+    <optativa>
+        <cultura_clasica/>
+    </optativa>
+</alumno>
