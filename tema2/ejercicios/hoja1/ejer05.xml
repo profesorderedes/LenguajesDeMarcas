@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE pacientes [
-    <!ELEMENT pacientes ANY>
-    <!ELEMENT paciente ANY>
-    <!ELEMENT nombre ANY>
-    <!ELEMENT dni ANY>
-    <!ELEMENT num_seg_social ANY>
+    <!ELEMENT pacientes (paciente*)>
+    <!ELEMENT paciente (nombre, (dni | num_seg_social))>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT num_seg_social (#PCDATA)>
 ]>
 
 <pacientes>
