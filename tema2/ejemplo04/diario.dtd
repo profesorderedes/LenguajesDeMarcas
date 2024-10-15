@@ -1,0 +1,7 @@
+<!ELEMENT diario ANY>
+<!ELEMENT nombre ANY>
+<!ELEMENT entrada ANY>
+<!ELEMENT fecha ANY>
+<!ELEMENT contenido ANY>
+<!ELEMENT festivo ANY>
+<!ELEMENT lectura ANY>
