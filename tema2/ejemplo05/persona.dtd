@@ -1,0 +1,5 @@
+<!ELEMENT persona (edad) >
+<!ATTLIST persona nombre CDATA "carlos">
+<!ATTLIST persona apellidos CDATA #REQUIRED>
+
+<!ELEMENT edad (#PCDATA)>

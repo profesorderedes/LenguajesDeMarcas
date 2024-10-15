@@ -1,0 +1,5 @@
+<semaforos>
+    <semaforo color="rojo" />
+    <semaforo color="naranja" />
+    <semaforo />
+</semaforos>
