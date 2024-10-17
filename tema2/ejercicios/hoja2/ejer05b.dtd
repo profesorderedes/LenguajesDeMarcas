@@ -1,0 +1,6 @@
+<!ELEMENT semaforos (semaforo+)>
+<!ELEMENT semaforo EMPTY>
+<!ATTLIST semaforo id ID #REQUIRED>
+<!-- Hemos establecido en el DTD que el único valor válido para el color
+     sea el rojo -->
+<!ATTLIST semaforo color CDATA #FIXED "rojo">

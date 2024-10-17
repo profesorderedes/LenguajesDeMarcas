@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE semaforos SYSTEM "ejer05b.dtd">
+
+<!-- Hemos establecido en el DTD que el único valor válido para el color
+     sea el rojo -->
+
+<semaforos>
+    <semaforo id="sem1" />
+    <semaforo id="sem2" color="rojo" />
+    <semaforo id="sem3" color="verde" />
+</semaforos>
