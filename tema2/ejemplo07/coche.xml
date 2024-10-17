@@ -12,4 +12,8 @@
         <marca>Volkswagen</marca>
         <modelo>Taigo</modelo>
     </coche>
+    <reparacion mat_vehiculo="MAT-8361DTG">
+        <concepto>Pinchazo rueda trasera izquiera</concepto>
+        <precio>10</precio>
+    </reparacion>
 </taller>
