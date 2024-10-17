@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE semaforos SYSTEM "ejer01.dtd">
 <semaforos>
     <semaforo color="rojo" />
     <semaforo color="naranja" />
