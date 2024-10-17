@@ -3,6 +3,6 @@
 <!DOCTYPE semaforos SYSTEM "ejer03.dtd">
 <semaforos>
     <semaforo color="rojo" />
-    <semaforo color="naranja" />
+    <semaforo color="naranja era mi semáforo$$$" />
     <semaforo />
 </semaforos>
