@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE cine SYSTEM "cine.dtd">
+
+<cine>
+    <peliculas>
+        <pelicula generos="pol acc">
+            <titulo>Black Rain</titulo>
+            <director>Ridley Scott</director>
+            <protagonistas>
+                <actor>Michael Douglas</actor>
+                <actriz>Kate Capshaw</actriz>
+                <actor>Andy García</actor>
+                <actor>Ken Takakura</actor>
+            </protagonistas>
+        </pelicula>
+
+        <pelicula generos="sci-fi pol">
+            <titulo>Blade Runner</titulo>
+            <director>Ridley Scott</director>
+            <protagonistas>
+                <actriz>Sean Young</actriz>
+                <actor>Harrison Ford</actor>
+                <actor>Rutger Hauer</actor>
+                <actor>Edward James Olmos</actor>
+            </protagonistas>
+        </pelicula>
+
+        <pelicula generos="ter">
+            <titulo>La niebla</titulo>
+            <director>Frank Darabont</director>
+            <protagonistas>
+                <actor>Thomas Jane</actor>
+                <actriz>Marcia Gay Harden</actriz>
+                <actriz>Laurie Holden</actriz>
+            </protagonistas>
+        </pelicula>
+
+        <pelicula generos="dra">
+            <titulo>El padrino</titulo>
+            <director>Francis Ford Coppola</director>
+            <protagonistas>
+                <actor>Marlon Brando</actor>
+                <actor>Al Pacino</actor>
+                <actor>James Caan</actor>
+                <actriz>Diane Keaton</actriz>
+            </protagonistas>
+        </pelicula>
+    </peliculas>
+
+    <generos>
+        <genero abreviatura="pol">Policiaco</genero>
+        <genero abreviatura="acc">Acción</genero>
+        <genero abreviatura="rom">Romántico</genero>
+        <genero abreviatura="sci-fi">Ciencia ficción</genero>
+        <genero abreviatura="ter">Terror</genero>
+        <genero abreviatura="dra">Drama</genero>
+    </generos>
+</cine>
