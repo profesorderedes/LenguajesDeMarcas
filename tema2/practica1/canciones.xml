@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE canciones SYSTEM "canciones.dtd">
+
+<canciones>
+
+    <cancion estilo="Rock" cod_artista="REM">
+        <titulo>Losing my religion</titulo>
+        <puntuacion>7</puntuacion>
+    </cancion>
+    <cancion estilo="Otros" cod_artista="ALP">
+        <titulo>Big in Japan</titulo>
+        <puntuacion>6</puntuacion>
+        <comprada />
+    </cancion>
+    <cancion cod_artista="EUF">
+        <titulo>Aviones plateados</titulo>
+        <puntuacion>6</puntuacion>
+        <comprada />
+    </cancion>
+
+    <artista codigo="REM">
+        <nombre>REM</nombre>
+        <historia>R.E.M. fue una banda de rock estadounidense formada en Athens (Georgia), en 1980
+            por el baterista Bill Berry, el guitarrista Peter Buck, el bajista Mike Mills y el
+            vocalista principal <cantante>Michael Stipe</cantante>, quienes eran estudiantes de la
+            Universidad de Georgia.</historia>
+    </artista>
+    <artista codigo="EUF">
+        <nombre>El último de la fila</nombre>
+        <historia>El Último de la Fila es un grupo musical de rock español formado por <cantante>Manolo
+            García</cantante> (vocalista) y Quimi Portet (guitarrista), surgido en la ciudad de
+            Barcelona. Ha sido uno de los grupos musicales de más éxito en España durante las
+            décadas de 1980 y de 1990, años en los que desarrollaron siete álbumes musicales y
+            numerosas giras, generalmente en España, aunque también en diversos países de
+            Hispanoamérica. </historia>
+    </artista>
+    <artista codigo="ALP">
+        <nombre>Alphaville</nombre>
+        <historia>Alphaville es un grupo musical alemán de synth pop que fue muy popular en la
+            década de 1980. En 1982, el cantante <cantante>Marian Gold</cantante> y el teclista
+            Bernhard Lloyd formaban parte de un proyecto musical llamado Nelson Community, allí
+            formaron una banda llamada Chinchilla Green que no prosperó. Ese mismo año, Lloyd formó
+            una banda con Frank Mertens, otro teclista; entonces ellos llamaron a Gold para que
+            fuera el cantante y así nació la banda Forever Young, que más tarde seríarebautizada
+            como Alphaville. </historia>
+    </artista>
+</canciones>

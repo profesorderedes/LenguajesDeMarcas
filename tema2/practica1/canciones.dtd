@@ -1,0 +1,15 @@
+<!ELEMENT canciones (cancion+, artista+)>
+<!ELEMENT cancion (titulo, puntuacion, comprada?)>
+<!ATTLIST cancion estilo (Rock|Pop|Otros) #IMPLIED>
+<!ATTLIST cancion cod_artista IDREF #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT puntuacion (#PCDATA)>
+<!ELEMENT comprada EMPTY>
+
+<!ELEMENT artista (nombre, historia)>
+<!ATTLIST artista codigo ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT historia (#PCDATA | cantante)*>
+<!ELEMENT cantante (#PCDATA)>
