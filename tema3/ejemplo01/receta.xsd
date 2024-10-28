@@ -2,6 +2,12 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="receta" type="xs:string"/>
+    <xs:element name="receta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="medicamento" type="xs:string" minOccurs="0" maxOccurs="10" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
 </xs:schema>

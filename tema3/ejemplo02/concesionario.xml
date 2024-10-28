@@ -3,6 +3,8 @@
 <concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="concesionario.xsd">
 
-    Peugeot 208
+    <coche>Peugeot 208</coche>
+    <coche>Volvo V40</coche>
+      
     
 </concesionario>
