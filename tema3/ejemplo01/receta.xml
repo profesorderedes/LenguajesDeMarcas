@@ -2,5 +2,6 @@
 
 <receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="receta.xsd">
-    Paracetamol
+    <medicamento>Omeprazol</medicamento>
+    <medicamento>Paracetamol</medicamento>
 </receta>
