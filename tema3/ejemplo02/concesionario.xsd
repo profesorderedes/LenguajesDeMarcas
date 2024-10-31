@@ -6,6 +6,34 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="coche" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                
+                <xs:element name="taller" type="xs:string" default="Talleres Pérez" />
+                
+                <xs:element name="capacidad">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                            <xs:maxInclusive value="100"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="propietario">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="5"/>
+                            <xs:maxLength value="60"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="tipo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Oficial"/>
+                            <xs:enumeration value="No oficial"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

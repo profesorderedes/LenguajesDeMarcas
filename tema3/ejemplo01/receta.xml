@@ -5,5 +5,15 @@
 
     <medicamento>Omeprazol</medicamento>
     <medicamento>Paracetamol</medicamento>
+
+    <farmacia>Farmacia Juaneda</farmacia>
+
+    <edad>70</edad>
+
+    <nombre>Francisco Santos</nombre>
+
+    <pago>Gratuito</pago>
+
+    <precio>2.89</precio>
     
 </receta>

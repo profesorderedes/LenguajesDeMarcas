@@ -5,6 +5,15 @@
 
     <coche>Peugeot 208</coche>
     <coche>Volvo V40</coche>
-      
+    
+    <taller>Talleres Pérez</taller>
+
+    <capacidad>40</capacidad> <!-- Entre 1 y 100 -->
+
+    <propietario>Manuel Peñas</propietario> <!-- Entre 5 y 60 caracteres-->
+
+    <tipo>No oficial</tipo> <!-- Oficial o No oficial-->
+
+    <coste_hora>40.75</coste_hora> <!-- Dos decimales como máximo y 4 cifras como máximo -->
     
 </concesionario>
