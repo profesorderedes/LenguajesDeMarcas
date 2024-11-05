@@ -6,7 +6,14 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="coche" minOccurs="0" maxOccurs="unbounded" >
-                    
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="matricula" type="xs:string" use="required"/>
+                                <xs:attribute name="anyo" type="xs:nonNegativeInteger" use="optional"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="taller" type="xs:string" default="Talleres Pérez" />

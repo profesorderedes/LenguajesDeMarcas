@@ -6,9 +6,9 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="medicamento" type="xs:string" minOccurs="0" maxOccurs="10" />
-                
+
                 <xs:element name="farmacia" type="xs:string" default="Farmacia Juaneda" />
-                
+
                 <xs:element name="edad">
                     <xs:simpleType>
                         <xs:restriction base="xs:integer">
@@ -17,12 +17,12 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
-                
+
                 <xs:element name="nombre">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:minLength value="3"/>
-                            <xs:maxLength value="20"/>
+                            <xs:minLength value="3" />
+                            <xs:maxLength value="20" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -30,9 +30,9 @@
                 <xs:element name="pago">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="Gratuito"/>
-                            <xs:enumeration value="Copago"/>
-                            <xs:enumeration value="Íntegro"/>
+                            <xs:enumeration value="Gratuito" />
+                            <xs:enumeration value="Copago" />
+                            <xs:enumeration value="Íntegro" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -40,8 +40,8 @@
                 <xs:element name="precio">
                     <xs:simpleType>
                         <xs:restriction base="xs:decimal">
-                            <xs:fractionDigits value="2"/>
-                            <xs:totalDigits value="6"/>
+                            <xs:fractionDigits value="2" />
+                            <xs:totalDigits value="6" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -50,9 +50,19 @@
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="numColegiado" type="xs:nonNegativeInteger" />
+                                <xs:attribute name="numColegiado" type="xs:nonNegativeInteger"
+                                    use="required" />
                             </xs:extension>
                         </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="tipo_paciente">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="paciente_habitual" type="xs:string" />
+                            <xs:element name="paciente_urgencias" type="xs:string" />
+                        </xs:choice>
                     </xs:complexType>
                 </xs:element>
 

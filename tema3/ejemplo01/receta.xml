@@ -17,5 +17,15 @@
     <precio>2.89</precio>
 
     <medico numColegiado="171612713">Juan Ríos</medico>
-    
+
+    <!-- Tipo de paciente: habitual o de urgencias -->
+    <tipo_paciente>
+        <paciente_urgencias></paciente_urgencias>
+    </tipo_paciente>
+
+    <posologia>
+        <tomas>3</tomas>
+        <horario>Mañana, tarde y noche</horario>
+    </posologia>
+
 </receta>
