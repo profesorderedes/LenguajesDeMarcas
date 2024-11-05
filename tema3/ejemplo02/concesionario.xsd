@@ -53,6 +53,21 @@
                     </xs:simpleType>
                 </xs:element>
 
+                <xs:element name="itv">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="Si" type="xs:string" />
+                            <xs:element name="No" type="xs:string" />
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ocasion">
+                    <xs:complexType>
+                        <xs:attribute name="ofrece_garantia" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+
             </xs:sequence>
         </xs:complexType>
     </xs:element>

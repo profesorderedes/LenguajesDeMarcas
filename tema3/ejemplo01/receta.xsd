@@ -66,6 +66,26 @@
                     </xs:complexType>
                 </xs:element>
 
+                <xs:element name="posologia">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tomas" type="xs:positiveInteger" />
+                            <xs:element name="horario" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="duracion" type="xs:string"  use="optional" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="alergias" >
+                    <xs:complexType />
+                </xs:element>
+
+                <xs:element name="grupo_sanguineo">
+                    <xs:complexType>
+                        <xs:attribute name="tipo" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+
             </xs:sequence>
         </xs:complexType>
     </xs:element>

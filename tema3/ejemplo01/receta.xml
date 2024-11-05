@@ -23,9 +23,14 @@
         <paciente_urgencias></paciente_urgencias>
     </tipo_paciente>
 
-    <posologia>
+    <posologia duracion="Cinco días">
         <tomas>3</tomas>
         <horario>Mañana, tarde y noche</horario>
     </posologia>
+
+    <!-- Etiqueta vacía -->
+    <alergias/>
+
+    <grupo_sanguineo tipo="A+" />
 
 </receta>
