@@ -46,6 +46,16 @@
                     </xs:simpleType>
                 </xs:element>
 
+                <xs:element name="medico">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="numColegiado" type="xs:nonNegativeInteger" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+
             </xs:sequence>
         </xs:complexType>
     </xs:element>

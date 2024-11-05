@@ -3,8 +3,8 @@
 <concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="concesionario.xsd">
 
-    <coche>Peugeot 208</coche>
-    <coche>Volvo V40</coche>
+    <coche matricula="9278HYJ">Peugeot 208</coche>
+    <coche matricula="1111T">Volvo V40</coche>
     
     <taller>Talleres Pérez</taller>
 

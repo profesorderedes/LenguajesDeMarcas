@@ -12,8 +12,10 @@
 
     <nombre>Francisco Santos</nombre>
 
-    <pago>Gratuito</pago>
+    <pago>Copago</pago>
 
     <precio>2.89</precio>
+
+    <medico numColegiado="171612713">Juan Ríos</medico>
     
 </receta>
