@@ -2,46 +2,121 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="receta" />
+    <xs:element name="receta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="medicamento" maxOccurs="10" />
+                <xs:element ref="farmacia" />
+                <xs:element ref="edad" />
+                <xs:element ref="nombre" />
+                <xs:element ref="pago" />
+                <xs:element ref="precio" />
+                <xs:element ref="medico" />
+                <xs:element ref="tipo_paciente" />
+                <xs:element ref="posologia" />
+                <xs:element ref="alergias" />
+                <xs:element ref="grupo_sanguineo" />
+                <xs:element ref="instrucciones" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
-    <xs:element name="medicamento" />
+    <xs:element name="medicamento" type="xs:string" />
 
-    <xs:element name="farmacia" />
+    <xs:element name="farmacia" type="xs:string" default="Farmacia Juaneda" />
 
-    <xs:element name="edad" />
+    <xs:element name="edad">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="0" />
+                <xs:maxInclusive value="120" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
 
-    <xs:element name="nombre" />
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="3" />
+                <xs:maxLength value="20" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
 
-    <xs:element name="pago" />
+    <xs:element name="pago">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Íntegro" />
+                <xs:enumeration value="Copago" />
+                <xs:enumeration value="Gratuito" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
 
-    <xs:element name="precio" />
+    <xs:element name="precio">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:fractionDigits value="2" />
+                <xs:totalDigits value="6" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
 
-    <xs:element name="medico" />
+    <xs:element name="medico">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="numColegiado" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
 
-    <xs:attribute name="num_colegiado" />
+    <xs:attribute name="numColegiado" type="xs:string" />
 
-    <xs:element name="tipo_paciente" />
+    <xs:element name="tipo_paciente">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="paciente_habitual" />
+                <xs:element ref="paciente_urgencias" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
 
-    <xs:element name="paciente_habitual" />
+    <xs:element name="paciente_habitual">
+        <xs:complexType />
+    </xs:element>
 
-    <xs:element name="paciente_urgencias" />
+    <xs:element name="paciente_urgencias">
+        <xs:complexType />
+    </xs:element>
 
-    <xs:element name="posologia" />
+    <xs:element name="posologia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tomas" />
+                <xs:element ref="horario" />
+            </xs:sequence>
+            <xs:attribute ref="duracion" />
+        </xs:complexType>
+    </xs:element>
 
-    <xs:attribute name="duracion" />
+    <xs:attribute name="duracion" type="xs:string" />
 
-    <xs:element name="tomas" />
+    <xs:element name="tomas" type="xs:string" />
 
-    <xs:element name="horario" />
+    <xs:element name="horario" type="xs:string" />
 
-    <xs:element name="alergias" />
+    <xs:element name="alergias">
+        <xs:complexType />
+    </xs:element>
 
     <xs:element name="grupo_sanguineo" />
 
     <xs:attribute name="tipo" />
 
     <xs:element name="instrucciones" />
-    
+
     <xs:element name="b" />
 
 </xs:schema>

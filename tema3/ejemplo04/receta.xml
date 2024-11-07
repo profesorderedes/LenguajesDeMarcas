@@ -20,7 +20,7 @@
 
     <!-- Tipo de paciente: habitual o de urgencias -->
     <tipo_paciente>
-        <paciente_urgencias></paciente_urgencias>
+        <paciente_urgencias/>
     </tipo_paciente>
 
     <posologia duracion="Cinco días">
