@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="receta.xsd">
+
+    <medicamento>Omeprazol</medicamento>
+    <medicamento>Paracetamol</medicamento>
+
+    <farmacia>Farmacia Juaneda</farmacia>
+
+    <edad>70</edad>
+
+    <nombre>Francisco Santos</nombre>
+
+    <pago>Copago</pago>
+
+    <precio>2.89</precio>
+
+    <medico numColegiado="171612713">Juan Ríos</medico>
+
+    <!-- Tipo de paciente: habitual o de urgencias -->
+    <tipo_paciente>
+        <paciente_urgencias></paciente_urgencias>
+    </tipo_paciente>
+
+    <posologia duracion="Cinco días">
+        <tomas>3</tomas>
+        <horario>Mañana, tarde y noche</horario>
+    </posologia>
+
+    <!-- Etiqueta vacía -->
+    <alergias />
+
+    <grupo_sanguineo tipo="A+" />
+
+    <instrucciones> Esta medicación debe tomarse en <b>ayunas</b>. No deben superarse los <b>cuatro</b>
+        comprimidos al día. 
+    </instrucciones>
+
+</receta>
