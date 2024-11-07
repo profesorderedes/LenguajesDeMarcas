@@ -25,5 +25,8 @@
      de ocasión. -->
     <ocasion ofrece_garantia="si"/>
 
+    <descripcion>
+        Concesionario dedicado a coches <b>nuevos</b>, <b>de ocasión</b> y <b>reparaciones</b>.
+    </descripcion>
 
 </concesionario>

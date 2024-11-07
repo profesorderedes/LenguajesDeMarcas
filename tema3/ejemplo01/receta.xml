@@ -29,8 +29,12 @@
     </posologia>
 
     <!-- Etiqueta vacía -->
-    <alergias/>
+    <alergias />
 
     <grupo_sanguineo tipo="A+" />
+
+    <instrucciones> Esta medicación debe tomarse en <b>ayunas</b>. No deben superarse los <b>cuatro</b>
+        comprimidos al día. 
+    </instrucciones>
 
 </receta>

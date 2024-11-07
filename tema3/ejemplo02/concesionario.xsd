@@ -5,23 +5,24 @@
     <xs:element name="concesionario">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="coche" minOccurs="0" maxOccurs="unbounded" >
+                <xs:element name="coche" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="matricula" type="xs:string" use="required"/>
-                                <xs:attribute name="anyo" type="xs:nonNegativeInteger" use="optional"/>
+                                <xs:attribute name="matricula" type="xs:string" use="required" />
+                                <xs:attribute name="anyo" type="xs:nonNegativeInteger"
+                                    use="optional" />
                             </xs:extension>
                         </xs:simpleContent>
                     </xs:complexType>
                 </xs:element>
-                
+
                 <xs:element name="taller" type="xs:string" default="Talleres Pérez" />
-                
+
                 <xs:element name="capacidad">
                     <xs:simpleType>
                         <xs:restriction base="xs:positiveInteger">
-                            <xs:maxInclusive value="100"/>
+                            <xs:maxInclusive value="100" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -29,8 +30,8 @@
                 <xs:element name="propietario">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:minLength value="5"/>
-                            <xs:maxLength value="60"/>
+                            <xs:minLength value="5" />
+                            <xs:maxLength value="60" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -38,8 +39,8 @@
                 <xs:element name="tipo">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:enumeration value="Oficial"/>
-                            <xs:enumeration value="No oficial"/>
+                            <xs:enumeration value="Oficial" />
+                            <xs:enumeration value="No oficial" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -47,8 +48,8 @@
                 <xs:element name="coste_hora">
                     <xs:simpleType>
                         <xs:restriction base="xs:decimal">
-                            <xs:fractionDigits value="2"/>
-                            <xs:totalDigits value="4"/>
+                            <xs:fractionDigits value="2" />
+                            <xs:totalDigits value="4" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -64,12 +65,14 @@
 
                 <xs:element name="ocasion">
                     <xs:complexType>
-                        <xs:attribute name="ofrece_garantia" type="xs:string"/>
+                        <xs:attribute name="ofrece_garantia" type="xs:string" />
                     </xs:complexType>
                 </xs:element>
 
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    
 
 </xs:schema>

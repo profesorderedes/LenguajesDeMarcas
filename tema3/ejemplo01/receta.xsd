@@ -72,11 +72,11 @@
                             <xs:element name="tomas" type="xs:positiveInteger" />
                             <xs:element name="horario" type="xs:string" />
                         </xs:sequence>
-                        <xs:attribute name="duracion" type="xs:string"  use="optional" />
+                        <xs:attribute name="duracion" type="xs:string" use="optional" />
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="alergias" >
+                <xs:element name="alergias">
                     <xs:complexType />
                 </xs:element>
 
@@ -86,6 +86,13 @@
                     </xs:complexType>
                 </xs:element>
 
+                <xs:element name="instrucciones">
+                    <xs:complexType mixed="true">
+                        <xs:choice maxOccurs="unbounded">
+                            <xs:element name="b" type="xs:string" />
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
