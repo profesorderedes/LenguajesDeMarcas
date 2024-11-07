@@ -88,7 +88,7 @@
 
                 <xs:element name="instrucciones">
                     <xs:complexType mixed="true">
-                        <xs:choice maxOccurs="unbounded">
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="b" type="xs:string" />
                         </xs:choice>
                     </xs:complexType>
