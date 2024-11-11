@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cliente" />
+                <xs:element ref="articulos" />
+            </xs:sequence>
+            <xs:attribute ref="codigo" />
+            <xs:attribute ref="estado" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="codigo" type="xs:positiveInteger" />
+
+    <xs:attribute name="estado">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="pagado" />
+                <xs:enumeration value="pendiente" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="cliente" />
+
+    <xs:element name="nombre" />
+
+    <xs:element name="articulos" />
+
+    <xs:element name="articulo" />
+
+    <xs:attribute name="iva" />
+
+    <xs:element name="descripcion" />
+
+    <xs:element name="precioUnitario" />
+
+    <xs:element name="unidades" />
+
+</xs:schema>
