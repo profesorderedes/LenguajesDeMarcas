@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="libro" />
+
+    <xs:attribute name="codigo" />
+
+    <xs:element name="titulo" />
+
+    <xs:element name="precio" />
+
+    <xs:element name="publicacion" />
+
+    <xs:attribute name="fecha" />
+
+    <xs:element name="autor" />
+
+    <xs:element name="capitulo" />
+
+    <xs:attribute name="num" />
+
+    <xs:element name="parrafo" />
+
+    <xs:element name="i" />
+
+</xs:schema>
