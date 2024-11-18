@@ -28,6 +28,7 @@
     <xs:element name="linia" />
     <xs:element name="promocio" />
     <xs:attribute name="fins"/>
+    <xs:element name="promocio_preu" />
 
     <xs:element name="mensual" />
     <xs:element name="total_mensual" />
