@@ -58,7 +58,7 @@
     <xs:element name="parrafo">
         <xs:complexType mixed="true">
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="i" />
+                <xs:element ref="i" />
             </xs:choice>
         </xs:complexType>
     </xs:element>
