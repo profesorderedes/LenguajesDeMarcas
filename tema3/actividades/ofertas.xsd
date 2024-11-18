@@ -8,6 +8,7 @@
 
     <xs:element name="nom" />
     <xs:element name="nom_companyia" />
+    <xs:element name="fibra" />
     <xs:element name="velocitat_transferencia" />
     <xs:attribute name="unitat" />
 
