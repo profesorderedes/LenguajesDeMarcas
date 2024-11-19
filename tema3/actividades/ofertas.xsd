@@ -1,33 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    
-    <xs:element name="connexions_ADSL" />
-    <xs:element name="oferta" />
-    <xs:attribute name="id"/>
 
-    <xs:element name="nom" />
-    <xs:element name="nom_companyia" />
-    <xs:element name="fibra" />
-    <xs:element name="velocitat_transferencia" />
-    <xs:attribute name="unitat" />
+    <xs:element name="connexions_ADSL">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="oferta" maxOccurs="unbounded" />
+                <xs:element ref="ofertes_actives" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
-    <xs:element name="pujada" />
-    <xs:element name="baixada" />
-    <xs:element name="preu" />
-    <xs:attribute name="moneda"/>
+    <xs:element name="oferta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom" />
+                <xs:element ref="nom_companyia" />
+                <xs:element ref="fibra" minOccurs="0" />
+                <xs:element ref="velocitat_transferencia" />
+                <xs:element ref="preu" />
+            </xs:sequence>
+            <xs:attribute ref="id" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="id" type="xs:positiveInteger" />
+
+    <xs:element name="nom" type="xs:string" />
+
+    <xs:element name="nom_companyia" type="xs:string" />
+
+    <xs:element name="fibra">
+        <xs:complexType />
+    </xs:element>
+
+    <xs:element name="velocitat_transferencia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pujada" />
+                <xs:element ref="baixada" />
+            </xs:sequence>
+            <xs:attribute ref="unitat" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="unitat">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="kbps" />
+                <xs:enumeration value="Mbps" />
+                <xs:enumeration value="Gbps" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="pujada">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:fractionDigits value="3" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="baixada" type="xs:positiveInteger" />
+
+    <xs:element name="preu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alta" />
+                <xs:element ref="linia" />
+                <xs:element ref="promocio" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="mensual" />
+                <xs:element ref="total_mensual" />
+                <xs:element ref="extres" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="moneda" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="moneda" />
 
     <xs:element name="alta" />
-    <xs:attribute name="gratis"/>
-    <xs:attribute name="permanencia"/>
+    <xs:attribute name="gratis" />
+    <xs:attribute name="permanencia" />
 
     <xs:element name="permanencia_alta" />
-    <xs:attribute name="temps"/>
-    <xs:attribute name="quantitat"/>
+    <xs:attribute name="temps" />
+    <xs:attribute name="quantitat" />
 
     <xs:element name="linia" />
     <xs:element name="promocio" />
-    <xs:attribute name="fins"/>
+    <xs:attribute name="fins" />
     <xs:element name="promocio_preu" />
 
     <xs:element name="mensual" />
