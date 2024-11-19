@@ -81,21 +81,30 @@
     <xs:attribute name="moneda" />
 
     <xs:element name="alta" />
+
     <xs:attribute name="gratis" />
+
     <xs:attribute name="permanencia" />
 
     <xs:element name="permanencia_alta" />
     <xs:attribute name="temps" />
+
     <xs:attribute name="quantitat" />
 
     <xs:element name="linia" />
+
     <xs:element name="promocio" />
+
     <xs:attribute name="fins" />
+
     <xs:element name="promocio_preu" />
 
     <xs:element name="mensual" />
+
     <xs:element name="total_mensual" />
+
     <xs:element name="extres" />
+    
     <xs:element name="ofertes_actives" />
 
 </xs:schema>
