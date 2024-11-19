@@ -50,7 +50,7 @@ L'atribut quantitat pot prendre valors sense decimals sencers positius amb el 0 
         <nom_companyia>
             Jazztel</nom_companyia>
         <fibra />
-        <velocitat_transferencia unitat="Mbps">
+        <velocitat_transferencia unitat="Gbps">
             <pujada>300</pujada>
             <baixada>300</baixada>
         </velocitat_transferencia>

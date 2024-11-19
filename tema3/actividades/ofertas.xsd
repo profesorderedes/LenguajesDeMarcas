@@ -20,7 +20,7 @@
                 <xs:element ref="velocitat_transferencia" />
                 <xs:element ref="preu" />
             </xs:sequence>
-            <xs:attribute ref="id" use="required"/>
+            <xs:attribute ref="id" use="required" />
         </xs:complexType>
     </xs:element>
 
@@ -40,7 +40,7 @@
                 <xs:element ref="pujada" />
                 <xs:element ref="baixada" />
             </xs:sequence>
-            <xs:attribute ref="unitat" use="required"/>
+            <xs:attribute ref="unitat" use="required" />
         </xs:complexType>
     </xs:element>
 
@@ -74,7 +74,7 @@
                 <xs:element ref="total_mensual" />
                 <xs:element ref="extres" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
-            <xs:attribute ref="moneda" use="required"/>
+            <xs:attribute ref="moneda" use="required" />
         </xs:complexType>
     </xs:element>
 
@@ -83,36 +83,72 @@
     <xs:element name="alta">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="permanencia_alta" minOccurs="0"/>
+                <xs:element ref="permanencia_alta" minOccurs="0" />
             </xs:sequence>
             <xs:attribute ref="gratis" use="required" />
             <xs:attribute ref="permanencia" use="optional" />
         </xs:complexType>
     </xs:element>
 
-    <xs:attribute name="gratis" />
+    <xs:attribute name="gratis" type="TipoSiNo" />
 
-    <xs:attribute name="permanencia" />
+    <xs:attribute name="permanencia" type="TipoSiNo" />
 
-    <xs:element name="permanencia_alta" />
-    <xs:attribute name="temps" />
+    <xs:element name="permanencia_alta">
+        <xs:complexType>
+            <xs:attribute ref="temps" use="required" />
+            <xs:attribute ref="quantitat" use="required" />
+        </xs:complexType>
+    </xs:element>
 
-    <xs:attribute name="quantitat" />
+    <xs:attribute name="temps">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="dies" />
+                <xs:enumeration value="mesos" />
+                <xs:enumeration value="anys" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
 
-    <xs:element name="linia" />
+    <xs:attribute name="quantitat" type="xs:nonNegativeInteger" />
 
-    <xs:element name="promocio" />
+    <xs:element name="linia" type="TipoPrecio" />
 
-    <xs:attribute name="fins" />
+    <xs:element name="promocio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="promocio_preu" />
+            </xs:sequence>
+            <xs:attribute ref="fins" use="optional" />
+        </xs:complexType>
+    </xs:element>
 
-    <xs:element name="promocio_preu" />
+    <xs:attribute name="fins" type="xs:date" />
 
-    <xs:element name="mensual" />
+    <xs:element name="promocio_preu" type="TipoPrecio" />
 
-    <xs:element name="total_mensual" />
+    <xs:element name="mensual" type="TipoPrecio" />
 
-    <xs:element name="extres" />
+    <xs:element name="total_mensual" type="TipoPrecio" />
 
-    <xs:element name="ofertes_actives" />
+    <xs:element name="extres" type="xs:string" />
+
+    <xs:element name="ofertes_actives" type="xs:string" />
+
+    <!-- Tipos personalizados -->
+
+    <xs:simpleType name="TipoSiNo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Si" />
+            <xs:enumeration value="No" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
 
 </xs:schema>
