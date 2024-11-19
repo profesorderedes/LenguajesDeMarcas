@@ -20,7 +20,7 @@
                 <xs:element ref="velocitat_transferencia" />
                 <xs:element ref="preu" />
             </xs:sequence>
-            <xs:attribute ref="id" />
+            <xs:attribute ref="id" use="required"/>
         </xs:complexType>
     </xs:element>
 
@@ -40,7 +40,7 @@
                 <xs:element ref="pujada" />
                 <xs:element ref="baixada" />
             </xs:sequence>
-            <xs:attribute ref="unitat" />
+            <xs:attribute ref="unitat" use="required"/>
         </xs:complexType>
     </xs:element>
 
@@ -74,13 +74,21 @@
                 <xs:element ref="total_mensual" />
                 <xs:element ref="extres" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
-            <xs:attribute ref="moneda" />
+            <xs:attribute ref="moneda" use="required"/>
         </xs:complexType>
     </xs:element>
 
-    <xs:attribute name="moneda" />
+    <xs:attribute name="moneda" fixed="Euro" />
 
-    <xs:element name="alta" />
+    <xs:element name="alta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="permanencia_alta" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="gratis" use="required" />
+            <xs:attribute ref="permanencia" use="optional" />
+        </xs:complexType>
+    </xs:element>
 
     <xs:attribute name="gratis" />
 
@@ -104,7 +112,7 @@
     <xs:element name="total_mensual" />
 
     <xs:element name="extres" />
-    
+
     <xs:element name="ofertes_actives" />
 
 </xs:schema>
