@@ -7,6 +7,16 @@
             <xs:sequence>
                 <xs:element ref="patron1" />
                 <xs:element ref="patron2" />
+                <xs:element ref="patron3" />
+                <xs:element ref="patron4" />
+                <xs:element ref="patron5" />
+                <xs:element ref="patron6" />
+                <xs:element ref="patron7" />
+                <xs:element ref="patron8" />
+                <xs:element ref="patron9" />
+                <xs:element ref="patron10" />
+                <xs:element ref="patron11" />
+                <xs:element ref="patron12" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -24,7 +34,98 @@
         <xs:simpleType>
             <xs:restriction base="xs:string">
                 <!-- Tres caracteres cualesquiera y dos cifras -->
-                <xs:pattern value=""/>
+                <xs:pattern value="...\d\d" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron3">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Tres caracteres no dígitos seguidos por un dígito -->
+                <xs:pattern value="\D\D\D\d" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron4">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Dos caracteres no dígitos seguidos de cero o más dígitos -->
+                <xs:pattern value="\D\D\d*" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron5">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Dos o más caracteres de cualquier tipo -->
+                <xs:pattern value="..+" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron6">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Uno o dos caracteres -->
+                <xs:pattern value="..?" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron7">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Empieza por a, b o c, y luego sigue uno o más caracteres cualesquiera -->
+                <xs:pattern value="[abc].+" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron8">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Una letra minúscula seguida de una letra mayúscula -->
+                <xs:pattern value="[a-z][A-Z]" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron9">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Número de 10 cifras -->
+                <xs:pattern value="\d{10}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron10">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Las letras "alu" seguidas por cuatro cifras o más. -->
+                <xs:pattern value="alu\d{4,}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron11">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Entre cuatro y ocho caracteres -->
+                <xs:pattern value=".{4,8}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron12">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Un carácter o más, pero sólo se permiten letras
+                 y números -->
+                <xs:pattern value="" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>

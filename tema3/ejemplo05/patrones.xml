@@ -4,6 +4,27 @@
     xsi:noNamespaceSchemaLocation="patrones.xsd">
 
     <patron1>$a1 </patron1>
-    <patron2>a$q93</patron2>
+
+    <patron2>q1q93</patron2>
+
+    <patron3>q t7</patron3>
+
+    <patron4>ab12</patron4>
+
+    <patron5>1xy</patron5>
+
+    <patron6>a$</patron6>
+
+    <patron7>b7htd47"f$</patron7>
+
+    <patron8>gG</patron8>
+
+    <patron9>1234567890</patron9>
+
+    <patron10>alu2902</patron10>
+
+    <patron11>d67$·wn7</patron11>
+
+    <patron12>xml2781</patron12>
 
 </patrones>
