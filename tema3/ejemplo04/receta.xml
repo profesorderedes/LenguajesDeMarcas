@@ -31,7 +31,7 @@
     <!-- Etiqueta vacía -->
     <alergias />
 
-    <grupo_sanguineo tipo="A+" />
+    <grupo_sanguineo tipo="AB+" />
 
     <instrucciones> Esta medicación debe tomarse en <b>ayunas</b>. No deben superarse los <b>cuatro</b>
         comprimidos al día. 

@@ -72,7 +72,14 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:attribute name="numColegiado" type="xs:string" />
+    <!-- El número de colegiado estará formado por siete u ocho cifras. -->
+    <xs:attribute name="numColegiado">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
 
     <xs:element name="tipo_paciente">
         <xs:complexType>
@@ -117,7 +124,13 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:attribute name="tipo" type="xs:string" />
+    <xs:attribute name="tipo" >
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="(A|B|AB|0)[-+]" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
 
     <xs:element name="instrucciones">
         <xs:complexType mixed="true">

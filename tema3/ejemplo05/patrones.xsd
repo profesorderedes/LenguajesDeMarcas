@@ -125,7 +125,7 @@
             <xs:restriction base="xs:string">
                 <!-- Un carácter o más, pero sólo se permiten letras
                  y números -->
-                <xs:pattern value="" />
+                <xs:pattern value="([a-z]|[A-Z]|\d)+" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
