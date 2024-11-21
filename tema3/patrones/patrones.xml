@@ -3,9 +3,9 @@
 <patrones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="patrones.xsd">
 
-    <ej1></ej1>
-    <ej2></ej2>
-    <ej3></ej3>
+    <ej1>2q</ej1>
+    <ej2>26</ej2>
+    <ej3>%1</ej3>
     <ej4></ej4>
     <ej5></ej5>
     <ej6></ej6>

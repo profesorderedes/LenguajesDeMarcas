@@ -24,7 +24,7 @@
     <xs:element name="ej1">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="([a-z]|[A-Z]|\d){2}" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -32,7 +32,7 @@
     <xs:element name="ej2">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d\d" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -40,7 +40,7 @@
     <xs:element name="ej3">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\D\d" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
