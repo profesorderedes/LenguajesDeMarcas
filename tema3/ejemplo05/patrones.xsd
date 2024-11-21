@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="patrones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="patron1" />
+                <xs:element ref="patron2" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="patron1">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Cuatro caracteres -->
+                <xs:pattern value="...." />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="patron2">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Tres caracteres cualesquiera y dos cifras -->
+                <xs:pattern value=""/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+</xs:schema>

@@ -2,6 +2,8 @@
 
 <patrones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="patrones.xsd">
-    
+
+    <patron1>$a1 </patron1>
+    <patron2>a$q93</patron2>
 
 </patrones>
