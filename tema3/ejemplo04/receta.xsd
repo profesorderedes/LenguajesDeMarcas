@@ -76,7 +76,8 @@
     <xs:attribute name="numColegiado">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <!-- <xs:pattern value="\d{7,8}" />-->
+                <xs:pattern value="\d\d\d\d\d\d\d\d?" />
             </xs:restriction>
         </xs:simpleType>
     </xs:attribute>

@@ -45,10 +45,11 @@
         </xs:complexType>
     </xs:element>
 
+    <!-- El código está formado por las letras LIB seguidas de cuatro cifras. -->
     <xs:attribute name="codigo">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:length value="7" />
+                <xs:pattern value="LIB\d{4}" />
             </xs:restriction>
         </xs:simpleType>
     </xs:attribute>

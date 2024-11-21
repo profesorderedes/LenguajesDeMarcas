@@ -16,7 +16,7 @@
 
     <precio>2.89</precio>
 
-    <medico numColegiado="171612713">Juan Ríos</medico>
+    <medico numColegiado="17161213">Juan Ríos</medico>
 
     <!-- Tipo de paciente: habitual o de urgencias -->
     <tipo_paciente>
