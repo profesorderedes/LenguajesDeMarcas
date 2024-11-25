@@ -48,7 +48,7 @@
     <xs:element name="ej4">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d{8}" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -56,7 +56,7 @@
     <xs:element name="ej5">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d*" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -64,7 +64,7 @@
     <xs:element name="ej6">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d+" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -72,7 +72,7 @@
     <xs:element name="ej7">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="[A-D]\d\d" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -80,7 +80,7 @@
     <xs:element name="ej8">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="[A-D]\d\d?" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -88,7 +88,7 @@
     <xs:element name="ej9">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d{8}[A-Z]" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -96,7 +96,7 @@
     <xs:element name="ej10">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d{8}[A-Za-z]" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -104,7 +104,7 @@
     <xs:element name="ej11">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:pattern value="" />
+                <xs:pattern value="\d{1,4} \d{9}" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
