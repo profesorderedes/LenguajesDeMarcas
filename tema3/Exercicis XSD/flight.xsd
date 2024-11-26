@@ -2,12 +2,43 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="flight" />
-    <xs:element name="airline" />
-    <xs:element name="flightno" />
-    <xs:element name="origin" />
-    <xs:element name="destination" />
-    <xs:element name="departure" />
-    <xs:element name="arrival" />
+    <xs:element name="flight">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="airline" />
+                <xs:element ref="flightno" />
+                <xs:element ref="origin" />
+                <xs:element ref="destination" />
+                <xs:element ref="departure" />
+                <xs:element ref="arrival" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="airline" type="xs:string" />
+
+    <xs:element name="flightno" type="xs:positiveInteger" />
+
+    <xs:element name="origin" type="TipoSoloPalabras" />
+
+    <xs:element name="destination" type="TipoSoloPalabras" />
+
+    <xs:element name="departure" type="TipoHora" />
+
+    <xs:element name="arrival" type="TipoHora" />
+
+    <!-- Nuestro tipos-->
+
+    <xs:simpleType name="TipoSoloPalabras">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z ]+" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoHora">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([1-9]|1[0-2]):[0-5]\d[ap]m" />
+        </xs:restriction>
+    </xs:simpleType>
 
 </xs:schema>

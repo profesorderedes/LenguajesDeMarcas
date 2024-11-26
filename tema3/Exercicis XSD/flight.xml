@@ -3,8 +3,8 @@
     xsi:noNamespaceSchemaLocation="flight.xsd">
     <airline>Delta</airline>
     <flightno>22</flightno>
-    <origin>Atlanta</origin>
+    <origin>Los Angeles</origin>
     <destination>Paris</destination>
     <departure>5:40pm</departure>
-    <arrival>8:10am</arrival>
+    <arrival>12:10am</arrival>
 </flight>
