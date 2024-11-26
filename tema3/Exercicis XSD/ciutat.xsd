@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="ciutat" />
-    <xs:element name="nom" />
-    <xs:element name="state" />
-    <xs:element name="description" />
-    <xs:element name="population" />
-    <xs:element name="location" />
-    <xs:element name="latitude" />
-    <xs:element name="longitude" />
+    <xs:element name="ciutat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom"></xs:element>
+                <xs:element ref="state"></xs:element>
+                <xs:element ref="description"></xs:element>
+                <xs:element ref=" population"></xs:element>
+                <xs:element ref=" location"></xs:element>
+                <xs:element ref="latitude"></xs:element>
+                <xs:element ref="longitude"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="nom" type="xs:string" />
+
+    <xs:element name="state">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{2}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="description" type="xs:string" />
+
+    <xs:element name="population" type="xs:positiveInteger"></xs:element>
+
+    <xs:element name="location" type="xs:string"/>
+
+    <xs:element name="latitude">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d\d? \d\d?' \d\d?&quot; [NS]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="longitude">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{1,2} \d\d?' \d\d?&quot; [EW]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
 
 </xs:schema>
