@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="flight.xsd">
+    <airline>Delta</airline>
+    <flightno>22</flightno>
+    <origin>Atlanta</origin>
+    <destination>Paris</destination>
+    <departure>5:40pm</departure>
+    <arrival>8:10am</arrival>
+</flight>
