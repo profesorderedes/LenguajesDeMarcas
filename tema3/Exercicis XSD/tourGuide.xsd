@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="tourGuide">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="city" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="city">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="cityName" />
+                <xs:element ref="adminUnit" />
+                <xs:element ref="country" />
+                <xs:element ref="population" />
+                <xs:element ref="area" />
+                <xs:element ref="elevation" />
+                <xs:element ref="longitude" />
+                <xs:element ref="latitude" />
+                <xs:element ref="description" />
+                <xs:element ref="history" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cityName" type="xs:string" />
+
+    <xs:element name="adminUnit" type="xs:string" />
+
+    <xs:element name="country" type="xs:string" />
+
+    <xs:element name="population" type="xs:positiveInteger" />
+
+    <xs:element name="area" type="xs:positiveInteger" />
+
+    <xs:element name="elevation" type="xs:positiveInteger" />
+
+    <xs:element name="longitude" type="TipoDecimal" />
+
+    <xs:element name="latitude" type="TipoDecimal" />
+
+    <xs:element name="description" type="xs:string" />
+
+    <xs:element name="history" type="xs:string" />
+
+    <!-- Tipos definidos por nosotros -->
+    
+    <xs:simpleType name="TipoDecimal">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
