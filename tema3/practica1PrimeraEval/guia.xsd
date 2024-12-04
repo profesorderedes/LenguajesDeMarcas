@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="guia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cadena" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cadena">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="programa" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="nombre" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="nombre"  type="xs:string"/>
+
+    <xs:element name="programa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="descripcion"/>
+                <xs:element ref="inicio"/>
+                <xs:element ref="fin"/>
+                <xs:element ref="links" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="tipo" use="required"/>
+            <xs:attribute ref="calificacion" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:attribute name="tipo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="INFORMATIVO"/>
+                <xs:enumeration value="SERIE"/>
+                <xs:enumeration value="PELÍCULA"/>
+                <xs:enumeration value="DOCUMENTAL"/>
+                <xs:enumeration value="OTROS"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="calificacion">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d?\d[+]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="nombre" type="xs:string"/>
+
+    <xs:element name="descripcion">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="b" />
+            </xs:choice> 
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="b" type="xs:string"/>
+
+    <xs:element name="inicio" type="TipoTiempo"/>
+
+    <xs:attribute name="fecha" type="xs:date"/>
+
+    <xs:attribute name="hora" type="xs:time"/>
+
+    <xs:element name="fin" type="TipoTiempo"/>
+
+    <xs:element name="links">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="link" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="link">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="nombre" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- Nuestros Tipos-->
+
+    <xs:complexType name="TipoTiempo">
+        <xs:attribute ref="fecha" use="required"/>
+        <xs:attribute ref="hora" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

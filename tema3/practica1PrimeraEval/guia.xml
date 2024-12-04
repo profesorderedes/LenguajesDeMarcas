@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<guia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="guia.xsd">
+
+    <cadena nombre="TVE1">
+        <programa tipo="INFORMATIVO" calificacion="0+">
+            <nombre>Telediario 1</nombre>
+            <descripcion>Informativo, Noticias</descripcion>
+            <inicio fecha="2024-11-22" hora="15:00:00" />
+            <fin fecha="2024-11-22" hora="15:50:00" />
+        </programa>
+        <programa tipo="INFORMATIVO" calificacion="0+">
+            <nombre>Informativo territorial</nombre>
+            <descripcion>Informativo, Noticias. Espacio dedicado a la
+                información autonómica.</descripcion>
+            <inicio fecha="2024-11-22" hora="15:50:00" />
+            <fin fecha="2024-11-22" hora="16:15:00" />
+        </programa>
+        <programa tipo="INFORMATIVO" calificacion="0+">
+            <nombre>El tiempo</nombre>
+            <descripcion>Información meteorológica de los próximos días a nivel
+                estatal. Este espacio está avalado por el Instituto Nacional de
+                Meteorología.</descripcion>
+            <inicio fecha="2024-11-22" hora="16:15:00" />
+            <fin fecha="2024-11-22" hora="16:30:00" />
+        </programa>
+        <programa tipo="SERIE" calificacion="12+">
+            <nombre>Salón de té La Moderna</nombre>
+            <descripcion>
+                <b>Capítulo: 44, Temporada: 3 Serie</b>. Telenovela (+12). Pepita sigue fría con
+                Emiliano tras la encerrona que le hizo para manipular a su esposa, y Paula se siente
+                frustrada por la información que Iván le dio sobre su negocio, generando
+                preocupación en sus padres. Paralelamente, Iván le admite a Mercedes que ha
+                manipulado a su hermana, provocando su enfado.</descripcion>
+            <inicio fecha="2024-11-22" hora="16:30:00" />
+            <fin fecha="2024-11-22" hora="17:30:00" />
+        </programa>
+        <programa tipo="SERIE" calificacion="12+">
+            <nombre>La promesa</nombre>
+            <descripcion><b>Capítulo: 348, Temporada: 2</b>. Jana se disculpa con Manuel por haber
+                abandonado la cena y acuerdan que Jana no va a volver a cenar con el resto de la
+                familia hasta que se sienta preparada. Alonso, por su parte, accede a acompañar a su
+                mujer a la fiesta de los condes de Urbizu, siempre y cuando ella abandone la guerra
+                contra los duques de los Infantes.</descripcion>
+            <inicio fecha="2024-11-22" hora="17:30:00" />
+            <fin fecha="2024-11-22" hora="18:30:00" />
+        </programa>
+        <programa tipo="PELÍCULA" calificacion="16+">
+            <nombre>Arma letal</nombre>
+            <descripcion> Martin y Roger son dos veteranos de Vietnam que hacen de policías en Los
+                Ángeles. Aunque son compañeros, son muy diferentes. Martin tiene fama de ser una
+                máquina de matar y sus actuaciones no siempre se ajustan a la ley. En cambio, Roger
+                es un profesional con una sólida reputación y un entorno familiar estable. <b>
+                Director</b>: Richard Donner, <b>Interpretes</b>: Mel Gibson, Danny Glover, Darlene
+                Love, Gary Busey, Mitch Ryan, Tom Atkins </descripcion>
+            <inicio fecha="2024-11-21" hora="22:01:00" />
+            <fin fecha="2024-11-21" hora="23:51:00" />
+            <links>
+                <link
+                    nombre="FilmAffinity">https://www.filmaffinity.com/es/film453
+                    476.html</link>
+                <link
+                    nombre="IMDB">https://www.imdb.com/title/tt0093409/</link>
+            </links>
+        </programa>
+    </cadena>
+    <cadena nombre="Paramount">
+        <programa tipo="SERIE" calificacion="13+">
+            <nombre>Agatha Christie: Poirot</nombre>
+            <descripcion><b>Capítulo: 1, Temporada: 2</b>. Episodio: Peligro en la casa de la punta
+                (I) Poirot se encuentra en un complejo hotelero lujoso y exclusivo. Allí conoce a
+                una hermosa heredera cuya vida corre peligro.</descripcion>
+            <inicio fecha="2024-11-22" hora="15:05:00" />
+            <fin fecha="2024-11-22" hora="16:10:00" />
+            <links>
+                <link
+                    nombre="IMDB">https://www.imdb.com/title/tt0094525/</link>
+            </links>
+        </programa>
+        <programa tipo="SERIE" calificacion="7+">
+            <nombre>Los misterios de Murdoch</nombre>
+            <descripcion>
+                <b>Capítulo: 2, Temporada: 9</b>, Episodio: Mark Twain. El famoso escritor Mark
+                Twain sufre un atentado, debido a sus opiniones políticas, y Murdoch investiga lo
+                sucedido. Sin embargo, el inspector enfrenta una disyuntiva: cumplir con su deber
+                profesional o mantener el respeto de sus compatriotas.</descripcion>
+            <inicio fecha="2024-11-22" hora="16:10:00" />
+            <fin fecha="2024-11-22" hora="17:10:00" />
+            <links>
+                <link
+                    nombre="FilmAffinity">https://www.filmaffinity.com/es/film166
+                    375.html</link>
+                <link
+                    nombre="IMDB">https://www.imdb.com/title/tt1091909/</link>
+            </links>
+        </programa>
+    </cadena>
+</guia>
