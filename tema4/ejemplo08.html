@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 8</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid red;
+        }
+
+        table {
+            border-collapse: collapse;
+            /*border-spacing: 20px;*/
+        }
+
+        td {
+            padding: 5px;
+            text-align: center;
+            width: 150px;
+            height: 50px;
+        }
+
+        .letra-verde{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas en HTML</h1>
+
+    <table>
+        <caption>Listado de empresas</caption>
+        <tr>
+            <th>Empresa</th>
+            <th>Presidente</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>McDonald's</td>
+            <td>John McDonald</td>
+            <td>Estados Unidos</td>
+        </tr>
+        <tr>
+            <td>Burger King</td>
+            <td>Stephen King</td>
+            <td>Estados Unidos</td>
+        </tr>
+        <tr>
+            <td>Inditex</td>
+            <td>Amancio Ortega</td>
+            <td>España</td>
+        </tr>
+
+        <tr>
+            <td>Indra Sistemas</td>
+            <td>José Vicente de los Mozos</td>
+            <td>España</td>
+        </tr>
+
+    </table>
+
+    <h2>Unir filas y columnas</h2>
+
+    <table>
+        <caption>Listado de empresas</caption>
+        <tr>
+            <th colspan="2">Empresa y presidente</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>McDonald's</td>
+            <td>John McDonald</td>
+            <td rowspan="2" class="letra-verde">Estados Unidos</td>
+        </tr>
+        <tr>
+            <td>Burger King</td>
+            <td>Stephen King</td>
+        </tr>
+        <tr>
+            <td>Inditex</td>
+            <td>Amancio Ortega</td>
+            <td rowspan="2" class="letra-verde">España</td>
+        </tr>
+
+        <tr>
+            <td>Indra Sistemas</td>
+            <td>José Vicente de los Mozos</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
