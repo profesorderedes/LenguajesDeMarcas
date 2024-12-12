@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 12</title>
+    <style>
+        textarea {
+            width: 250px;
+            height: 75px;
+            resize: none;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Formularios</h1>
 
     <form action="gestion_datos.php" method="get">
-        Nombre<br>
-        <input type="text" name="nombre"><br>
+        <label for="nombre">Nombre</label><br>
+        <input id="nombre" type="text" name="nombre"><br>
 
-        Apellidos<br>
-        <input type="text" name="apellidos"><br>
+        <label for="apellidos">Apellidos</label><br>
+        <input id="apellidos" type="text" name="apellidos"><br>
 
-        Password<br>
-        <input type="password" name="password"><br>
-        Repita el password<br>
-        <input type="password" name="password2"><br>
+        <label for="password">Password</label><br>
+        <input id="password" type="password" name="password"><br>
+
+        <label for="password2">Repita el password</label><br>
+        <input id="password2" type="password" name="password2"><br>
 
         Elija su actividad<br>
-        <input type="radio" value="estudiante" name="actividad">Estudiante
-        <input type="radio" value="profesional" name="actividad" checked>Profesional
-        <input type="radio" value="jubilado" name="actividad">Jubilado<br>
+        <input id="act_estudiante" type="radio" value="estudiante" name="actividad"><label
+            for="act_estudiante">Estudiante</label>
 
-        
+        <input id="act_profesional" type="radio" value="profesional" name="actividad" checked><label
+            for="act_profesional">Profesional</label>
+
+        <input id="act_jubilado" type="radio" value="jubilado" name="actividad"><label
+            for="act_jubilado">Jubilado</label><br>
+
+        Es mayor de edad?<br>
+        <input id="edad_si" type="radio" value="si" name="edad" checked><label for="edad_si">Sí</label>
+
+        <input id="edad_no" type="radio" value="no" name="edad"><label for="edad_no">No</label><br>
+
+        <label for="comentarios">Escriba sus comentarios</label><br>
+        <textarea name="comentarios" id="comentarios"></textarea><br>
+
+        <input id="terminos_uso" type="checkbox" name="terminos_uso" value="aceptados" checked>
+        <label for="terminos_uso">Acepto los términos de uso</label><br>
+
+        <input id="publicidad" type="checkbox" name="publicidad" value="si">
+        <label for="publicidad">Me gustaría recibir publicidad en mi correo</label><br>
+
         <br>
         <input type="submit" value="Registrarme">
 
     </form>
 </body>
+
 </html>
