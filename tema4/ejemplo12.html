@@ -15,6 +15,10 @@
         fieldset {
             width: 400px;
         }
+
+        #descuento{
+            background-color: yellow;
+        }
     </style>
 </head>
 
@@ -26,16 +30,16 @@
             <legend>Datos personales</legend>
 
             <label for="nombre">Nombre</label><br>
-            <input id="nombre" type="text" name="nombre"><br>
+            <input id="nombre" type="text" name="nombre" placeholder="Tu nombre..." required autofocus autocomplete="off"><br>
 
             <label for="apellidos">Apellidos</label><br>
-            <input id="apellidos" type="text" name="apellidos"><br>
+            <input id="apellidos" type="text" name="apellidos" placeholder="Tus apellidos..." required><br>
 
             <label for="password">Password</label><br>
-            <input id="password" type="password" name="password"><br>
+            <input id="password" type="password" name="password" placeholder="Elige un password"><br>
 
             <label for="password2">Repita el password</label><br>
-            <input id="password2" type="password" name="password2"><br>
+            <input id="password2" type="password" name="password2" placeholder="Confirma el password"><br>
 
             Elija su actividad<br>
             <input id="act_estudiante" type="radio" value="estudiante" name="actividad"><label
@@ -53,7 +57,7 @@
             <input id="edad_no" type="radio" value="no" name="edad"><label for="edad_no">No</label><br>
 
             <label for="comentarios">Escriba sus comentarios</label><br>
-            <textarea name="comentarios" id="comentarios"></textarea><br>
+            <textarea name="comentarios" id="comentarios" placeholder="Escribe tu opinión sobre la web"></textarea><br>
 
             <input id="terminos_uso" type="checkbox" name="terminos_uso" value="aceptados" checked>
             <label for="terminos_uso">Acepto los términos de uso</label><br>
@@ -92,6 +96,9 @@
             <label for="correo">Correo electrónico</label><br>
             <input type="email" name="correo" id="correo"><br>
 
+            <label for="descuento">Código de descuento</label><br>
+            <input type="text" name="descuento" id="descuento" value="#OFERTADIC2024" disabled><br>
+            
             <br>
             <input type="submit" value="Registrarme">
             <input type="reset" value="Borrar formulario">
