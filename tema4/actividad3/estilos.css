@@ -1,4 +1,36 @@
-h1{
+h1 {
     color: blue;
 }
 
+h2 {
+    color: red;
+}
+
+#img_grande {
+    width: 500px;
+}
+
+.img_pequenya {
+    width: 250px;
+}
+
+table {
+    border: 2px green solid;
+    padding: 5px;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+th {
+    color: green;
+}
+
+th, td {
+    border: 2px green solid;
+    padding: 5px;
+}
+
+#comentarios {
+    width: 400px;
+    height: 100px;
+}

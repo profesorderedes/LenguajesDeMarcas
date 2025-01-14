@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lenguajes</title>
+
+    <link rel="icon" type="image/x-icon" href="imgs/faviconJava.ico">
     <link rel="stylesheet" href="estilos.css">
+
 </head>
+
 <body>
+
     <h1>Lenguajes de programación</h1>
+
+    <img id="img_grande" src="imgs/lenguajes_de_programacion.png" alt="Lenguajes de programación logos">
+
+    <h2>Navegación</h2>
+
+    <ul>
+        <li>Inicio</li>
+        <li><a href="java.html">Java</a></li>
+        <li><a href="python.html">Python</a></li>
+    </ul>
+
+    <h2>Historia</h2>
+
+    <p>En los años 40, fueron los primeros compuatadores eléctricos. La velocidad y memoria limitadas frozaban a los
+        programadores a escribir programas tuneados a mano en ensalbadores. Eventualmente se vio que la programación en
+        lenguaje ensablador requieria un gran esfuerzo intelectual.</p>
+
+    <img class="img_pequenya" src="imgs/codigo_programa.jpg" alt="Código programa">
+
+    <p>Una propuesta temprana para un lenguaje de alto nivel fue <i>Plankalkül</i>, desarollado por <b>Konrad Zuse</b>
+        para su computadora >1 entre 1942 y 1945, pero no implementado en aquel entonces. </p>
+
+    <p>Los primeros lenguajes diseñados para comunicar intrucciones a un computadora fueron escritos al principio de la
+        decada del 50. <i>Short Code</i>, de <b>Jhon Mauchly</b>, propuesto en 1949.</p>
+
+    <h2>Índice Tiobe</h2>
+
+    <p>El índice TIOBE o índice de la comunidad de programación TIOBE (en inglés: TIOBE programming community index)
+        mide la popularidad de los lenguajes de programación. El índice fue creado por la compañía TIOBE, con sede en
+        Eindhoven, Países Bajos.</p>
+
+    <img class="img_pequenya" src="imgs/indice_TIOBE.png" alt="Índice TIOBE">
+
+    <p>La clasificación en enero de 2023 es:</p>
+
+    <table>
+        <tr>
+            <th>Posición</th>
+            <th>Lenguajes</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Python</td>
+            <td>16,36%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>C</td>
+            <td>16,26%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>C++</td>
+            <td>12,91%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Java</td>
+            <td>12,21%</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>C#</td>
+            <td>5,73%</td>
+        </tr>
+    </table>
+
+    <br><hr>
+
+    <h2>Comentarios</h2>
+
+    <form action="comentarios.jsp" method="get">
+
+        <label for="nombre">Nombre</label> <br>
+        <input id="nombre" type="text" name="nombre" placeholder="Tu nombre..."><br>
+        <br>
+        <label for="comentarios">Comentarios</label> <br>
+        <textarea name="comentarios" id="comentarios" placeholder="Comparte tus comentarios..."></textarea> <br>
+        <br>
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+
+    </form>
+
 </body>
+
 </html>
