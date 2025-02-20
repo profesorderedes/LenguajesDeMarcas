@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 26</title>
+    <style>
+        img {
+            width: 350px;
+            position: absolute;
+        }
+
+        .imagen1 {
+            border: 2px solid green;
+            z-index: 2;
+        }
+
+        .imagen2 {
+            top: 50px;
+            left: 50px;
+            border: 2px solid brown;
+        }
+
+        .imagen3 {
+            top: 75px;
+            left: 100px;
+            border: 2px solid blue;
+        }
+
+        .imagen4 {
+            top: 100px;
+            left: 200px;
+            border: 2px solid yellow;
+            z-index: -2;
+        }
+
+        .imagen5 {
+            top: 200px;
+            left: 120px;
+            border: 2px solid orange;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Collage - z-index</h1>
+
+    <div><img class="imagen1" src="imgs/arquitectura/andrea-leopardi-LjWC8V9_2f0-unsplash.jpg" alt="Edificio"></div>
+    <div><img class="imagen2" src="imgs/arquitectura/ben-dumond-VedK8_UlmkY-unsplash.jpg" alt="Edificio"></div>
+    <div><img class="imagen3" src="imgs/arquitectura/dil-5OOfwgaiUN8-unsplash.jpg" alt="Edificio"></div>
+    <div><img class="imagen4" src="imgs/arquitectura/halil-ibrahim-cetinkaya-WpAMwNNssJU-unsplash.jpg" alt="Edificio">
+    </div>
+    <div><img class="imagen5" src="imgs/arquitectura/jorge-percival-QW32kgFye3c-unsplash.jpg" alt="Edificio"></div>
+
+</body>
+
+</html>
