@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /* divs dentro de contenedor
+        .contenedor div{
+            color: red;
+        }*/
+
+        /* párrafos que sean hijos de contenedor 
+        .contenedor>p{
+            color: purple;
+        }
+        */
+
+        /* párrafos hijos de apartado 
+        .apartado>p{
+            color: green;
+        }
+        */
+
+        /* Párrafos que sean hermanos de algún párrafo 
+        p+p{
+            color: yellow;
+        }
+        */
+
+        /* apartados que sean hermanos de un apartado, apareciendo después 
+        pero no necesariamente pegados a él:
+        .apartado~.apartado{
+            color: brown;
+        }
+        */
+
+        /* divs que estén junto un hermano apartado */
+        .apartado+div{
+            color: peru;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Combinadores</h1>
+    <div class="contenedor">
+        <div class="apartado">
+            <p>Párrafo 1</p>
+            <p>Párrafo 2</p>
+            <p>Párrafo 3</p>
+            <p>Párrafo 4</p>
+        </div>
+        <div class="apartado">
+            <p>Párrafo 5</p>
+            <p>Párrafo 6</p>
+            <p>Párrafo 7</p>
+            <p>Párrafo 8</p>
+        </div>
+        <div class="contenido">
+            <p>Párrafo 9</p>
+            <p>Párrafo 10</p>
+            <p>Párrafo 11</p>
+            <p>Párrafo 12</p>
+        </div>
+        <div class="final">
+            <p>Párrafo 13</p>
+            <p>Párrafo 14</p>
+            <p>Párrafo 15</p>
+            <p>Párrafo 16</p>
+        </div>
+    </div>
+</body>
+
+</html>
