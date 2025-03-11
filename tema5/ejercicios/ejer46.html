@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act46</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 18, 22);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px auto 30px auto;
+        }
+
+        #contenedor {
+            max-width: 60%;
+            margin: auto;
+            border-top: 2px solid grey;
+            border-bottom: 2px solid grey;
+        }
+
+        #menu-izquierdo {
+            /* overflow: auto; */
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            margin: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        li:first-child {
+            text-decoration: none;
+        }
+
+        li:first-child>a {
+            color: chartreuse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Barra de menú Xataka</h1>
+
+    <div id="contenedor">
+        <ul id="menu-izquierdo">
+            <li><a href="#">BUSCAR</a></li>
+            <li><a href="#">ANÁLISIS</a></li>
+            <li><a href="#">XATAKA SELECCIÓN</a></li>
+            <li><a href="#">MÓVILES</a></li>
+            <li><a href="#">CIENCIA</a></li>
+            <li><a href="#">PRO</a></li>
+            <li><a href="#">NEWSLETTER</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
