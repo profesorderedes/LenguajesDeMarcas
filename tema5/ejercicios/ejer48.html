@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Act46</title>
+    <title>Act48</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <style>
         * {
@@ -24,20 +26,34 @@
         }
 
         #contenedor {
-            max-width: 60%;
+            overflow: auto;
+            max-width: 70%;
             margin: auto;
             border-top: 2px solid grey;
             border-bottom: 2px solid grey;
         }
 
-        #menu-izquierdo {
-            overflow: auto;
+        #menu-izquierdo,
+        #menu-derecho {
             list-style: none;
         }
 
-        li {
+        #menu-izquierdo>li {
             float: left;
             margin: 25px;
+        }
+
+        #menu-derecho {
+           float: right;
+        }
+
+        #menu-derecho>li {
+            float: right;
+            margin: 25px 0px 0px 15px;
+        }
+
+        #menu-derecho>li>a {
+            color: chartreuse;
         }
 
         a {
@@ -49,12 +65,17 @@
             text-decoration: underline;
         }
 
-        li:first-child {
+        #menu-izquierdo>li:first-child {
             text-decoration: none;
+            margin-left: 0px;
         }
 
         li:first-child>a {
             color: chartreuse;
+        }
+
+        .fa-brands, .fa-solid{
+            font-size: 1.2em;
         }
     </style>
 
@@ -65,13 +86,19 @@
 
     <div id="contenedor">
         <ul id="menu-izquierdo">
-            <li><a href="#">BUSCAR</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li><a href="#">ANÁLISIS</a></li>
             <li><a href="#">XATAKA SELECCIÓN</a></li>
             <li><a href="#">MÓVILES</a></li>
             <li><a href="#">CIENCIA</a></li>
             <li><a href="#">PRO</a></li>
             <li><a href="#">NEWSLETTER</a></li>
+        </ul>
+        <ul id="menu-derecho">
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
         </ul>
     </div>
 </body>

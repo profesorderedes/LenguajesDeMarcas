@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Act46</title>
 
     <style>
@@ -24,15 +25,16 @@
         }
 
         #contenedor {
-            max-width: 60%;
+            max-width: 80%;
             margin: auto;
             border-top: 2px solid grey;
             border-bottom: 2px solid grey;
+            overflow: auto;
         }
 
         #menu-izquierdo {
-            overflow: auto;
             list-style: none;
+            /* max-width: 70%; */
         }
 
         li {
@@ -56,6 +58,24 @@
         li:first-child>a {
             color: chartreuse;
         }
+
+        #menu-izquierdo li:first-child {
+            margin-left: 0px;
+        }
+
+        #menu-derecho {
+            list-style: none;
+        }
+
+        #menu-derecho li {
+            float: right;
+            margin: 5px;
+            margin-top: 25px;
+        }
+
+        #menu-derecho li>a {
+            color: chartreuse;
+        }
     </style>
 
 </head>
@@ -65,13 +85,19 @@
 
     <div id="contenedor">
         <ul id="menu-izquierdo">
-            <li><a href="#">BUSCAR</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li><a href="#">ANÁLISIS</a></li>
             <li><a href="#">XATAKA SELECCIÓN</a></li>
             <li><a href="#">MÓVILES</a></li>
             <li><a href="#">CIENCIA</a></li>
             <li><a href="#">PRO</a></li>
             <li><a href="#">NEWSLETTER</a></li>
+        </ul>
+        <ul id="menu-derecho">
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
         </ul>
     </div>
 </body>
