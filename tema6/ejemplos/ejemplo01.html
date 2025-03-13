@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 01</title>
+</head>
+
+<body>
+    <h1>Empezando con JavaScript</h1>
+
+    <script>
+        "use strict"
+
+        let precio = 10;
+        let nombre = "Pedro";
+        let apellidos = 'Martínez López';
+
+        let cliente = {
+            nombre: "Pepe",
+            dni: "20100100T",
+            colorPreferido: "verde"
+        };
+
+        console.log(precio);
+        console.log(nombre);
+
+        console.log(cliente.nombre);
+        console.log(cliente.colorPreferido);
+
+        console.log(cliente);
+
+        console.log(cliente["dni"]);
+
+        let mascota = {
+            nombre: 'Mino',
+            especie: 'Gato',
+            raza: 'Siamés',
+            edad: 5,
+            mostrar: function () {
+                console.log("Nombre: " + this.nombre + ", (" + this.especie + ")");
+            }
+        };
+
+        console.log(mascota.especie);
+        mascota.mostrar();
+        
+
+    </script>
+</body>
+
+</html>
