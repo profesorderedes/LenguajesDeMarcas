@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <style>
+        /********** TODA LA PÁGINA **********/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #contenedor {
+            max-width: 61rem;
+            margin: 0.5rem auto;
+        }
+
+        /********** COLUMNA IZQUIERDA **********/
+
+        #col-izquierda {
+            float: left;
+            /* Para que el contenido de la columna se adapte cuando la estrechemos */
+            max-width: 40rem;
+            padding: 0.3rem;
+            margin-right: 1rem;
+        }
+
+        .foto-con-play {
+            /* Para poder usar position: absolute en el icono de play */
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .icono-play {
+            position: absolute;
+            color: white;
+            font-size: 2.5rem;
+            bottom: 1rem;
+            left: 1rem;
+        }
+
+        .pie-foto {
+            text-align: right;
+            font-size: 0.7rem;
+            color: #777;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 0.8rem;
+        }
+
+        .pie-titulo {
+            margin-top: 0.7rem;
+            font-size: 0.7rem;
+        }
+
+        .autor {
+            text-transform: uppercase;
+        }
+
+        .icono-mensaje {
+            color: #999;
+            padding-left: 0.2rem;
+        }
+
+        .num-comentarios {
+            color: rgb(7, 93, 252);
+        }
+
+        .texto-noticia {
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 0.7rem;
+        }
+
+        /********** COLUMNA DERECHA **********/
+
+        #col-derecha {
+            float: left;
+            /* Para que el contenido de la columna se adapte cuando la estrechemos */
+            max-width: 20rem;
+            padding: 0.3rem;
+
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        .noticia-relacionada {
+            margin-top: 0.7rem;
+            /* Para que el div coja toda la imagen que contiene */
+            overflow: auto;
+        }
+
+        .foto-miniatura {
+            float: left;
+            width: 4rem;
+            margin-right: 0.7rem;
+        }
+
+        .texto-noticia-relacionada {
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .directo {
+            margin-top: 2.4rem;
+            margin-bottom: 0.6rem;
+            color: red;
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+
+        <div id="col-izquierda">
+
+            <div class="foto-con-play">
+                <img src="imgs/evergiven.png" alt="Buque Ever Given">
+                <i class="bi bi-play-circle icono-play"></i>
+            </div>
+
+            <p class="pie-foto">Los remolcadores consiguen mover el 'Ever Given', este lunes.</p>
+
+            <h2>El canal de Suez restablece el tráfico tras conseguir reflotar el buque atascado</h2>
+
+            <div class="pie-titulo">
+                <span class="autor">Marc Español | </span>
+                Ismailía
+                <i class="bi bi-chat-left-fill icono-mensaje"></i>
+                <span class="num-comentarios">
+                    33
+                </span>
+            </div>
+
+            <div class="texto-noticia">
+                Las maniobras logran desencallar el ‘Ever Given’ después de seis días. El presidente egipcio Al Sisi
+                dice que la crisis ha finalizado, pero más de 400 buques siguen a la espera para poder atravesar la vía.
+            </div>
+
+        </div>
+
+        <div id="col-derecha">
+
+            <h3>El déficit se dispara por encima del 10% del PIB en 2020 por la pandemia</h3>
+
+            <div class="pie-titulo">
+                <span class="autor">Laura Delle Femme | </span>
+                Madrid
+                <i class="bi bi-chat-left-fill icono-mensaje"></i>
+                <span class="num-comentarios">
+                    17
+                </span>
+            </div>
+
+            <div class="texto-noticia">
+                Los números rojos de las administraciones aumentaron por la caída de ingresos y la subida del gasto ante
+                la crisis.
+            </div>
+
+            <div class="noticia-relacionada">
+                <div class="foto-miniatura">
+                    <img src="imgs/graffiti.PNG" alt="Dummy image">
+                </div>
+
+                <p class="texto-noticia-relacionada">
+                    El coronavirus provoca la mayor subida del gasto público en democracia
+                </p>
+            </div>
+
+            <div class="directo">
+                EN DIRECTO
+            </div>
+
+            <h3>Madrid vuelve a estar en riesgo muy alto al superar los 250 casos por 100.000 habitantes</h3>
+
+            <div class="texto-noticia">
+                Sanidad comunica 15.501 nuevos contagios por coronavirus y 189 muertes desde el viernes.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
