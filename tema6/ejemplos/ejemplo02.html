@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+</head>
+
+<body>
+    <h1>Ejemplo 2</h1>
+
+    <script>
+        "use strict"
+
+        // Función media (toma tres valores y devuelve la media)
+        function media(num1, num2, num3) {
+            return (num1 + num2 + num3) / 3;
+        }
+
+        console.log(media(1, 2, 3));
+
+        // Mostrar los nombres de los atributos de un objeto
+
+        let factura = {
+            cliente: "Paula Martínez",
+            dni: "12911922T",
+            tel: "555 28 91"
+        }
+
+        for (let clave in factura) {
+            console.log(clave + " = " + factura[clave]);
+        }
+
+        // Recorrer los valores de un array
+
+        let marcas = ['Coca-cola', 'Fanta', 'SevenUp'];
+
+        for (let marca of marcas) {
+            console.log(marca);
+        }
+
+        // Ejecutar una acción sobre todos los valores de un array
+
+        console.log("Mostrando las marcas con forEach:");
+        marcas.forEach(mostrar);
+
+        function mostrar(marca) {
+            console.log(marca);
+        }
+
+
+    </script>
+</body>
+
+</html>
