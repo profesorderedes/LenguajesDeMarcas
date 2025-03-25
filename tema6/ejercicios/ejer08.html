@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio </title>
+</head>
+
+<body>
+
+    <script>
+
+        //.- Crea un programa que dada una cadena de texto, muestre en la consola el texto de forma inversa.
+
+        "use strict"
+        let frase = prompt("Escribe una frase y te la devuelvo invertida")
+        let frase2 = "";
+        for (let i = frase.length; i >= 0; i--) {
+            frase2 = frase2 + frase.charAt(i);
+        }
+        console.log(frase2)
+
+    </script>
+</body>
+
+</html>

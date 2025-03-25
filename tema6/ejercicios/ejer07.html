@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio07</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+
+        let seguir = true;
+
+        while (seguir) {
+            let nota = Number(prompt("nota:"));
+
+            if (nota % 2 == 0) {
+                alert("La nota es par")
+            } else {
+                alert("La nota es impar")
+            }
+
+            let confirmacion = prompt("¿Quieres seguir?")
+            if (confirmacion === "no") {
+                seguir = false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
