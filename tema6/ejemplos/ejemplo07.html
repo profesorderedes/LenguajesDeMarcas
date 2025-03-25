@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 7</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1>Acceder al DOM desde JavaScript</h1>
+
+    <p class="parrafo">Este texto está escrito en el HTML.</p>
+
+    <p class="parrafo">Este texto está escrito en el HTML.</p>
+
+    <p id="parrafo2">Este texto está escrito en el HTML.</p>
+
+    <script>
+        "use strict"
+
+        // let parrafo = document.querySelector(".parrafo");
+        // parrafo.innerHTML = "Cambiado por JavaScript";
+        
+        let parrafos = document.querySelectorAll(".parrafo");
+
+        parrafos[0].innerHTML = "Cambiado por JavaScript";
+        parrafos[1].innerHTML = "Cambiado por JavaScript";
+
+       
+    </script>
+</body>
+
+</html>

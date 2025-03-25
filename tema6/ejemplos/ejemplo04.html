@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4</title>
+</head>
+<body>
+    <h1>Acceder al DOM desde JavaScript</h1>
+
+    <p id="parrafo">Este texto está escrito en el HTML.</p>
+
+    <script>
+        "use strict"
+        
+        document.getElementById("parrafo").innerText = "Este texto está escrito desde JavaScript";
+
+        let parrafo = document.getElementById("parrafo");
+        parrafo.innerText = "Este texto está escrito desde JavaScript";
+
+    </script>
+</body>
+</html>

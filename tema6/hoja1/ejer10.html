@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict"
+
+        // Escribe un programa que solicite tres números e imprima en la consola el número más
+        // pequeño.
+
+        let num1 = Number(prompt("Introduce un número"));
+        let num2 = Number(prompt("Introduce otro número"));
+        let num3 = Number(prompt("Introduce otro número"));
+
+        if (num1 <= num2 && num1 <= num3) {
+
+            alert("El número más pequeño es : " + num1);
+        } else if (num2 <= num1 && num2 <= num3) {
+
+            alert("El número más pequeño es : " + num2);
+        }
+        else if (num3 <= num2 && num3 <= num1) {
+
+            alert("El número más pequeño es : " + num3);
+        }
+
+    </script>
+</body>
+
+</html>
