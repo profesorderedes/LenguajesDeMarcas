@@ -10,12 +10,14 @@
 <body>
     <h1>Cambiar el destino de un link</h1>
 
-    <a href="https://www.iessonferrer.net">IES Son Ferrer</a>
+    <a id="link" href="https://www.iessonferrer.net">IES Son Ferrer</a>
 
     <script>
         "use strict"
 
-        
+        let link = document.getElementById('link');
+        link.href = "https://sites.google.com/iesbendinat.org/iesbendinat";
+        link.innerText = "IES Bendinat";
     </script>
 
 </body>

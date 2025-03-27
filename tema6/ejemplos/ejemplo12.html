@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ea">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 12</title>
+</head>
+
+<body>
+    <h1 id="encabezado">Respondiendo a clicks</h1>
+
+    <p id="parrafo">Este párrafo va a cambiar cuando hagas click en el encabezado.</p>
+
+    <script>
+        "use strict"
+
+        let encabezado = document.getElementById('encabezado');
+        encabezado.addEventListener('click', cambiarColor);
+
+        let parrafo = document.getElementById('parrafo');
+        function cambiarColor(){
+            parrafo.style.color = 'green';
+            parrafo.style.backgroundColor = 'yellow';
+        }
+    </script>
+</body>
+
+</html>

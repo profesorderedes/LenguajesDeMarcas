@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 10</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="encabezado">Cambio de propiedades de la página</h1>
+
+    <p id="parrafo">Este párrafo no se llegará a ver porque lo eliminaremos con JavaScript</p>
+
+    <p>Este párrafo se mantendrá visible.</p>
+
+    <script>
+        "use strict"
+
+        document.body.style.backgroundColor = 'rgb(50, 250, 50)';
+
+        let encabezado = document.getElementById('encabezado');
+        encabezado.style.fontSize = '3rem';
+        encabezado.style.fontFamily = 'Arial';
+        encabezado.style.color = 'blue';
+
+        // document.getElementById('parrafo').style.opacity = '0';
+        //document.getElementById('parrafo').style.display = 'none';
+        document.getElementById('parrafo').style.visibility = 'hidden';
+    </script>
+
+</body>
+
+</html>
