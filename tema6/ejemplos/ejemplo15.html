@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 15</title>
+    <style>
+        #caja {
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Eventos onmouseover y onmouseout</h1>
+
+    <div id="caja"></div>
+
+    <script>
+        "use strict"
+
+        let caja = document.getElementById("caja");
+        caja.addEventListener('mouseover', ponerBorde);
+        caja.addEventListener('mouseout', quitarBorde);
+
+        function ponerBorde(){
+            caja.style.border = '4px solid black';
+        }
+
+        function quitarBorde(){
+            caja.style.border = 'none';
+        }
+
+    </script>
+
+</body>
+
+</html>
