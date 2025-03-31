@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 01</title>
+    <style>
+        #foto {
+            border: 5px solid lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galería</h1>
+
+    <p>Pulsa sobre la imagen y la fotografía cambiará.</p>
+
+    <img id="foto" src="imgs/hamsters/w150px/hamster10.png" alt="hamster">
+
+    <script>
+        "use strict"
+
+        let foto = document.getElementById('foto');
+        foto.addEventListener('click', cambiarFoto);
+
+        function cambiarFoto() {
+            
+            let numHamster = Math.floor(Math.random() * 12 + 1);
+            let ruta = "imgs/hamsters/w150px/hamster";
+            if(numHamster < 10){
+                ruta = ruta + "0";
+            }
+            ruta = ruta + numHamster + ".png";
+
+            foto.src = ruta;
+            
+        }
+    </script>
+</body>
+
+</html>
