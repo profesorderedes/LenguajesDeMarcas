@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 19</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Eventos focus y focusout</h1>
+
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        "use strict"
+
+        document.getElementById('nombre').addEventListener('focus', function () { resaltar(this) });
+        document.getElementById('apellidos').addEventListener('focus', function () { resaltar(this) });
+
+        document.getElementById('nombre').addEventListener('focusout', function () { resetear(this) });
+        document.getElementById('apellidos').addEventListener('focusout', function () { resetear(this) });
+
+
+        function resaltar(elemento) {
+            elemento.style.backgroundColor = 'lightgreen';
+            elemento.style.border = '1px solid blue';
+            elemento.style.borderRadius = '2px';
+            elemento.style.outline = '0px solid blue';
+        }
+
+        function resetear(elemento) {
+            elemento.style.backgroundColor = 'white';
+            elemento.style.border = '1px solid gray';
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -4,13 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo 18</title>
+    <title>Ejemplo18</title>
+
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <style></style>
 </head>
 
 <body>
+
     <h1>Eliminar imágenes</h1>
 
-    <!-- Galería con 5 fotos, al hacer clic en ellas, desaparecen -->
+    <img src="imgs/planetas/marte.jpg" alt="Planeta Marte">
+    <img src="imgs/planetas/mercurio.jpg" alt="Planeta Mercurio">
+    <img src="imgs/planetas/saturno.png" alt="Planeta Saturno">
+    <img src="imgs/planetas/venus.png" alt="Planeta Venus">
+
+    <script>
+
+        "use strict"
+
+        let imagenes = document.getElementsByTagName("img");
+
+        for (let imagen of imagenes) {
+            imagen.addEventListener("click", function () { eliminar(this) })
+        }
+
+        function eliminar(elemento) {
+            elemento.style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

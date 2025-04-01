@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        .parrafo {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aplicar una clase a un elemento</h1>
+
+    <p>Haz clic al siguiente elemento para centrarlo y cambiarle la fuente</p>
+
+    <p id="parrafoN">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum alias quisquam facilis quidem quia
+        doloribus
+        cupiditate error, tempora quibusdam autem sapiente reiciendis accusamus esse eos sit? Autem velit voluptates
+        nihil quasi aspernatur a error assumenda, debitis ipsam accusantium alias recusandae, quisquam praesentium
+        mollitia deserunt aut, quidem reiciendis inventore cumque! Iste!</p>
+
+    <script>
+        "use strict"
+
+        let parrafoN = document.getElementById('parrafoN');
+        parrafoN.addEventListener('click', cambio);
+
+        function cambio() {
+            parrafoN.classList.add('parrafo');
+        }
+
+    </script>
+
+</body>
+
+</html>

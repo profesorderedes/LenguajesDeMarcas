@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 17</title>
 </head>
+
 <body>
     <h1>Uso de this</h1>
+
+    <!-- Cinco párrafos, al hacer clic en ellos, desaparecen -->
 
     <p>Párrafo 1</p>
     <p>Párrafo 2</p>
     <p>Párrafo 3</p>
     <p>Párrafo 4</p>
     <p>Párrafo 5</p>
-    
+
     <script>
         "use strict"
 
         // Vamos a asignar a todos los párrafos el manejador de click eliminar().
         let parrafos = document.getElementsByTagName('p')
-        for(let parrafo of parrafos){
-            parrafo.addEventListener('click', function(){ eliminar(this)});
+        for (let parrafo of parrafos) {
+            parrafo.addEventListener('click', function () { eliminar(this) });
         }
 
-        function eliminar(elemento){
+        function eliminar(elemento) {
             elemento.style.display = 'none';
         }
 
 
     </script>
 </body>
+
 </html>
