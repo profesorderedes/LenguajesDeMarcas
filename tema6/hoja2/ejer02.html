@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces Dinámicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            color: black;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        a {
+            margin: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: black;
+        }
+
+        #wiki {
+            background-color: violet;
+        }
+
+        #green {
+            background-color: greenyellow;
+        }
+
+        #cruz {
+            background-color: rosybrown;
+        }
+
+        .boton{
+            background-color: yellow;
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elegir destino del enlace</h1>
+    <p>Pulsa uno de estos tres colores para elegir del link que aparece más abajo.</p>
+
+    <button id="wiki" onclick="cambiarEnlace('Wikipedia', 'https://www.wikipedia.org')">Wikipedia</button>
+    <button id="green" onclick="cambiarEnlace('Greenpeace', 'https://www.greenpeace.org')">Greenpeace</button>
+    <button id="cruz" onclick="cambiarEnlace('Cruz Roja', 'https://www.redcross.org')">Cruz Roja</button>
+
+    <p>Pulsa el siguiente link para dirigirte a la web elegida:</p>
+
+    <button id="enlace" class="boton"><a  href="https://es.wikipedia.org" target="_blank">Ir a Wikipedia</a></button>
+   
+    
+
+    <script>
+        "use strict"
+
+        function cambiarEnlace(nombre, url) {
+            let enlace = document.getElementById("enlace");
+            enlace.textContent = "Ir a " + nombre;
+            enlace.href = url;
+        }
+    </script>
+</body>
+
+</html>
