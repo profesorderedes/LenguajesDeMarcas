@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <style>
+        #borderExterior {
+            width: fit-content;
+            padding: 5px 0px 0px 5px;
+            border: 6px solid lightgreen;
+        }
+
+        .cajas {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+        #amarillo {
+            background-color: yellow;
+        }
+
+        #naranja {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Ocultar divs</h1>
+
+    <p>Haz clic en los siguientes cuadrados para hacerlos desaparecer:</p>
+
+    <div id="borderExterior">
+        <div class="cajas" id="rojo"></div>
+        <div class="cajas" id="verde"></div>
+        <div class="cajas" id="azul"></div>
+        <div class="cajas" id="amarillo"></div>
+        <div class="cajas" id="naranja"></div>
+    </div>
+
+    <script>
+
+        "use script"
+
+        let cajas = document.getElementsByClassName("cajas");
+
+        for (let caja of cajas) {
+            caja.addEventListener("click", function () { desaparecer(this) });
+        }
+
+        function desaparecer(elemento) {
+            elemento.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
