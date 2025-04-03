@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 20</title>
+</head>
+
+<body>
+    <h1>Eventos input y change</h1>
+
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        "use strict"
+
+        let nombre = document.getElementById('nombre');
+
+        nombre.addEventListener('input', mayusculas);
+        nombre.addEventListener('change', mensaje);
+
+        function mayusculas() {
+            let contenido = nombre.value;
+            contenido = contenido.toUpperCase();
+            nombre.value = contenido;
+        }
+
+        function mensaje() {
+            alert('¡Has salido de la casilla nombre!')
+        }
+
+    </script>
+</body>
+
+</html>
