@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        #hamster {
+            border: 5px solid lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galería</h1>
+
+    <p>Pulsa sobre la imagen y el color del borde cambiará aleatoriamente</p>
+
+    <img id="hamster" src="imgs/hamsters/w150px/hamster01.png" alt="hamster">
+
+    <script>
+        "use strict"
+
+        let foto = document.getElementById('hamster');
+        foto.addEventListener('click', cambiarColor);
+
+        
+
+        function cambiarColor() {
+
+            let rojo = Math.floor(Math.random() * 256);
+            let verde = Math.floor(Math.random() * 256);
+            let azul = Math.floor(Math.random() * 256);
+
+            let color = 'rgb(' + rojo + ", " + verde + ", " + azul + ")";
+
+            document.getElementById("hamster").style.borderColor = color;
+        }
+    </script>
+</body>
+
+</html>

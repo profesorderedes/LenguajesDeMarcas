@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 21b</title>
+    <style>
+        button {
+            background-color: chocolate;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Agregar párrafos desde JavaScript</h1>
+
+    <div id="contenedorParrafos"></div>
+
+    <button id="boton">Añadir párrafo</button>
+
+    <script>
+        "use script"
+
+        let boton = document.getElementById('boton');
+        boton.addEventListener('click', anyadirParrafo);
+
+        function anyadirParrafo() {
+
+            let parrafo = document.createElement("p");
+            parrafo.innerText = 'Este párrafo se ha creado desde JavaScript';
+            document.getElementById('contenedorParrafos').appendChild(parrafo);
+
+        }
+
+    </script>
+</body>
+
+</html>

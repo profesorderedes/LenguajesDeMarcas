@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 22</title>
+</head>
+
+<body>
+    <h1>Agregar elementos con inserBefore</h1>
+
+    <button id="boton">Agregar un párrafo</button>
+
+    <div id="contenedor">
+        <p>Este párrafo está al principio del contenedor.</p>
+
+        <img id="imagen" src="imgs/planetas/saturno.png" alt="Planeta Saturno">
+
+        
+    </div>
+
+    <script>
+        "use strict"
+
+        let boton = document.getElementById('boton');
+        boton.addEventListener('click', anyadirParrafo);
+
+        function anyadirParrafo(){
+
+            let nuevo = document.createElement('p');
+            nuevo.innerText = 'Párrafo nuevo';
+
+            let imagen = document.getElementById('imagen');
+
+            document.getElementById('contenedor').insertBefore(nuevo, imagen);
+        }
+
+    </script>
+</body>
+
+</html>

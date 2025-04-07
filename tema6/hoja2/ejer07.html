@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer07</title>
+    <style>
+        img {
+            height: 200px;
+            display: block;
+            padding-top: 20px;
+        }
+
+        #barra {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Control de transparencia</h1>
+
+    <p>Mueve el deslizador para cambiar la transparencia de la foto</p>
+
+    <input id="barra" type="range" min="0" max="100" value="100">
+
+    <img id="estructura" src="imgs/arquitectura/dil-5OOfwgaiUN8-unsplash.jpg" alt="Edificio">
+
+    <script>
+        "use strict"
+
+        let barra = document.getElementById("barra");
+        barra.addEventListener("input", transparencia);
+
+        function transparencia() {
+
+            let valor = barra.value;
+
+            estructura.style.opacity = valor / 100;
+        }
+    </script>
+</body>
+
+</html>
