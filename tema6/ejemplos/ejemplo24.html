@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 24</title>
+    <style>
+        input{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Validar formularios</h1>
+
+    <form id="login" action="login.php" onsubmit="return validar()">
+        <label for="usuario">Nombre de usuario</label>
+        <input type="text" name="usuario" id="usuario">
+
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        "use strict"
+
+        // Ejercicio: cuando una casilla de texto tenga 5 o más caracteres, 
+        // el borde rojo desaparecerá.
+        // Ejemplo24b: si se pulsa enviar y alguna casilla de texto no tiene al menos
+        // 5 caracteres, se mostrará a su lado un aviso como "*El nombre de usuario debe tener
+        // al menos 5 caracteres".
+        function validar(){
+           let usuario = document.getElementById('usuario');
+           let password = document.getElementById('password');
+
+            if(usuario.value.length < 5){
+                console.log("El usuario debe tener al menos 5 caracteres.");
+                usuario.style.borderColor = "red";
+                return false;
+            }
+
+            if(password.value.length < 5){
+                console.log("El password debe tener al menos 5 caracteres.");
+                password.style.borderColor = "red";
+                return false;
+            }
+
+            return true;
+
+        }
+
+
+    </script>
+</body>
+
+</html>

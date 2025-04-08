@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejer08</title>
+    <title>Ejer08b</title>
     <style>
         #texto {
             display: block;
@@ -34,8 +34,13 @@
         let boton = document.getElementById("boton");
         boton.addEventListener("click", anyadirTexto);
 
+
+
         function anyadirTexto() {
-            document.getElementById('placeholder').style.display = "none";
+
+            if(document.getElementById('placeholder') != null){
+                document.getElementById('placeholder').remove();
+            }
             
             let nuevo = document.createElement("option");
             nuevo.innerText = relleno.value;
