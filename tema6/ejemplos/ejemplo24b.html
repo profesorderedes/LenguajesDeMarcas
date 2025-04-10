@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 24</title>
     <style>
-        input {
+        label {
             display: block;
+        }
+
+        input {
             margin-bottom: 10px;
+        }
+
+        #enviar {
+            display: block;
+        }
+
+        span {
+            display: none;
+            color: red;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -18,19 +31,18 @@
 
     <form id="login" action="login.php" onsubmit="return validar()">
         <label for="usuario">Nombre de usuario</label>
-        <input type="text" name="usuario" id="usuario" onfocusout="validar()">
+        <input type="text" name="usuario" id="usuario" onfocusout="validar()"><span id="errorUsuario">*El nombre de
+            usuario debe tener al menos 5 caracteres</span>
 
         <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" onfocusout="validar()">
+        <input type="password" name="password" id="password" onfocusout="validar()"><span id="errorPassword">*La
+            contraseña debe tener al menos 5 caracteres</span>
 
-        <input type="submit" value="Enviar">
+        <input id="enviar" type="submit" value="Enviar">
     </form>
 
     <script>
         "use strict"
-
-        // Ejercicio: cuando una casilla de texto tenga 5 o más caracteres, 
-        // el borde rojo desaparecerá.
 
         // Ejemplo24b: si se pulsa enviar y alguna casilla de texto no tiene al menos
         // 5 caracteres, se mostrará a su lado un aviso como "*El nombre de usuario debe tener
@@ -43,16 +55,20 @@
 
             if (usuario.value.length < 5) {
                 usuario.style.borderColor = "red";
+                document.getElementById('errorUsuario').style.display = "inline";
                 return false;
-            }else {
+            } else {
                 usuario.style.borderColor = "grey";
+                document.getElementById('errorUsuario').style.display = "none";
             }
 
             if (password.value.length < 5) {
                 password.style.borderColor = "red";
+                document.getElementById('errorPassword').style.display = "inline";
                 return false;
-            }else {
+            } else {
                 password.style.borderColor = "grey";
+                document.getElementById('errorPassword').style.display = "none";
             }
 
             return true;
