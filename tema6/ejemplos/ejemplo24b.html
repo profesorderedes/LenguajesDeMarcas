@@ -22,6 +22,8 @@
             display: none;
             color: red;
             margin-left: 5px;
+            font-size: 0.7rem;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -31,11 +33,12 @@
 
     <form id="login" action="login.php" onsubmit="return validar()">
         <label for="usuario">Nombre de usuario</label>
-        <input type="text" name="usuario" id="usuario" onfocusout="validar()"><span id="errorUsuario">*El nombre de
+        <input type="text" name="usuario" id="usuario" onfocusout="validarUsuario()"><span id="errorUsuario">*El nombre
+            de
             usuario debe tener al menos 5 caracteres</span>
 
         <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" onfocusout="validar()"><span id="errorPassword">*La
+        <input type="password" name="password" id="password" onfocusout="validarPassword()"><span id="errorPassword">*La
             contraseña debe tener al menos 5 caracteres</span>
 
         <input id="enviar" type="submit" value="Enviar">
@@ -49,9 +52,20 @@
         // al menos 5 caracteres".
         function validar() {
 
-            console.log("Validando...");
+            let nombreValido = validarUsuario();
+            let passwordValido = validarPassword();
+
+            if (!nombreValido || !passwordValido) {
+                return false;
+            }
+            console.log('Validación ok')
+
+            return true;
+
+        }
+
+        function validarUsuario() {
             let usuario = document.getElementById('usuario');
-            let password = document.getElementById('password');
 
             if (usuario.value.length < 5) {
                 usuario.style.borderColor = "red";
@@ -60,7 +74,12 @@
             } else {
                 usuario.style.borderColor = "grey";
                 document.getElementById('errorUsuario').style.display = "none";
+                return true;
             }
+        }
+
+        function validarPassword() {
+            let password = document.getElementById('password');
 
             if (password.value.length < 5) {
                 password.style.borderColor = "red";
@@ -69,12 +88,9 @@
             } else {
                 password.style.borderColor = "grey";
                 document.getElementById('errorPassword').style.display = "none";
+                return true;
             }
-
-            return true;
-
         }
-
 
     </script>
 </body>

@@ -1,0 +1,32 @@
+{
+    "personas": [
+        {
+            "apellidos": "Martínez Chicote",
+            "nombre": "Isabel",
+            "edad": 40,
+            "tel": "555 891100",
+            "email": "imartinez23@gmail.com"
+        },
+        {
+            "apellidos": "Rojas Sabater",
+            "nombre": "Ana María",
+            "edad": 54,
+            "tel": "555 909992",
+            "email": "arojas@hotmail.com"
+        },
+        {
+            "apellidos": "Martín Gallego",
+            "nombre": "Pedro",
+            "edad": 56,
+            "tel": "555 190029",
+            "email": "pedrogallego@gmail.com"
+        },
+        {
+            "apellidos": "Rico López",
+            "nombre": "Dolores",
+            "edad": 33,
+            "tel": "555 111213",
+            "email": "doloresrilo@yahoo.es"
+        }
+    ]
+}
