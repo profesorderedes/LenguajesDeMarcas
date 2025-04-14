@@ -13,7 +13,22 @@
 
         let textoJSON = '{"jugador": "charlie", "avatar": "guerrero","armas": [{"tipo": "armadura", "nivel": 3},{"tipo": "espada", "nivel":7}, {"tipo": "escudo","nivel": 4}],"vida": 6}';
 
-        
+        console.log(textoJSON);
+
+        let objeto = JSON.parse(textoJSON);
+
+        console.log(objeto);
+        console.log(objeto.jugador);
+
+        let armas = objeto.armas;
+        for(let arma of armas){
+            console.log(arma.tipo);
+        }
+
+
+
+
+
     </script>
 </body>
 </html>
