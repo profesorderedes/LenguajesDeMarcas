@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tiempo</title>
+</head>
+
+<body>
+    <h1>El tiempo en Palma</h1>
+
+    <p>Ciudad: <span id="ciudad"></span></p>
+    <p>Temperatura: <span id="temp"></span></p>
+    <p>Salida del Sol: <span id="orto"></span></p>
+    <p>Puesta del Sol: <span id="ocaso"></span></p>
+    <p>Humedad: <span id="humedad"></span></p>
+    <p>Presión: <span id="presion"></span></p>
+    <p>Velocidad del viento: <span id="velocidadViento"></span></p>
+    <p>Dirección del viento: <span id="direccionViento"></span></p>
+
+    <script>
+        "use strict"
+
+        let url = "https://api.openweathermap.org/data/2.5/forecast?q=Palma&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
+
+        fetch(url)
+            .then(function (resultado) {
+                // Devolvemos el resultado descargado en formato JSON.
+                return resultado.json();
+            })
+            .then(function (resultado) {
+                // Lo que queremos que se haga con el JSON descargado.
+                let ciudad = resultado.city.name;
+                console.log("Ciudad: " + ciudad);
+                document.getElementById('ciudad').innerText = ciudad;
+
+                let temperatura = resultado.list[0].main.temp - 273.15;
+                temperatura = temperatura.toFixed(1);
+                console.log("Temperatura: " + temperatura + " ºC");
+                document.getElementById('temp').innerText = temperatura + " ºC";
+
+                let orto = resultado.city.sunrise;
+                let ocaso = resultado.city.sunset;
+
+                console.log("Salida del Sol: " + epochAHora(orto));
+                console.log("Puesta de Sol: " + epochAHora(ocaso));
+                document.getElementById('orto').innerText = epochAHora(orto);
+                document.getElementById('ocaso').innerText = epochAHora(ocaso);
+
+                let humedad = resultado.list[0].main.humidity;
+                console.log("Humedad: " + humedad + "%");
+                document.getElementById('humedad').innerText = humedad + "%";
+
+                let presion = resultado.list[0].main.pressure;
+                console.log("Presión: " + presion + " mbar");
+                document.getElementById('presion').innerText = presion + " mbar";
+
+                let velocidadViento = resultado.list[0].wind.speed * 3.6;
+                velocidadViento = velocidadViento.toFixed(1);
+                console.log("Velocidad del viento: " + velocidadViento + " km/h");
+                document.getElementById('velocidadViento').innerText = velocidadViento + " km/h";
+                
+                let direccionViento = resultado.list[0].wind.deg;
+                console.log("Dirección del viento: " + direccionViento + "º");
+                document.getElementById('direccionViento').innerText = direccionViento + "º";
+            })
+            .catch(function (error) {
+                // lo que queramos que se haga si se produce un error
+                // al descargar.
+                console.log("Error al descargar.");
+                console.log(error);
+            });
+
+        function epochAHora(tiempo) {
+            let fecha = new Date(tiempo * 1000);
+            return fecha.getHours() + ":" + fecha.getMinutes() + ":" + fecha.getSeconds();
+        }
+
+    </script>
+</body>
+
+</html>
