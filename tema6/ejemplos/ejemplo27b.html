@@ -25,12 +25,8 @@
         let url = "https://api.openweathermap.org/data/2.5/forecast?q=Paris&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
 
         fetch(url)
-            .then(function (resultado) {
-                // Devolvemos el resultado descargado en formato JSON.
-                return resultado.json();
-            })
-            .then(function (resultado) {
-
+            .then(resultado => resultado.json())
+            .then(resultado => {
                 // Lo que queremos que se haga con el JSON descargado.
                 let ciudad = resultado.city.name;
                 console.log("Ciudad: " + ciudad);
@@ -66,7 +62,7 @@
                 console.log("Dirección del viento: " + direccionViento + "º");
                 document.getElementById('direccionViento').innerText = direccionViento + "º";
             })
-            .catch(function (error) {
+            .catch(error => {
                 // lo que queramos que se haga si se produce un error
                 // al descargar.
                 console.log("Error al descargar.");
