@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 31</title>
+    <style>
+        th, td{
+            border: 1px solid black;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad innerHTML</h1>
+    <table id="tabla">
+        
+    </table>
+
+    <script>
+        "use strict"
+
+        let pacientes = [
+            ['Juan Gómez', 'Pipo', 'Perro'],
+            ['Ricardo Ruiz', 'Chispas', 'Gato'],
+            ['Margarita López', 'Pelusa', 'Gato']
+        ];
+
+        for(let paciente of pacientes){
+            console.log(paciente[0]);
+            console.log(paciente[1]);
+            console.log(paciente[2]);
+
+            
+        }
+    </script>
+</body>
+
+</html>
