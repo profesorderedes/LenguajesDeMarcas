@@ -19,7 +19,11 @@
 <body>
     <h1>Propiedad innerHTML</h1>
     <table id="tabla">
-        
+        <tr>
+            <th>Dueño</th>
+            <th>Mascota</th>
+            <th>Especie</th>
+        </tr>
     </table>
 
     <script>
@@ -31,13 +35,18 @@
             ['Margarita López', 'Pelusa', 'Gato']
         ];
 
+        let contenidoTabla = '';
+
         for(let paciente of pacientes){
             console.log(paciente[0]);
             console.log(paciente[1]);
             console.log(paciente[2]);
 
-            
+            contenidoTabla = contenidoTabla + '<tr><td>' + paciente[0] + '</td><td>' + paciente[1] + '</td><td>' + paciente[2] + '</td></tr>';
+
         }
+
+        document.getElementById('tabla').innerHTML = document.getElementById('tabla').innerHTML + contenidoTabla;
     </script>
 </body>
 
