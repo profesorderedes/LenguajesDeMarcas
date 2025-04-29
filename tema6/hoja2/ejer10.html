@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar elementos de una lista</title>
+    <style>
+        select {
+            width: 200px;
+            height: 100px;
+            background-color: #fdfdd8;
+            border: 2px solid blue;
+            color: blue;
+        }
+
+        button {
+            background-color: pink;
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Eliminar elementos de una lista</h1>
+    <p>Usuarios con permiso de administrador en la aplicación. Selecciona uno y pulsa el botón para retirarle estos
+        permisos.</p>
+
+    <select id="listaUsuarios" size="5">
+        <option onclick="seleccionarUsuario(this)">csogorb</option>
+        <option onclick="seleccionarUsuario(this)">lfernandez</option>
+        <option onclick="seleccionarUsuario(this)">ntorres</option>
+        <option onclick="seleccionarUsuario(this)">pmas</option>
+    </select>
+    <br>
+    <button onclick="eliminarUsuario()">Eliminar usuario</button>
+
+    <script>
+        let usuarioSeleccionado = null;
+
+        function seleccionarUsuario(opcion) {
+            usuarioSeleccionado = opcion;
+        }
+
+        function eliminarUsuario() {
+            if (usuarioSeleccionado) {
+                usuarioSeleccionado.remove();
+                usuarioSeleccionado = null;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
