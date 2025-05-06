@@ -5,32 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El tiempo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: rgb(221, 208, 208);
+        }
+
+        body {
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li:nth-child(even) {
+            background-color: rgb(221, 208, 208);
+        }
+
+        li:hover {
+            background-color: rgb(105, 105, 105);
+            font-weight: bold;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <h1>El tiempo en Palma</h1>
 
-    <p>Ciudad: <span id="ciudad"></span></p>
-    <p>Temperatura: <span id="temp"></span></p>
-    <p>Salida del Sol: <span id="orto"></span></p>
-    <p>Puesta del Sol: <span id="ocaso"></span></p>
-    <p>Humedad: <span id="humedad"></span></p>
-    <p>Presión: <span id="presion"></span></p>
-    <p>Velocidad del viento: <span id="velocidadViento"></span></p>
-    <p>Dirección del viento: <span id="direccionViento"></span></p>
+    <ul id="datos">
+        <li>
+            <p>Ciudad: <span id="ciudad"></span></p>
+        </li>
+        <li>
+            <p>Temperatura: <span id="temp"></span></p>
+        </li>
+        <li>
+            <p>Salida del Sol: <span id="orto"></span></p>
+        </li>
+        <li>
+            <p>Puesta del Sol: <span id="ocaso"></span></p>
+        </li>
+        <li>
+            <p>Humedad: <span id="humedad"></span></p>
+        </li>
+        <li>
+            <p>Presión: <span id="presion"></span></p>
+        </li>
+        <li>
+            <p>Velocidad del viento: <span id="velocidadViento"></span></p>
+        </li>
+        <li>
+            <p>Dirección del viento: <span id="direccionViento"></span></p>
+        </li>
+    </ul>
 
     <script>
         "use strict"
 
-        let url = "https://api.openweathermap.org/data/2.5/forecast?q=Palma&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
+        let url = "https://api.openweathermap.org/data/2.5/forecast?q=Paris&appid=7dcc6bb908fc23a49ee9184422cc7cfd";
 
         fetch(url)
-            .then(function (resultado) {
-                // Devolvemos el resultado descargado en formato JSON.
-                return resultado.json();
-            })
-            .then(function (resultado) {
-
+            .then(resultado => resultado.json())
+            .then(resultado => {
                 // Lo que queremos que se haga con el JSON descargado.
                 let ciudad = resultado.city.name;
                 console.log("Ciudad: " + ciudad);
@@ -61,12 +116,12 @@
                 velocidadViento = velocidadViento.toFixed(1);
                 console.log("Velocidad del viento: " + velocidadViento + " km/h");
                 document.getElementById('velocidadViento').innerText = velocidadViento + " km/h";
-                
+
                 let direccionViento = resultado.list[0].wind.deg;
                 console.log("Dirección del viento: " + direccionViento + "º");
                 document.getElementById('direccionViento').innerText = direccionViento + "º";
             })
-            .catch(function (error) {
+            .catch(error => {
                 // lo que queramos que se haga si se produce un error
                 // al descargar.
                 console.log("Error al descargar.");
