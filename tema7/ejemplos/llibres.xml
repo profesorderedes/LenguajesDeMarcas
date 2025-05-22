@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<llibreria>
+	<llibre categoria="CUINA">
+		<titol idioma="en">Everyday Italian</titol>
+		<autor>Giada De Laurentiis</autor>
+		<any>2005</any>
+		<preu>30.00</preu>
+	</llibre>
+	<llibre categoria="INFANTIL">
+		<titol idioma="en">Harry Potter</titol>
+		<autor>J K. Rowling</autor>
+		<any>2005</any>
+		<preu>29.99</preu>
+	</llibre>
+	<llibre categoria="WEB">
+		<titol idioma="en">XQuery Kick Start</titol>
+		<autor>James McGovern</autor>
+		<autor>Per Bothner</autor>
+		<autor>Kurt Cagle</autor>
+		<autor>James Linn</autor>
+		<autor>Vaidyanathan Nagarajan</autor>
+		<any>2003</any>
+		<preu>49.99</preu>
+	</llibre>
+	<llibre categoria="WEB">
+		<titol idioma="en">Learning XML</titol>
+		<autor>Erik T. Ray</autor>
+		<any>2003</any>
+		<preu>39.95</preu>
+	</llibre>
+</llibreria>
