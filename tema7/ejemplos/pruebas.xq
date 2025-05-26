@@ -1,2 +1,5 @@
-for $x in doc("llibres.xml")//llibre
-return <libro>{$x/titol/data()}, publicado el {$x/any/data()}, ({})</libro>
+let $libros := doc('llibres.xml')//llibre
+let $numLibros := count($libros)
+let $precio := doc('llibres.xml')//preu
+let $minPrecio := min($precio)
+return $minPrecio
