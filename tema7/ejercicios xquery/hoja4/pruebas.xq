@@ -1,5 +1,9 @@
-(: 5.- Lista con los pasajeros que no van a Palma de Mallorca y sus destinos, ordenados por destino en orden descendente. :)
-for $x in doc('vuelos.xml')//reserva
-where $x/destino != 'Palma de Mallorca'
-order by $x/destino descending
-return <vuelo>{$x/pasajero/nombre}{$x/destino}</vuelo>
+(: 8.- Consulta que muestre el precio de reserva más alto y el más bajo (usa las funciones max y min). :)
+<body>
+<h1>Vuelo más caro y más barato</h1>
+{
+  let $max := max(doc("vuelos.xml")//precio)
+  let $min := min(//precio)
+  return <p>El vuelo más caro cuesta {$max} €, y el más barato, {$min} €</p>
+}
+</body>
